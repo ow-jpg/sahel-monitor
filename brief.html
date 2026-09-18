@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brief · Sahel Monitor</title>
+<meta name="description" content="Weekly written brief on the Sahel, generated from the monitored feeds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .provenance {
+    margin-top: 1.1rem; padding-top: 0.8rem; border-top: 1px solid var(--line-soft);
+    font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3);
+    display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem;
+  }
+  .ref-filter {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+    margin-bottom: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>The week from the feeds
+    <span>Written by a model from the monitored items, with every source listed below.</span>
+  </h1>
+  <div class="status-block">
+    <span class="pill" id="status-pill"><span class="lamp"></span><span id="status-text">Checking</span></span>
+    <a class="linkish" href="index.html" style="font-size:0.75rem;">Back to monitor</a>
+  </div>
+</header>
+
+<nav class="tabs"></nav>
+
+<div class="alert" id="alert" role="status">
+  <h2 id="alert-title"></h2>
+  <p id="alert-body"></p>
+</div>
+
+<section id="brief-wrap" style="margin-top:2rem; display:none;">
+  <div class="panel">
+    <div class="panel-head">
+      <h2 id="brief-heading">Summary</h2>
+      <span class="when" id="brief-when"></span>
+    </div>
+    <div class="prose" id="brief-body"></div>
+    <div class="provenance">
+      <span id="prov-model"></span>
+      <span id="prov-items"></span>
+      <span id="prov-window"></span>
+    </div>
+  </div>
+
+  <div class="context-panel" id="context-panel" style="display:none;">
+    <h3>Wider context</h3>
+    <p class="origin">Drawn from outside the monitored feeds. Nothing here was
+      collected by this system, so treat it separately from the summary above and
+      follow the links before relying on any of it.</p>
+    <div class="prose" id="context-body"></div>
+    <ul class="source-list" id="context-sources"></ul>
+  </div>
+</section>
+
+<div class="empty" id="no-brief" style="margin-top:2rem; display:none;">
+  No brief has been generated. The collector writes <code>brief.json</code> after it
+  finishes gathering. If the feeds ran but the brief did not, the model call failed
+  or was rate limited, and the run log in the Actions tab will say which.
+</div>
+
+<section class="refs" id="refs-wrap" style="display:none;">
+  <h2>References</h2>
+  <p class="col-note">Every item the model was given, in the order it received them.
+    If a claim above is not traceable to something here, it did not come from the feeds.</p>
+  <div class="ref-filter">
+    <input type="search" id="ref-q" placeholder="Filter references" aria-label="Filter references">
+    <select id="ref-country" aria-label="Filter references by country">
+      <option value="">Any country</option>
+    </select>
+    <span class="tally" id="ref-tally"></span>
+  </div>
+  <ol class="ref-list" id="ref-list"></ol>
+</section>
+
+<footer>
+  <p>The summary is generated text. It has not been checked by anyone, and a model
+  writing from headlines can misread what a headline meant. The reference list is
+  there so you can go to the reporting rather than take the summary on trust. Where
+  the feeds were thin, the summary will be thin, which is the intended behaviour.</p>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+(function () {
+  "use strict";
+  var S = window.SM;
+  var refs = [];
+
+  function renderRefs(filterText, filterCountry) {
+    var list = document.getElementById("ref-list");
+    list.textContent = "";
+    var shown = 0;
+
+    refs.forEach(function (ref, index) {
+      if (filterCountry && (ref.countries || []).indexOf(filterCountry) === -1) return;
+      if (filterText) {
+        var blob = ((ref.title || "") + " " + (ref.publisher || "")).toLowerCase();
+        if (blob.indexOf(filterText) === -1) return;
+      }
+      shown++;
+
+      var li = S.el("li", "ref-item");
+      li.appendChild(S.el("div", "ref-num", String(index + 1)));
+
+      var body = S.el("div", "ref-body");
+      var href = S.safeUrl(ref.link);
+      var head = S.el(href ? "a" : "span", null, ref.title || "Untitled");
+      if (href) { head.href = href; head.target = "_blank"; head.rel = "noopener noreferrer"; }
+      body.appendChild(head);
+
+      var meta = S.el("div", "ref-meta");
+      if (ref.publisher) meta.appendChild(S.el("span", null, ref.publisher));
+      meta.appendChild(S.el("span", null, S.relativeDate(ref.date)));
+      (ref.countries || []).forEach(function (c) { meta.appendChild(S.el("span", null, c)); });
+      if (Number(ref.corroboration) >= 2) {
+        meta.appendChild(S.el("span", null, ref.corroboration + " outlets"));
+      }
+      body.appendChild(meta);
+      li.appendChild(body);
+      list.appendChild(li);
+    });
+
+    document.getElementById("ref-tally").textContent =
+      shown === refs.length ? refs.length + " items" : shown + " of " + refs.length;
+  }
+
+  function buildRefCountries() {
+    var seen = {};
+    refs.forEach(function (r) {
+      (r.countries || []).forEach(function (c) { seen[c] = true; });
+    });
+    var select = document.getElementById("ref-country");
+    Object.keys(seen).sort().forEach(function (c) {
+      var o = S.el("option", null, c);
+      o.value = c;
+      select.appendChild(o);
+    });
+  }
+
+  S.buildNav("brief.html");
+
+  S.loadAll().then(function (data) {
+    // The stale warning matters more here than anywhere else. A thin monitor
+    // page looks thin. A stale summary reads as current no matter how old it is.
+    S.assessFreshness(data.meta, {
+      severeMessage:
+        "The feeds behind this summary have not updated in some time, so the text " +
+        "below describes an earlier period and says nothing about what has happened " +
+        "since. Do not read it as a picture of this week."
+    });
+
+    var brief = data.brief;
+    if (!brief || !brief.from_feeds) {
+      document.getElementById("no-brief").style.display = "block";
+      return;
+    }
+
+    document.getElementById("brief-wrap").style.display = "block";
+    S.paragraphs(document.getElementById("brief-body"), brief.from_feeds);
+
+    var when = new Date(brief.generated);
+    if (!isNaN(when.getTime())) {
+      document.getElementById("brief-when").textContent =
+        when.toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" });
+    }
+
+    document.getElementById("prov-model").textContent =
+      "model  " + (brief.model || "unknown");
+    document.getElementById("prov-items").textContent =
+      (brief.items_used || (brief.references || []).length || 0) + " items given";
+    document.getElementById("prov-window").textContent =
+      "covering " + (brief.window_days || 7) + " days";
+
+    if (brief.context) {
+      S.paragraphs(document.getElementById("context-body"), brief.context);
+      var srcList = document.getElementById("context-sources");
+      (brief.context_sources || []).forEach(function (s) {
+        var href = S.safeUrl(s.url);
+        if (!href) return;
+        var li = S.el("li");
+        var a = S.el("a", null, s.title || href);
+        a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer";
+        li.appendChild(a);
+        srcList.appendChild(li);
+      });
+      document.getElementById("context-panel").style.display = "block";
+    }
+
+    refs = brief.references || [];
+    if (refs.length) {
+      document.getElementById("refs-wrap").style.display = "block";
+      buildRefCountries();
+      renderRefs("", "");
+
+      var search = document.getElementById("ref-q"), timer;
+      search.addEventListener("input", function () {
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          renderRefs(search.value.trim().toLowerCase(),
+                     document.getElementById("ref-country").value);
+        }, 150);
+      });
+      document.getElementById("ref-country").addEventListener("change", function () {
+        renderRefs(search.value.trim().toLowerCase(), this.value);
+      });
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahel Monitor</title>
+<meta name="description" content="Conflict and political developments in the Sahel and West Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!--
+==============================================================================
+  DATA CONTRACT
+  Four stream files plus the brief, all in this folder. None exist until the
+  collector has run. The collector will be written to produce exactly this.
+
+  news.json / social.json / analysis.json / research.json
+  {
+    "generated":     "2026-09-18T20:04:11+00:00",   ISO 8601, UTC
+    "cadence_hours": 24,
+    "window_days":   21,
+    "countries":     ["Mali", "Burkina Faso", ...],
+    "tiers":         { "Mali": 1, "Niger": 1, "Nigeria": 2 },
+    "themes":        { "Jihadist groups": { "colour": "#c25b4a" } },
+    "events":        ["Conflict event", "Leadership change", "Alliance shift"],
+    "coverage":      [ { "country": "Niger", "recent": 4, "baseline": 19.2 } ],
+    "health":        [ { "name": "RFI Afrique", "ok": true, "fetched": 40,
+                         "kept": 6, "dry_runs": 0, "error": null } ],
+    "items": [ {
+        "title": "...", "link": "https://...", "publisher": "RFI",
+        "lang": "fr", "date": "2026-09-17T08:00:00+00:00",
+        "summary": "Plain text, a sentence or two.",
+        "countries": ["Mali"], "themes": ["Azawad and FLA"],
+        "events": ["Leadership change"],
+        "corroboration": 7,          distinct non-syndicated outlets
+        "thread": "new" | "developing",
+        "anomaly": true              country volume off its own baseline
+    } ]
+  }
+
+  brief.json
+  {
+    "generated": "...", "model": "z-ai/glm-5.2:free", "items_used": 94,
+    "window_days": 7,
+    "from_feeds": "Paragraphs derived only from the items below.",
+    "context": "Optional. Background from outside the feeds.",
+    "context_sources": [ { "title": "...", "url": "https://..." } ],
+    "references": [ { "title": "...", "link": "...", "publisher": "...",
+                      "date": "...", "countries": [...], "corroboration": 3 } ]
+  }
+==============================================================================
+-->
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Sahel Monitor
+    <span>Mali, Burkina Faso and Niger in focus. Wider West Africa tracked.</span>
+  </h1>
+  <div class="status-block">
+    <span class="pill" id="status-pill"><span class="lamp"></span><span id="status-text">Checking</span></span>
+    <button class="linkish" id="diag-toggle" aria-expanded="false">Diagnostics</button>
+  </div>
+</header>
+
+<nav class="tabs"></nav>
+
+<div class="alert" id="alert" role="status">
+  <h2 id="alert-title"></h2>
+  <p id="alert-body"></p>
+</div>
+
+<div class="diagnostics" id="diagnostics">
+  <div class="diag-section">
+    <h3>Collection</h3>
+    <div class="rows" id="health-rows"></div>
+    <p class="hint">
+      <span class="ok">ok</span> responded and produced items.
+      <span class="dry">dry</span> responded but nothing matched, which is normal for
+      broad feeds and a problem if it persists.
+      <span class="fail">fail</span> did not respond, so fix or remove it in sources.yml.
+    </p>
+  </div>
+  <div class="diag-section">
+    <h3>Coverage against baseline</h3>
+    <div class="bars" id="coverage-bars"></div>
+    <p class="hint">Volume over the last seven days against each country's own trailing
+      average, worst shortfall first. A short bar means less reporting than usual. It
+      does not mean less is happening.</p>
+  </div>
+</div>
+
+<div class="filters" role="search">
+  <input type="search" id="q" placeholder="Search" aria-label="Search headlines">
+  <select id="tier" aria-label="Filter by tier">
+    <option value="">All countries</option>
+    <option value="1">Tier 1 only</option>
+    <option value="2">Tier 2 only</option>
+  </select>
+  <select id="country" aria-label="Filter by country">
+    <option value="">Any country</option>
+  </select>
+  <select id="days" aria-label="Timeframe">
+    <option value="7">Last 7 days</option>
+    <option value="14">Last 14 days</option>
+    <option value="0" selected>Everything held</option>
+  </select>
+  <span class="sep" aria-hidden="true"></span>
+  <span id="theme-chips" style="display:contents;"></span>
+  <span class="sep" aria-hidden="true"></span>
+  <span id="event-chips" style="display:contents;"></span>
+  <button class="linkish" id="reset" style="font-size:0.8rem;">Clear</button>
+  <span class="tally" id="tally"></span>
+</div>
+
+<main class="columns">
+  <section class="col">
+    <h2>News</h2>
+    <p class="col-note">Wire services, regional outlets, local reporting.</p>
+    <ul class="stream" id="stream-news"></ul>
+  </section>
+  <section class="col">
+    <h2>Bluesky</h2>
+    <p class="col-note">Tracked accounts and terms.</p>
+    <ul class="stream" id="stream-social"></ul>
+  </section>
+  <section class="col">
+    <h2>Analysis</h2>
+    <p class="col-note">Research institutes and specialist trackers.</p>
+    <ul class="stream" id="stream-analysis"></ul>
+  </section>
+</main>
+
+<section class="research">
+  <h2>Academic work</h2>
+  <p class="col-note">Recent papers. Slower cadence than everything above.</p>
+  <ul class="stream" id="stream-research"></ul>
+</section>
+
+<footer>
+  <p>Automated collection over headlines and post text. Nothing here is verified,
+  and inclusion is not endorsement of a source. Corroboration counts measure how
+  many outlets carried a story, which is a measure of reporting rather than of
+  truth. Check diagnostics before concluding that a quiet week was quiet.</p>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+(function () {
+  "use strict";
+  var S = window.SM;
+
+  var store = null;
+  var filters = {
+    query: "", tier: "", country: "", days: 0,
+    themes: new Set(), events: new Set()
+  };
+
+  // ---------- diagnostics ----------
+
+  function renderHealth() {
+    var host = document.getElementById("health-rows");
+    host.textContent = "";
+    if (!store.health.length) {
+      host.appendChild(S.el("div", "note", "No collection data."));
+      return;
+    }
+    var rank = function (h) { return h.ok ? (h.kept ? 2 : 1) : 0; };
+    store.health.slice().sort(function (a, b) { return rank(a) - rank(b); })
+      .forEach(function (h) {
+        var row = S.el("div");
+        var cls = h.ok ? (h.kept ? "ok" : "dry") : "fail";
+        row.appendChild(S.el("span", "tag " + cls, cls));
+        row.appendChild(document.createTextNode(h.name + "  "));
+        if (h.ok) {
+          row.appendChild(S.el("span", "note", h.kept + " of " + h.fetched +
+            (h.dry_runs > 1 ? "   " + h.dry_runs + " empty runs in a row" : "")));
+        } else if (h.error) {
+          row.appendChild(S.el("span", "note", h.error));
+        }
+        host.appendChild(row);
+      });
+  }
+
+  function renderCoverage() {
+    var host = document.getElementById("coverage-bars");
+    host.textContent = "";
+    if (!store.coverage.length) {
+      host.appendChild(S.el("div", "note",
+        "Not enough history yet to compare against a baseline."));
+      return;
+    }
+    var widest = store.coverage.reduce(function (m, c) {
+      return Math.max(m, c.recent || 0, c.baseline || 0);
+    }, 1);
+    var ratio = function (c) { return (c.recent || 0) / Math.max(c.baseline || 1, 1); };
+
+    store.coverage.slice().sort(function (a, b) { return ratio(a) - ratio(b); })
+      .forEach(function (c) {
+        var r = ratio(c);
+        var row = S.el("div", "bar-row");
+        row.appendChild(S.el("span", null, c.country));
+        var track = S.el("div", "bar-track");
+        var fill = S.el("div", "bar-fill" + (r < 0.5 ? " low" : r > 1.5 ? " high" : ""));
+        fill.style.width = Math.min(100, ((c.recent || 0) / widest) * 100) + "%";
+        track.appendChild(fill);
+        row.appendChild(track);
+        row.appendChild(S.el("span", "val",
+          (c.recent || 0) + " vs " + (Math.round((c.baseline || 0) * 10) / 10)));
+        host.appendChild(row);
+      });
+  }
+
+  // ---------- filtering ----------
+
+  function passes(item) {
+    if (filters.country && (item.countries || []).indexOf(filters.country) === -1) return false;
+
+    if (filters.tier) {
+      var wanted = Number(filters.tier);
+      var inTier = (item.countries || []).some(function (c) {
+        return Number(store.tiers[c]) === wanted;
+      });
+      if (!inTier) return false;
+    }
+
+    if (filters.days) {
+      var age = S.hoursSince(item.date);
+      if (age === null || age > filters.days * 24) return false;
+    }
+
+    if (filters.themes.size) {
+      var themes = item.themes || [], themeHit = false;
+      filters.themes.forEach(function (t) { if (themes.indexOf(t) !== -1) themeHit = true; });
+      if (!themeHit) return false;
+    }
+
+    if (filters.events.size) {
+      var events = item.events || [], eventHit = false;
+      filters.events.forEach(function (e) { if (events.indexOf(e) !== -1) eventHit = true; });
+      if (!eventHit) return false;
+    }
+
+    if (filters.query) {
+      var blob = ((item.title || "") + " " + (item.publisher || "") + " " +
+                  (item.summary || "")).toLowerCase();
+      if (blob.indexOf(filters.query) === -1) return false;
+    }
+    return true;
+  }
+
+  function emptyState(key) {
+    var box = S.el("div", "empty");
+    if (!store.streams[key].length) {
+      box.appendChild(document.createTextNode("Nothing collected. Waiting on "));
+      box.appendChild(S.el("code", null, key + ".json"));
+      box.appendChild(document.createTextNode("."));
+    } else {
+      box.textContent = "Nothing here matches the current filters.";
+    }
+    return box;
+  }
+
+  function render() {
+    var shown = 0, held = 0;
+    S.STREAMS.forEach(function (key) {
+      var list = document.getElementById("stream-" + key);
+      list.textContent = "";
+      var items = store.streams[key].filter(passes);
+      held += store.streams[key].length;
+      shown += items.length;
+      if (!items.length) { list.appendChild(emptyState(key)); return; }
+      var frag = document.createDocumentFragment();
+      items.forEach(function (it) { frag.appendChild(S.buildEntry(it, store.themes)); });
+      list.appendChild(frag);
+    });
+    document.getElementById("tally").textContent =
+      held ? shown + " of " + held + " shown" : "";
+  }
+
+  // ---------- controls ----------
+
+  function toggleChip(btn, set, value, colour) {
+    if (set.has(value)) {
+      set.delete(value);
+      btn.setAttribute("aria-pressed", "false");
+      btn.style.background = "transparent";
+      btn.style.color = colour || "";
+      btn.style.borderColor = "";
+    } else {
+      set.add(value);
+      btn.setAttribute("aria-pressed", "true");
+      btn.style.background = colour || "var(--ink-2)";
+      btn.style.color = "var(--bg)";
+      btn.style.borderColor = colour || "var(--ink-2)";
+    }
+    render();
+  }
+
+  function buildThemeChips() {
+    var host = document.getElementById("theme-chips");
+    host.textContent = "";
+    Object.keys(store.themes).forEach(function (name) {
+      var colour = store.themes[name];
+      var chip = S.el("button", "chip");
+      chip.type = "button";
+      chip.setAttribute("aria-pressed", "false");
+      chip.style.color = colour;
+      chip.appendChild(S.el("span", "dot"));
+      chip.appendChild(document.createTextNode(name));
+      chip.addEventListener("click", function () {
+        toggleChip(chip, filters.themes, name, colour);
+      });
+      host.appendChild(chip);
+    });
+  }
+
+  function buildEventChips() {
+    var host = document.getElementById("event-chips");
+    host.textContent = "";
+    store.events.forEach(function (name) {
+      var chip = S.el("button", "chip", name);
+      chip.type = "button";
+      chip.setAttribute("aria-pressed", "false");
+      chip.addEventListener("click", function () {
+        toggleChip(chip, filters.events, name, null);
+      });
+      host.appendChild(chip);
+    });
+  }
+
+  function buildCountryList() {
+    var select = document.getElementById("country");
+    while (select.options.length > 1) select.remove(1);
+    store.countries.forEach(function (c) {
+      var o = S.el("option", null,
+        c + (store.tiers[c] ? "  (T" + store.tiers[c] + ")" : ""));
+      o.value = c;
+      select.appendChild(o);
+    });
+  }
+
+  function wire() {
+    var search = document.getElementById("q"), timer;
+    search.addEventListener("input", function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        filters.query = search.value.trim().toLowerCase();
+        render();
+      }, 150);
+    });
+
+    document.getElementById("tier").addEventListener("change", function () {
+      filters.tier = this.value; render();
+    });
+    document.getElementById("country").addEventListener("change", function () {
+      filters.country = this.value; render();
+    });
+    document.getElementById("days").addEventListener("change", function () {
+      filters.days = Number(this.value); render();
+    });
+
+    document.getElementById("reset").addEventListener("click", function () {
+      filters = { query: "", tier: "", country: "", days: 0,
+                  themes: new Set(), events: new Set() };
+      search.value = "";
+      document.getElementById("tier").value = "";
+      document.getElementById("country").value = "";
+      document.getElementById("days").value = "0";
+      buildThemeChips();
+      buildEventChips();
+      render();
+    });
+
+    document.getElementById("diag-toggle").addEventListener("click", function () {
+      var open = document.getElementById("diagnostics").classList.toggle("on");
+      this.setAttribute("aria-expanded", String(open));
+      this.textContent = open ? "Hide diagnostics" : "Diagnostics";
+    });
+  }
+
+  // ---------- go ----------
+
+  S.buildNav("index.html");
+  wire();
+  S.STREAMS.forEach(function (k) {
+    S.skeletons(document.getElementById("stream-" + k), 4);
+  });
+
+  S.loadAll().then(function (data) {
+    store = data;
+    S.assessFreshness(data.meta);
+    renderHealth();
+    renderCoverage();
+    buildThemeChips();
+    buildEventChips();
+    buildCountryList();
+    render();
+  });
+})();
+</script>
+</body>
+</html>
