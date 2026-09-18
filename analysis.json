@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T06:31:58.775784+00:00",
+ "generated": "2026-09-18T22:22:19.060753+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,27 +61,27 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 64,
+   "recent": 80,
    "baseline": 0.0
   },
   {
    "country": "Burkina Faso",
-   "recent": 15,
+   "recent": 17,
    "baseline": 0.0
   },
   {
    "country": "Niger",
-   "recent": 89,
+   "recent": 104,
    "baseline": 0.0
   },
   {
    "country": "Nigeria",
-   "recent": 55,
+   "recent": 68,
    "baseline": 0.0
   },
   {
    "country": "Chad",
-   "recent": 3,
+   "recent": 5,
    "baseline": 0.0
   },
   {
@@ -91,22 +91,22 @@
   },
   {
    "country": "Senegal",
-   "recent": 11,
+   "recent": 15,
    "baseline": 0.0
   },
   {
    "country": "Guinea",
-   "recent": 2,
+   "recent": 3,
    "baseline": 0.0
   },
   {
    "country": "Côte d'Ivoire",
-   "recent": 7,
+   "recent": 9,
    "baseline": 0.0
   },
   {
    "country": "Ghana",
-   "recent": 32,
+   "recent": 38,
    "baseline": 0.0
   },
   {
@@ -116,34 +116,16 @@
   },
   {
    "country": "Benin",
-   "recent": 17,
+   "recent": 19,
    "baseline": 0.0
   },
   {
    "country": "Regional",
-   "recent": 80,
+   "recent": 83,
    "baseline": 0.0
   }
  ],
  "items": [
-  {
-   "id": "535977090b113c1b",
-   "title": "Burkina Faso: Measles Outbreak - Jan 2026",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE41ZjZBYmhvb2d6Mk9nZVI5MVJOdkNNa1RseHBrMWItYjIwdHRDR2xUNWNNSmZsZjRQbVVObHc5X1VZSC1QMm5OU0hKMTlkQTY3S3dXSGJEZFY0Mkt1d2c?oc=5",
-   "publisher": "ReliefWeb",
-   "feed": "Humanitarian reporting",
-   "lang": "en",
-   "date": "2026-09-16T11:39:05+00:00",
-   "summary": "Burkina Faso: Measles Outbreak - Jan 2026 &nbsp;&nbsp; ReliefWeb",
-   "countries": [
-    "Burkina Faso"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
   {
    "id": "861d3a828bd78a6e",
    "title": "Is violence actually decreasing after Boko Haram’s alleged ceasefire deal in Nigeria?",
@@ -202,20 +184,20 @@
   },
   {
    "id": "f2abb36d2b9b8d2f",
-   "title": "Burkina Faso: Education - Maps / Infographics - response.reliefweb.int",
+   "title": "Burkina Faso: Education - Maps / Infographics",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QRTdIcTNONTVTaEhGVXB1dXhfTEVlUVFQZnpRMkJGSDN0T1NqR1FuNXpOS2FtVGxZajdoRnBNSm1wd3VJc1hqOGtUZ3BnblB0LVZ5T1FxWGhaVGdna1RaOUg1czN0RWRRM21PUy1Vb0RLZFRy?oc=5",
-   "publisher": "response.reliefweb.int",
+   "publisher": "ReliefWeb Response",
    "feed": "Humanitarian reporting",
    "lang": "en",
    "date": "2026-09-13T22:37:24+00:00",
-   "summary": "Burkina Faso: Education - Maps / Infographics &nbsp;&nbsp; response.reliefweb.int",
+   "summary": "Burkina Faso: Education - Maps / Infographics &nbsp;&nbsp; ReliefWeb Response",
    "countries": [
     "Burkina Faso"
    ],
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -275,7 +257,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -298,24 +280,6 @@
    ],
    "corroboration": 1,
    "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "1f6253905362c0db",
-   "title": "In Mali, generative AI joins the information war",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV1ZtcFlzV2FUUXJDOUpiaUZpU1hjWkJtMDFLWWNTRHVQU3lIV3AyY040VVJUTkJFT2RrTXNYN3RuOXBWRkhaQjQ4ZUp1WDJ6UXN1WUl0MWJ0NnRCZDdRcWREaVlUdkE1ZzZjc2l4ajlRWVZDUU45THhZcU9pYUhTYkVuNWRfaWFRZUl3VG9mVWdWTl9GaldHa1RhajZQS2NjRy1DM3NlaE9uVjRTc2dyc0c1U3JSSVpuZFE?oc=5",
-   "publisher": "Timbuktu Institute",
-   "feed": "Think tanks via search",
-   "lang": "en",
-   "date": "2026-09-09T07:00:00+00:00",
-   "summary": "In Mali, generative AI joins the information war &nbsp;&nbsp; Timbuktu Institute",
-   "countries": [
-    "Mali"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "new",
    "anomaly": false
   },
   {
@@ -352,7 +316,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -391,7 +355,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -531,17 +495,17 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
-   "id": "a4464cfa68ad0232",
+   "id": "1a112ba65df98538",
    "title": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence?",
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVkQyYVJHYmUtdXp3V2RGYkFXRjZTZ1p2ZHF1UGRSc1BuQV8yck0zWmdqNWdOY01nX1hzZmEwTEZwbER3bDhyNU5MSUtvWXBCWnc3QWw3Mmc1XzJsbHJDZHAxQ2Fnc2czeC1URUFzQmJHODdfTFdYenBuaWVCVUgta2VCV0xPY2pJcUhZNFRlMnhRWUNMNnc5TDg4NWdYQ2FnUWlZaldUQzhMOVZwdnpWb1hxY0JXRXc4dlVPUl9HMUJDTi1DMnN0UGlSMS1ZQ25GS2s5ZkpURGVoODk1dnVxYlpmWmZCSmgyUDk1YkJCSWJKUFAyaXFFWg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbTVxLWdZeDRYWmQ0OXc1aEprelZodW9rbVhHc1lSRUtfZWtvdzU2c2o0NXY3UlpaMFFOUnRKV3lnU0dKWHBsdlc3RDBLcHd0WUk0SS03QjVKYXpqN1RYRHRuTm0yWUZtODV6bHdsS3c0WjV5UGFtbmY2VWdlTkxhaGQ4cDAyWjlQMkU1UExOb0Z0bXBOUllEWjF5R2hQSDBjeDdtTHRLV1lLbnBreXFKclFMQWN6VWRtTnBHRXhyNGZHbzgwWGhiSWFPN1c3RG9LZFdoYTdWdHJCX1BDUUpj?oc=5",
    "publisher": "Timbuktu Institute",
    "feed": "Think tanks via search",
    "lang": "en",
-   "date": "2026-08-30T14:47:33+00:00",
+   "date": "2026-08-30T17:48:12+00:00",
    "summary": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence? &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali",
@@ -579,13 +543,13 @@
    "anomaly": false
   },
   {
-   "id": "6693612aecd7921a",
+   "id": "b334df7425c3c473",
    "title": "La Belgique cherche-t-elle à compenser l’effacement européen au Sahel ?",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOXVQZVJ4VHEyLWRxenJoSDNLeEwwUzhTS3FFcWlzWTBxMERLTkFPQThHcms1aW1nTUlISkdINWk0Nkg2UFJ1R0JyR3VtYUVUdW5nVUFIMHltQlltenpLNnJmMGVJRHpCQ215S2RVdHhYSHpla3hKcWxycXBodkZ6MWt3N000TFFaY09Wcl92OVJNRFVhXzExb1dacldWTkZlLUVKaFpkTjVHUUwzNHVQRHdfbXJzUU52V1NaazdVRk9KV0NuelBzUw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWlUxV3ZrVDI4ODBMa29rN1FmX3lmWHl0Yk1Sc2NPMkZjbWJsbFAtYzcyNWhvZ3ZjU24wMVJ5R0VtUERtWWFjcHZUVG15a1NrUERqMmkyZWoyTnJqLUJDUmZQWExuMElXek5zN1V0TFRELWNveTZLckVOOGVtekh4amFQOGR3YlZQQzcwT0RfT0ktSTd3N1FtWjgyZklibE9mY092UGR4RThjRTV5OVppY1BwMDJGcEdmMFNjNzd3MHlid3ppVFoweQ?oc=5",
    "publisher": "Timbuktu Institute",
    "feed": "Analyse francophone",
    "lang": "fr",
-   "date": "2026-08-29T07:00:00+00:00",
+   "date": "2026-08-30T04:01:48+00:00",
    "summary": "La Belgique cherche-t-elle à compenser l’effacement européen au Sahel ? &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali",
@@ -605,7 +569,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 2
+   "dry_runs": 3
   },
   {
    "name": "Crisis Group",
@@ -629,13 +593,13 @@
    "fetched": 100,
    "kept": 0,
    "error": null,
-   "dry_runs": 1
+   "dry_runs": 2
   },
   {
    "name": "Humanitarian reporting",
    "ok": true,
    "fetched": 100,
-   "kept": 6,
+   "kept": 5,
    "error": null,
    "dry_runs": 0
   },
@@ -643,7 +607,7 @@
    "name": "Think tanks via search",
    "ok": true,
    "fetched": 100,
-   "kept": 7,
+   "kept": 6,
    "error": null,
    "dry_runs": 0
   },

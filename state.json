@@ -3,7 +3,7 @@
   "Sahel security": 0,
   "JNIM and Islamic State Sahel": 0,
   "Russia and Africa Corps": 0,
-  "AES and ECOWAS": 0,
+  "AES and ECOWAS": 1,
   "Nigeria and Lake Chad": 0,
   "Coastal spillover": 0,
   "Sahel securite": 0,
@@ -15,8 +15,8 @@
   "France 24 Afrique": 0,
   "Al Jazeera": 0,
   "Guardian Africa": 0,
-  "ReliefWeb": 2,
-  "Long War Journal": 2,
+  "ReliefWeb": 3,
+  "Long War Journal": 3,
   "Institute for Security Studies": 0,
   "Crisis Group": 0,
   "ACLED": 0,
@@ -34,7 +34,7 @@
   "OpenAlex: Tuareg Azawad": 0,
   "OpenAlex: Russian influence Africa": 0,
   "ISS Africa and ACLED": 0,
-  "Africa Center and US research": 1,
+  "Africa Center and US research": 2,
   "Humanitarian reporting": 0
  }
 }
