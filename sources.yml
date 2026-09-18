@@ -233,27 +233,32 @@ news:
 # -----------------------------------------------------------------------------
 
 analysis:
+  # Direct feeds, confirmed working.
   - name: Long War Journal
     lang: en
     url: https://www.longwarjournal.org/feed
-  - name: Institute for Security Studies
-    lang: en
-    url: https://issafrica.org/rss/recent-publications.xml
   - name: Crisis Group
     lang: en
     url: https://www.crisisgroup.org/rss.xml
-  - name: ACLED
+
+  # ISS Africa, ACLED, the Africa Center and ReliefWeb either have no public
+  # feed or have moved it, so they are reached through search instead. Split
+  # across several queries because one long query returns shallow results.
+  - name: ISS Africa and ACLED
     lang: en
-    url: https://acleddata.com/feed/
-  - name: Africa Center for Strategic Studies
+    url: https://news.google.com/rss/search?q=(site%3Aissafrica.org+OR+site%3Aacleddata.com)+(Sahel+OR+Mali+OR+Niger+OR+Burkina+OR+Nigeria)&hl=en-US&gl=US&ceid=US:en
+  - name: Africa Center and US research
     lang: en
-    url: https://africacenter.org/feed/
+    url: https://news.google.com/rss/search?q=(site%3Aafricacenter.org+OR+site%3Acsis.org+OR+site%3Acfr.org)+(Sahel+OR+Mali+OR+Niger+OR+%22Burkina+Faso%22)&hl=en-US&gl=US&ceid=US:en
+  - name: Humanitarian reporting
+    lang: en
+    url: https://news.google.com/rss/search?q=(site%3Areliefweb.int+OR+site%3Athenewhumanitarian.org)+(Sahel+OR+Mali+OR+Niger+OR+%22Burkina+Faso%22)&hl=en-US&gl=US&ceid=US:en
   - name: Think tanks via search
     lang: en
-    url: https://news.google.com/rss/search?q=(site%3Aissafrica.org+OR+site%3Acrisisgroup.org+OR+site%3Aacleddata.com+OR+site%3Atimbuktu-institute.org)+(Sahel+OR+Mali+OR+Niger+OR+Burkina)&hl=en-US&gl=US&ceid=US:en
+    url: https://news.google.com/rss/search?q=(site%3Acrisisgroup.org+OR+site%3Atimbuktu-institute.org+OR+site%3Aecfr.eu+OR+site%3Achathamhouse.org)+(Sahel+OR+Mali+OR+Niger+OR+Burkina)&hl=en-US&gl=US&ceid=US:en
   - name: Analyse francophone
     lang: fr
-    url: https://news.google.com/rss/search?q=(site%3Airis-france.org+OR+site%3Atimbuktu-institute.org+OR+site%3Agrip.org)+(Sahel+OR+Mali+OR+Niger)&hl=fr&gl=FR&ceid=FR:fr
+    url: https://news.google.com/rss/search?q=(site%3Airis-france.org+OR+site%3Atimbuktu-institute.org+OR+site%3Agrip.org+OR+site%3Afondation-res-publica.org)+(Sahel+OR+Mali+OR+Niger)&hl=fr&gl=FR&ceid=FR:fr
 
 
 # -----------------------------------------------------------------------------
