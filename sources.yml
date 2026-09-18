@@ -1,0 +1,346 @@
+# =============================================================================
+#  Sahel Monitor - source and classification config
+#
+#  This is the file you edit. Everything else runs itself.
+#  Two spaces for indentation, never tabs. A broken file fails the run and
+#  leaves the last good data in place, so the site keeps working.
+# =============================================================================
+
+settings:
+  window_days: 21          # how much material the site holds
+  cadence_hours: 24        # how often the workflow runs; the site warns if late
+  max_news: 300
+  max_analysis: 120
+  max_research: 60
+  archive_days: 400        # how much history to keep for baselines and threads
+  baseline_weeks: 8        # trailing weeks used for the coverage comparison
+
+
+# -----------------------------------------------------------------------------
+#  GEOGRAPHY
+#  Tier 1 is the focus. Tier 2 is tracked. An item needs at least one match
+#  here to appear at all.
+#  Terms match whole words only and ignore accents, so "mali" will not fire
+#  inside "Somalia" and "Tillaberi" matches "Tillabéri".
+# -----------------------------------------------------------------------------
+
+countries:
+  Mali:
+    tier: 1
+    terms: [mali, malian, malien, malienne, bamako, gao, timbuktu, tombouctou,
+            kidal, mopti, menaka, segou, sikasso, koulikoro, nampala, kayes]
+  Burkina Faso:
+    tier: 1
+    terms: [burkina, burkinabe, ouagadougou, ouaga, djibo, dori, kaya, nouna,
+            "bobo-dioulasso", solenzo, barsalogho, sahel region]
+  Niger:
+    tier: 1
+    terms: [niger, nigerien, niamey, tillaberi, diffa, agadez, tahoua, dosso,
+            maradi, zinder, tera, banibangou]
+
+  Nigeria:
+    tier: 2
+    terms: [nigeria, nigerian, abuja, lagos, borno, maiduguri, zamfara, kaduna,
+            sokoto, katsina, yobe, benue, "niger delta", lakurawa]
+  Chad:
+    tier: 2
+    terms: [chad, chadian, tchad, ndjamena, "n'djamena", "lake chad", "lac tchad"]
+  Mauritania:
+    tier: 2
+    terms: [mauritania, mauritanian, mauritanie, nouakchott]
+  Senegal:
+    tier: 2
+    terms: [senegal, senegalese, dakar, casamance, ziguinchor]
+  Guinea:
+    tier: 2
+    terms: [guinea, guinean, guinee, conakry]
+  Côte d'Ivoire:
+    tier: 2
+    terms: [ivoire, ivorian, ivoirien, "ivory coast", abidjan, korhogo, yamoussoukro]
+  Ghana:
+    tier: 2
+    terms: [ghana, ghanaian, accra, bawku]
+  Togo:
+    tier: 2
+    terms: [togo, togolese, togolais, lome, savanes, dapaong]
+  Benin:
+    tier: 2
+    terms: [benin, beninese, beninois, cotonou, "porto-novo", alibori, atakora, kandi]
+  Regional:
+    tier: 2
+    terms: [sahel, sahelian, sahelien, ecowas, cedeao, "west africa",
+            "afrique de l'ouest", "sahel states", "etats du sahel", liptako,
+            gourma, "gulf of guinea", "tri-border", "three borders"]
+
+# Phrases that cancel a country match, to stop the obvious false positives.
+country_traps:
+  Guinea: [papua, "equatorial guinea", "guinee equatoriale", "guinea pig"]
+  Niger: ["niger delta", "river niger", "niger state", "niger bridge"]
+  Benin: ["benin city"]
+  Chad: [chadwick]
+
+
+# -----------------------------------------------------------------------------
+#  THEMES
+#  Colour coded on the site and used as filter buttons. An item can carry
+#  several. The order here is the order the buttons appear in.
+# -----------------------------------------------------------------------------
+
+themes:
+  Jihadist groups:
+    colour: "#c25b4a"
+    terms: [jnim, "nusrat al-islam", "nusrat al islam", "soutien a l'islam",
+            katiba, macina, ansarul, ansaru, "islamic state", "etat islamique",
+            iswap, issp, "is-sahel", "boko haram", jihadist, jihadiste,
+            islamist, islamiste, "al-qaeda", "al qaida", aqim, aqmi, lakurawa,
+            insurgent, insurge, militant, "armed group", "groupe arme"]
+  Russia and Africa Corps:
+    colour: "#7e93a8"
+    terms: [russia, russian, russie, russe, wagner, "africa corps", "afrika korps",
+            moscow, moscou, kremlin, prigozhin, rosoboronexport, rosatom, lavrov,
+            "military instructors", "instructeurs russes"]
+  Azawad and FLA:
+    colour: "#d3a24b"
+    terms: [azawad, fla, "front de liberation", cma, tuareg, touareg, separatist,
+            separatiste, independantiste, "coordination des mouvements", hcua, mnla]
+  Coups and transitions:
+    colour: "#84a58c"
+    terms: [coup, putsch, junta, junte, transition, "transitional government",
+            "gouvernement de transition", election, referendum, constitution,
+            "state of emergency", "etat d'urgence", dissolved, dissous, mutiny,
+            mutinerie, "seized power", "sworn in", interim]
+  External actors:
+    colour: "#a08ac0"
+    terms: [france, french, francais, barkhane, minusma, "united states", africom,
+            turkey, turkish, turquie, bayraktar, uae, emirates, emirats, china,
+            chinese, chinois, "european union", "union europeenne", eucap, eutm,
+            morocco, algeria, algerie, iran, "north korea"]
+  Regional bloc politics:
+    colour: "#c98f6a"
+    terms: [ecowas, cedeao, "alliance of sahel states", "alliance des etats du sahel",
+            aes, "african union", "union africaine", summit, sommet, sanctions,
+            withdrawal, retrait, mediation, confederation, "single currency", cfa]
+
+
+# -----------------------------------------------------------------------------
+#  EVENT TYPES
+#  Filter buttons, and shown as a badge on each item. Deliberately few.
+#  These are matched on top of the themes, not instead of them.
+# -----------------------------------------------------------------------------
+
+events:
+  Conflict event:
+    terms: [attack, attaque, ambush, embuscade, killed, tues, raid, clash,
+            affrontement, offensive, strike, frappe, bombing, explosion, ied,
+            casualties, wounded, blesses, siege, massacre, abducted, enleve,
+            fighting, combats, drone strike]
+  Leadership change:
+    terms: [appointed, appoints, "names new", nomme, nomination, replaced,
+            remplace, resigned, demissionne, sacked, limoge, dismissed, ousted,
+            "new leader", "nouveau chef", "new defence minister", "new head",
+            promoted, succeeded, "takes over", "took command", "steps down",
+            "hands over", installed, emir, commander, "chief of staff",
+            reshuffle, remaniement, successor]
+  Alliance shift:
+    terms: [alliance, pact, pacte, agreement, accord, deal, merger, split,
+            scission, defected, rallied, "joined forces", partnership, partenariat,
+            memorandum, treaty, traite, cooperation, rupture, expelled, expulse]
+  Political development:
+    terms: [election, referendum, constitution, parliament, parlement, decree,
+            decret, law, loi, protest, manifestation, negotiation, negociation,
+            talks, pourparlers, sanctions, summit, sommet, cabinet, government,
+            gouvernement, arrested, arrete, trial, proces]
+
+
+# -----------------------------------------------------------------------------
+#  NEWS SOURCES
+#
+#  Most are Google News searches, which is the most reliable way to reach
+#  outlets with no usable RSS of their own. To add one, copy a block and edit
+#  the q= part. Spaces become +, quotation marks become %22, OR must be capital.
+#
+#  If a source shows as "fail" in the site's diagnostics panel, delete it or
+#  replace it with a Google News search restricted to that site, like
+#  q=site%3Aexample.com+Sahel
+# -----------------------------------------------------------------------------
+
+news:
+  - name: Sahel security
+    lang: en
+    url: https://news.google.com/rss/search?q=(Sahel+OR+Mali+OR+%22Burkina+Faso%22+OR+Niger)+(attack+OR+militants+OR+army+OR+offensive)&hl=en-US&gl=US&ceid=US:en
+
+  - name: JNIM and Islamic State Sahel
+    lang: en
+    url: https://news.google.com/rss/search?q=JNIM+OR+%22Islamic+State+Sahel%22+OR+%22Islamic+State+West+Africa%22+OR+ISWAP&hl=en-US&gl=US&ceid=US:en
+
+  - name: Russia and Africa Corps
+    lang: en
+    url: https://news.google.com/rss/search?q=(%22Africa+Corps%22+OR+Wagner+OR+Russian)+(Mali+OR+%22Burkina+Faso%22+OR+Niger+OR+Sahel)&hl=en-US&gl=US&ceid=US:en
+
+  - name: AES and ECOWAS
+    lang: en
+    url: https://news.google.com/rss/search?q=ECOWAS+OR+%22Alliance+of+Sahel+States%22&hl=en-US&gl=US&ceid=US:en
+
+  - name: Nigeria and Lake Chad
+    lang: en
+    url: https://news.google.com/rss/search?q=(Nigeria+OR+%22Lake+Chad%22)+(%22Boko+Haram%22+OR+ISWAP+OR+banditry+OR+Borno)&hl=en-US&gl=US&ceid=US:en
+
+  - name: Coastal spillover
+    lang: en
+    url: https://news.google.com/rss/search?q=(Benin+OR+Togo+OR+%22Ivory+Coast%22+OR+Ghana+OR+Senegal)+(jihadist+OR+attack+OR+border+OR+security)&hl=en-US&gl=US&ceid=US:en
+
+  - name: Sahel securite
+    lang: fr
+    url: https://news.google.com/rss/search?q=(Sahel+OR+Mali+OR+%22Burkina+Faso%22+OR+Niger)+(arm%C3%A9e+OR+attaque+OR+junte+OR+s%C3%A9curit%C3%A9)&hl=fr&gl=FR&ceid=FR:fr
+
+  - name: Jihadistes au Sahel
+    lang: fr
+    url: https://news.google.com/rss/search?q=JNIM+OR+%22Etat+islamique+au+Sahel%22+OR+jihadistes+Sahel&hl=fr&gl=FR&ceid=FR:fr
+
+  - name: Azawad et FLA
+    lang: fr
+    url: https://news.google.com/rss/search?q=%22Front+de+Lib%C3%A9ration+de+l%27Azawad%22+OR+Azawad+OR+Kidal&hl=fr&gl=FR&ceid=FR:fr
+
+  - name: Russie au Sahel
+    lang: fr
+    url: https://news.google.com/rss/search?q=(Russie+OR+Wagner+OR+%22Africa+Corps%22)+(Mali+OR+Burkina+OR+Niger+OR+Sahel)&hl=fr&gl=FR&ceid=FR:fr
+
+  - name: AES et CEDEAO
+    lang: fr
+    url: https://news.google.com/rss/search?q=CEDEAO+OR+%22Alliance+des+Etats+du+Sahel%22&hl=fr&gl=FR&ceid=FR:fr
+
+  # Direct publisher feeds
+  - name: RFI Afrique
+    lang: fr
+    url: https://www.rfi.fr/fr/afrique/rss
+  - name: France 24 Afrique
+    lang: fr
+    url: https://www.france24.com/fr/afrique/rss
+  - name: Al Jazeera
+    lang: en
+    url: https://www.aljazeera.com/xml/rss/all.xml
+  - name: Guardian Africa
+    lang: en
+    url: https://www.theguardian.com/world/africa/rss
+  - name: ReliefWeb
+    lang: en
+    url: https://reliefweb.int/updates/rss.xml?view=headlines
+
+
+# -----------------------------------------------------------------------------
+#  ANALYSIS SOURCES
+#  Slower moving, so they get their own column rather than being buried.
+# -----------------------------------------------------------------------------
+
+analysis:
+  - name: Long War Journal
+    lang: en
+    url: https://www.longwarjournal.org/feed
+  - name: Institute for Security Studies
+    lang: en
+    url: https://issafrica.org/rss/recent-publications.xml
+  - name: Crisis Group
+    lang: en
+    url: https://www.crisisgroup.org/rss.xml
+  - name: ACLED
+    lang: en
+    url: https://acleddata.com/feed/
+  - name: Africa Center for Strategic Studies
+    lang: en
+    url: https://africacenter.org/feed/
+  - name: Think tanks via search
+    lang: en
+    url: https://news.google.com/rss/search?q=(site%3Aissafrica.org+OR+site%3Acrisisgroup.org+OR+site%3Aacleddata.com+OR+site%3Atimbuktu-institute.org)+(Sahel+OR+Mali+OR+Niger+OR+Burkina)&hl=en-US&gl=US&ceid=US:en
+  - name: Analyse francophone
+    lang: fr
+    url: https://news.google.com/rss/search?q=(site%3Airis-france.org+OR+site%3Atimbuktu-institute.org+OR+site%3Agrip.org)+(Sahel+OR+Mali+OR+Niger)&hl=fr&gl=FR&ceid=FR:fr
+
+
+# -----------------------------------------------------------------------------
+#  ACADEMIC RESEARCH
+#  From OpenAlex, which is free and needs no key.
+# -----------------------------------------------------------------------------
+
+research_queries:
+  - Sahel insurgency
+  - jihadist violence West Africa
+  - Mali conflict
+  - Burkina Faso security
+  - Wagner Group Africa
+  - military coup West Africa
+  - Boko Haram
+  - ECOWAS regional security
+  - Tuareg Azawad
+  - Russian influence Africa
+
+
+# -----------------------------------------------------------------------------
+#  NOISE FILTER
+#  Any headline containing one of these is dropped. Adding to this list is the
+#  fastest way to improve signal, and you should expect to for a few weeks.
+# -----------------------------------------------------------------------------
+
+exclude:
+  - football
+  - afcon
+  - "africa cup"
+  - "cup of nations"
+  - premier league
+  - transfer window
+  - striker
+  - midfielder
+  - "world cup qualif"
+  - horoscope
+  - lottery
+  - "best hotels"
+  - "travel guide"
+  - recipe
+  - "box office"
+  - nollywood
+  - afrobeats
+  - "music video"
+  - "net worth"
+  - "how to watch"
+  - betting
+  - casino
+
+
+# -----------------------------------------------------------------------------
+#  SYNDICATION
+#  Outlets that mostly republish agency copy. When several sources carry the
+#  same story and they all trace back to one agency, it counts once rather
+#  than inflating the corroboration score.
+# -----------------------------------------------------------------------------
+
+agencies:
+  - reuters
+  - "associated press"
+  - " ap "
+  - agence france-presse
+  - afp
+  - anadolu
+  - xinhua
+  - "deutsche presse"
+  - dpa
+  - efe
+  - apa news
+
+# Platforms that republish other people's copy. These are not newsrooms, so
+# they are ignored entirely when counting corroboration and are never chosen
+# as the version of a story to display. Without this, one wire story carried
+# by six portals looks like six independent confirmations.
+aggregators:
+  - yahoo
+  - msn
+  - "google news"
+  - flipboard
+  - newsbreak
+  - "news break"
+  - smartnews
+  - "the news international"
+  - zerohedge
+  - "one news page"
+  - headtopics
+  - "star tribune wire"
+  - "bignewsnetwork"
+  - "big news network"
