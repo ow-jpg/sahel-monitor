@@ -15,8 +15,8 @@
   "France 24 Afrique": 0,
   "Al Jazeera": 0,
   "Guardian Africa": 0,
-  "ReliefWeb": 1,
-  "Long War Journal": 1,
+  "ReliefWeb": 2,
+  "Long War Journal": 2,
   "Institute for Security Studies": 0,
   "Crisis Group": 0,
   "ACLED": 0,
@@ -32,6 +32,9 @@
   "OpenAlex: Boko Haram": 0,
   "OpenAlex: ECOWAS regional security": 0,
   "OpenAlex: Tuareg Azawad": 0,
-  "OpenAlex: Russian influence Africa": 0
+  "OpenAlex: Russian influence Africa": 0,
+  "ISS Africa and ACLED": 0,
+  "Africa Center and US research": 1,
+  "Humanitarian reporting": 0
  }
 }

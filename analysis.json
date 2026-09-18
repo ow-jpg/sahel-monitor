@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T06:27:48.262424+00:00",
+ "generated": "2026-09-18T06:31:58.775784+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,22 +61,22 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 60,
+   "recent": 64,
    "baseline": 0.0
   },
   {
    "country": "Burkina Faso",
-   "recent": 10,
+   "recent": 15,
    "baseline": 0.0
   },
   {
    "country": "Niger",
-   "recent": 87,
+   "recent": 89,
    "baseline": 0.0
   },
   {
    "country": "Nigeria",
-   "recent": 53,
+   "recent": 55,
    "baseline": 0.0
   },
   {
@@ -121,11 +121,51 @@
   },
   {
    "country": "Regional",
-   "recent": 79,
+   "recent": 80,
    "baseline": 0.0
   }
  ],
  "items": [
+  {
+   "id": "535977090b113c1b",
+   "title": "Burkina Faso: Measles Outbreak - Jan 2026",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE41ZjZBYmhvb2d6Mk9nZVI5MVJOdkNNa1RseHBrMWItYjIwdHRDR2xUNWNNSmZsZjRQbVVObHc5X1VZSC1QMm5OU0hKMTlkQTY3S3dXSGJEZFY0Mkt1d2c?oc=5",
+   "publisher": "ReliefWeb",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-09-16T11:39:05+00:00",
+   "summary": "Burkina Faso: Measles Outbreak - Jan 2026 &nbsp;&nbsp; ReliefWeb",
+   "countries": [
+    "Burkina Faso"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "861d3a828bd78a6e",
+   "title": "Is violence actually decreasing after Boko Haram’s alleged ceasefire deal in Nigeria?",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWUN2NmtpemlxMmdCeVAyVHdDQjlJVTdQMTZuTFBDVzVzY19uVEJNZmtFV3RzdHI1VkJkY3pRMl80dUwydHZkN2RvU180MkFkRHFxa245d3ZuUGxZQmFfVkRiUi0wVXl3S2Zqdl9ITWdlWHNoN2xUMmQ1cHBaSGZGSmQ4amFfRDc4dW5YUUVCV0Q0XzBfcnMwaHlURTh6aUVZQkVDcDBFY2ZCSzNrYTROR3JiRXg?oc=5",
+   "publisher": "ACLED",
+   "feed": "ISS Africa and ACLED",
+   "lang": "en",
+   "date": "2026-09-16T09:09:24+00:00",
+   "summary": "Is violence actually decreasing after Boko Haram’s alleged ceasefire deal in Nigeria? &nbsp;&nbsp; ACLED",
+   "countries": [
+    "Nigeria"
+   ],
+   "themes": [
+    "Jihadist groups"
+   ],
+   "events": [
+    "Alliance shift"
+   ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
   {
    "id": "328fb873f3d985fb",
    "title": "Ten Challenges for the UN in 2026-2027",
@@ -156,6 +196,24 @@
     "Alliance shift",
     "Political development"
    ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "f2abb36d2b9b8d2f",
+   "title": "Burkina Faso: Education - Maps / Infographics - response.reliefweb.int",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QRTdIcTNONTVTaEhGVXB1dXhfTEVlUVFQZnpRMkJGSDN0T1NqR1FuNXpOS2FtVGxZajdoRnBNSm1wd3VJc1hqOGtUZ3BnblB0LVZ5T1FxWGhaVGdna1RaOUg1czN0RWRRM21PUy1Vb0RLZFRy?oc=5",
+   "publisher": "response.reliefweb.int",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-09-13T22:37:24+00:00",
+   "summary": "Burkina Faso: Education - Maps / Infographics &nbsp;&nbsp; response.reliefweb.int",
+   "countries": [
+    "Burkina Faso"
+   ],
+   "themes": [],
+   "events": [],
    "corroboration": 1,
    "thread": "new",
    "anomaly": false
@@ -197,6 +255,66 @@
    ],
    "events": [],
    "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "cfadb9dc3ba96f9b",
+   "title": "Burkina Faso, Mali and Western Niger - Humanitarian Overview – 2026 (as of 9 September 2026)",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLUNPejJXVDhJaUFMOXF3V3ZicTR6bjYySWRRRFBFT2pjcmFYRGFDc0FKc3RMX0g5RVJiQXk1YnBsNmEtS0UzV00yelVBZlBiUmQyMVVfcFJhY3ZDdWFDeXBsdHlYbXk3dFhNNUJCRkNaTmo1NEptQlRiRU8zVGFXaEdFTzZZS0NQakJpa0M0RzE3WVNyLXNmM3pENXZkd05xVmpEeEU2SjhsN3RLVTVmVnR6bENSaTRnUVlPUGNB?oc=5",
+   "publisher": "ReliefWeb",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-09-10T12:43:04+00:00",
+   "summary": "Burkina Faso, Mali and Western Niger - Humanitarian Overview – 2026 (as of 9 September 2026) &nbsp;&nbsp; ReliefWeb",
+   "countries": [
+    "Mali",
+    "Burkina Faso",
+    "Niger"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "7e2f7be492fb5d86",
+   "title": "Nigeria names new commander to lead military operations against Boko Haram | Reuters",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ05PZGNDT002T1BYSmh1Mmw4RHZBSzBtcTZJYjdkMV9OMXRrN0dnSU03Si1CdjZ3MTBsbk5HRHhkZUJFbWhnMFJ2bW82Q0dQZjZZRGxLZXJQRE1oRmd1V0RTdE9mdGN3UkV6R3lpT2tXcXNwX0Q4QTZQZWNXSjlXRlpUVWQ2VjZsV0tuZDlveDRrdGduUHdzanFwekRMVEtCZGxkczdlRXZWUTYyZVc4cVBZQ1A4ZGc?oc=5",
+   "publisher": "ACLED",
+   "feed": "ISS Africa and ACLED",
+   "lang": "en",
+   "date": "2026-09-09T07:00:00+00:00",
+   "summary": "Nigeria names new commander to lead military operations against Boko Haram | Reuters &nbsp;&nbsp; ACLED",
+   "countries": [
+    "Nigeria"
+   ],
+   "themes": [
+    "Jihadist groups"
+   ],
+   "events": [
+    "Leadership change"
+   ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "1f6253905362c0db",
+   "title": "In Mali, generative AI joins the information war",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV1ZtcFlzV2FUUXJDOUpiaUZpU1hjWkJtMDFLWWNTRHVQU3lIV3AyY040VVJUTkJFT2RrTXNYN3RuOXBWRkhaQjQ4ZUp1WDJ6UXN1WUl0MWJ0NnRCZDdRcWREaVlUdkE1ZzZjc2l4ajlRWVZDUU45THhZcU9pYUhTYkVuNWRfaWFRZUl3VG9mVWdWTl9GaldHa1RhajZQS2NjRy1DM3NlaE9uVjRTc2dyc0c1U3JSSVpuZFE?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-09T07:00:00+00:00",
+   "summary": "In Mali, generative AI joins the information war &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
    "thread": "new",
    "anomaly": false
   },
@@ -211,6 +329,24 @@
    "summary": "Burkina Faso : Between Industrial Sovereignty, Youth Mobilization and Persistent Insecurity &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali",
+    "Burkina Faso"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "fc26acb11fd09a5d",
+   "title": "WFP Burkina Faso Country Brief, August 2026",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcmhPQ3JOX3kxM29FUVNKcTNORkY1eVM3S1RhVnZDOU5pcmQ0TERvYS1BWEFodWNJOXM0WHZ1eElHLUEyenQyVjF2THlWX2M2SFlEN1hBMFVnRjEzTVlyRTJYRGk4MUxEQ2VVWEMtclpZdC1UOFA5Qi1Gc1dFVGlLdDA2N0JqYmczeGJ0LQ?oc=5",
+   "publisher": "ReliefWeb",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-09-08T22:21:40+00:00",
+   "summary": "WFP Burkina Faso Country Brief, August 2026 &nbsp;&nbsp; ReliefWeb",
+   "countries": [
     "Burkina Faso"
    ],
    "themes": [],
@@ -237,6 +373,24 @@
    ],
    "events": [],
    "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "1ac39939c91ef99d",
+   "title": "Burkina Faso : Bilan regional Bankui, Janvier-Juin 2026",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdTdyMVNNY0MtWmRQRW1ZdFRLdjJLay12OEwtTDExOGhsOVNYUEZZZm1CQ0N6OVREM0lPVDhWM0I5WG12VGQyYUVfTmI2TEZQWTJTWWtEU00yODlCVU5EQ1FHSmx0dl9DXzJTMzFJck4wRURGSms1UVNOQXF3ZlF3NzBaeE9QMmxLNFQzMjhsbDcyN3BxSjFsZEdB?oc=5",
+   "publisher": "ReliefWeb",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-09-08T07:00:00+00:00",
+   "summary": "Burkina Faso : Bilan regional Bankui, Janvier-Juin 2026 &nbsp;&nbsp; ReliefWeb",
+   "countries": [
+    "Burkina Faso"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
    "thread": "new",
    "anomaly": false
   },
@@ -256,7 +410,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -275,7 +429,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -283,7 +437,7 @@
    "title": "Can Mali’s FLA-JNIM insurgent alliance survive its internal divisions?",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRFpNY1ZHTjlxSjJFWU51WEIzbnMySzQ4UHVVNE5WbFpJSnc3eUNuT2NxcHpGTS1PVjhsTTV1M3YtVGpMemh3R2pJbllwRFN6UjMzQ0lSZ1FCYkJ0U0FsYzE3ZURWOUw0cXVaVDdsT1Z1V3pfWDJJaEFZR0JINmZ5bkU1Z1Q1d2ZTN2Vrd2t5c2ZENHNVRHVvQnhURXVSNzgwdGdz?oc=5",
    "publisher": "ISS Africa",
-   "feed": "Think tanks via search",
+   "feed": "ISS Africa and ACLED",
    "lang": "en",
    "date": "2026-09-02T07:00:00+00:00",
    "summary": "Can Mali’s FLA-JNIM insurgent alliance survive its internal divisions? &nbsp;&nbsp; ISS Africa",
@@ -306,7 +460,7 @@
    "title": "Protected: JNIM’s expansion in western Mali puts Senegal’s trade and mining sectors at risk",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTGctTUh0SVBsZDd3RzFXRzdnRGRtVUFqV05mRUJ3REV2bjVVM0hFVEVLU0NIS3hsMVp1NkJaQ3g3M2VFSUxSRVJnWmFEMkkzcGRiZWpvdktBaHJPLVFHOWhBUjl4LU5zTTZ4UDJwUVRhNEkxdmZwa0oxNXYxUjR6blozWGkyNUxlTlF2TFlDdm1lbGw2Q05TdFMydUNTMWh5U1g0?oc=5",
    "publisher": "ACLED",
-   "feed": "Think tanks via search",
+   "feed": "ISS Africa and ACLED",
    "lang": "en",
    "date": "2026-09-01T21:30:00+00:00",
    "summary": "Protected: JNIM’s expansion in western Mali puts Senegal’s trade and mining sectors at risk &nbsp;&nbsp; ACLED",
@@ -319,7 +473,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -327,7 +481,7 @@
    "title": "Niger’s capital rocked by failed mutiny attempt: Could jihadist groups benefit?",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQODdCbm5kV2RUc0V3V2dDdEYtUjhQbmlZbHdOeElpV00zeF9jRDVJNDEtRkNTMUtKS1FOT3RsMzV6djBPSm9yakVpTDkzcVdkWWM1V1VHb3NRM3l3OG5QN0pSODZ0SWVLc1lBLWtfNFM5S1NGRFNSNy1HdURwRlNmRTU5bkR3ekNNdXZ5U0FqWURjR0FudDgyZlRHU2xBYUlZRFZaR1pHS2U0M2VucU1B?oc=5",
    "publisher": "ACLED",
-   "feed": "Think tanks via search",
+   "feed": "ISS Africa and ACLED",
    "lang": "en",
    "date": "2026-09-01T16:35:38+00:00",
    "summary": "Niger’s capital rocked by failed mutiny attempt: Could jihadist groups benefit? &nbsp;&nbsp; ACLED",
@@ -340,7 +494,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -359,17 +513,35 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "2981644532c9d559",
+   "title": "West Africa Seasonal Monitor: Rainy season progresses with localized deficits across the Sahel, August 31, 2026",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMTFjMWYzWF9JejVzaUI5U1hWNEdJVDEyOVk0ZHlvNUFHek1sS216N0JRa0tVMTFmcDctRXZ4Tjd0WWJaeTlBQm4xTnB2RFhwMWlpRW9NWC1qNVo5eF9HdTNWT2s4REMxMXZnZ3o1TV94VXNVejN2X2NZSWo1N3J1SC14VFlTVjVtUnh3aGFfb0ZEUlFTclQ1WVk2dTNXcFRkLXR5eEpzcktDckZodmdaTmRkeC1zeFBWM0VsYUxRRzM5NXdNQXBYalJPMGNTQW8?oc=5",
+   "publisher": "ReliefWeb",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-08-31T07:00:00+00:00",
+   "summary": "West Africa Seasonal Monitor: Rainy season progresses with localized deficits across the Sahel, August 31, 2026 &nbsp;&nbsp; ReliefWeb",
+   "countries": [
+    "Regional"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
    "thread": "new",
    "anomaly": false
   },
   {
-   "id": "1a112ba65df98538",
+   "id": "a4464cfa68ad0232",
    "title": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence?",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbTVxLWdZeDRYWmQ0OXc1aEprelZodW9rbVhHc1lSRUtfZWtvdzU2c2o0NXY3UlpaMFFOUnRKV3lnU0dKWHBsdlc3RDBLcHd0WUk0SS03QjVKYXpqN1RYRHRuTm0yWUZtODV6bHdsS3c0WjV5UGFtbmY2VWdlTkxhaGQ4cDAyWjlQMkU1UExOb0Z0bXBOUllEWjF5R2hQSDBjeDdtTHRLV1lLbnBreXFKclFMQWN6VWRtTnBHRXhyNGZHbzgwWGhiSWFPN1c3RG9LZFdoYTdWdHJCX1BDUUpj?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVkQyYVJHYmUtdXp3V2RGYkFXRjZTZ1p2ZHF1UGRSc1BuQV8yck0zWmdqNWdOY01nX1hzZmEwTEZwbER3bDhyNU5MSUtvWXBCWnc3QWw3Mmc1XzJsbHJDZHAxQ2Fnc2czeC1URUFzQmJHODdfTFdYenBuaWVCVUgta2VCV0xPY2pJcUhZNFRlMnhRWUNMNnc5TDg4NWdYQ2FnUWlZaldUQzhMOVZwdnpWb1hxY0JXRXc4dlVPUl9HMUJDTi1DMnN0UGlSMS1ZQ25GS2s5ZkpURGVoODk1dnVxYlpmWmZCSmgyUDk1YkJCSWJKUFAyaXFFWg?oc=5",
    "publisher": "Timbuktu Institute",
    "feed": "Think tanks via search",
    "lang": "en",
-   "date": "2026-08-30T17:48:12+00:00",
+   "date": "2026-08-30T14:47:33+00:00",
    "summary": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence? &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali",
@@ -381,7 +553,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -403,7 +575,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -422,7 +594,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   }
  ],
@@ -433,15 +605,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 1
-  },
-  {
-   "name": "Institute for Security Studies",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "ValueError: feed did not parse",
-   "dry_runs": 0
+   "dry_runs": 2
   },
   {
    "name": "Crisis Group",
@@ -452,26 +616,34 @@
    "dry_runs": 0
   },
   {
-   "name": "ACLED",
-   "ok": false,
-   "fetched": 0,
-   "kept": 0,
-   "error": "HTTPError: 404 Client Error: Not Found for url: https://acleddata.com/feed/",
+   "name": "ISS Africa and ACLED",
+   "ok": true,
+   "fetched": 100,
+   "kept": 5,
+   "error": null,
    "dry_runs": 0
   },
   {
-   "name": "Africa Center for Strategic Studies",
+   "name": "Africa Center and US research",
    "ok": true,
-   "fetched": 0,
+   "fetched": 100,
    "kept": 0,
    "error": null,
    "dry_runs": 1
   },
   {
+   "name": "Humanitarian reporting",
+   "ok": true,
+   "fetched": 100,
+   "kept": 6,
+   "error": null,
+   "dry_runs": 0
+  },
+  {
    "name": "Think tanks via search",
    "ok": true,
    "fetched": 100,
-   "kept": 9,
+   "kept": 7,
    "error": null,
    "dry_runs": 0
   },

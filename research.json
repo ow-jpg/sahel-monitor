@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T06:27:48.262424+00:00",
+ "generated": "2026-09-18T06:31:58.775784+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,22 +61,22 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 60,
+   "recent": 64,
    "baseline": 0.0
   },
   {
    "country": "Burkina Faso",
-   "recent": 10,
+   "recent": 15,
    "baseline": 0.0
   },
   {
    "country": "Niger",
-   "recent": 87,
+   "recent": 89,
    "baseline": 0.0
   },
   {
    "country": "Nigeria",
-   "recent": 53,
+   "recent": 55,
    "baseline": 0.0
   },
   {
@@ -121,7 +121,7 @@
   },
   {
    "country": "Regional",
-   "recent": 79,
+   "recent": 80,
    "baseline": 0.0
   }
  ],
