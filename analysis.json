@@ -1,0 +1,487 @@
+{
+ "generated": "2026-09-18T06:27:48.262424+00:00",
+ "cadence_hours": 24,
+ "window_days": 21,
+ "countries": [
+  "Mali",
+  "Burkina Faso",
+  "Niger",
+  "Nigeria",
+  "Chad",
+  "Mauritania",
+  "Senegal",
+  "Guinea",
+  "Côte d'Ivoire",
+  "Ghana",
+  "Togo",
+  "Benin",
+  "Regional"
+ ],
+ "tiers": {
+  "Mali": 1,
+  "Burkina Faso": 1,
+  "Niger": 1,
+  "Nigeria": 2,
+  "Chad": 2,
+  "Mauritania": 2,
+  "Senegal": 2,
+  "Guinea": 2,
+  "Côte d'Ivoire": 2,
+  "Ghana": 2,
+  "Togo": 2,
+  "Benin": 2,
+  "Regional": 2
+ },
+ "themes": {
+  "Jihadist groups": {
+   "colour": "#c25b4a"
+  },
+  "Russia and Africa Corps": {
+   "colour": "#7e93a8"
+  },
+  "Azawad and FLA": {
+   "colour": "#d3a24b"
+  },
+  "Coups and transitions": {
+   "colour": "#84a58c"
+  },
+  "External actors": {
+   "colour": "#a08ac0"
+  },
+  "Regional bloc politics": {
+   "colour": "#c98f6a"
+  }
+ },
+ "events": [
+  "Conflict event",
+  "Leadership change",
+  "Alliance shift",
+  "Political development"
+ ],
+ "coverage": [
+  {
+   "country": "Mali",
+   "recent": 60,
+   "baseline": 0.0
+  },
+  {
+   "country": "Burkina Faso",
+   "recent": 10,
+   "baseline": 0.0
+  },
+  {
+   "country": "Niger",
+   "recent": 87,
+   "baseline": 0.0
+  },
+  {
+   "country": "Nigeria",
+   "recent": 53,
+   "baseline": 0.0
+  },
+  {
+   "country": "Chad",
+   "recent": 3,
+   "baseline": 0.0
+  },
+  {
+   "country": "Mauritania",
+   "recent": 1,
+   "baseline": 0.0
+  },
+  {
+   "country": "Senegal",
+   "recent": 11,
+   "baseline": 0.0
+  },
+  {
+   "country": "Guinea",
+   "recent": 2,
+   "baseline": 0.0
+  },
+  {
+   "country": "Côte d'Ivoire",
+   "recent": 7,
+   "baseline": 0.0
+  },
+  {
+   "country": "Ghana",
+   "recent": 32,
+   "baseline": 0.0
+  },
+  {
+   "country": "Togo",
+   "recent": 2,
+   "baseline": 0.0
+  },
+  {
+   "country": "Benin",
+   "recent": 17,
+   "baseline": 0.0
+  },
+  {
+   "country": "Regional",
+   "recent": 79,
+   "baseline": 0.0
+  }
+ ],
+ "items": [
+  {
+   "id": "328fb873f3d985fb",
+   "title": "Ten Challenges for the UN in 2026-2027",
+   "link": "https://www.crisisgroup.org/sbr/global/sb15-ten-challenges-un-2026-2027",
+   "publisher": "Crisis Group",
+   "feed": "Crisis Group",
+   "lang": "en",
+   "date": "2026-09-14T08:00:00+00:00",
+   "summary": "Ten Challenges for the UN in 2026-2027 eschelhaas Mon, 09/14/2026 - 10:00 Latest Updates Africa Asia-Pacific Europe Latin America &amp; Caribbean Middle East &amp; North Africa United States Global Issues &amp; Institutions My Reading List Candidates for United Nations Secretary-General position par",
+   "countries": [
+    "Mali",
+    "Burkina Faso",
+    "Niger",
+    "Chad",
+    "Senegal",
+    "Regional"
+   ],
+   "themes": [
+    "Jihadist groups",
+    "Russia and Africa Corps",
+    "Coups and transitions",
+    "External actors",
+    "Regional bloc politics"
+   ],
+   "events": [
+    "Conflict event",
+    "Leadership change",
+    "Alliance shift",
+    "Political development"
+   ],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "c477ffd21b25c9d2",
+   "title": "Artificial intelligence, a new propaganda lever for JNIM in Mali?",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZWhYcG9pQWhGZ3pJQjVleXZnRmRGMlc5VVdYdUJaMGtraVUzTG92RHVyT1c1VHdHcW5fODEtelc4NWFEVUJDZlAxclBNSDJtMHNWb2JnazNvYVNSME14Y1IyS241RzVfVDQ0eC1DdHlOSmdKQ3RiYkVXYlVxb0dfMkZKSFZTb0pjZEZJaDBQamNxU1c0NFgzcm1uRmdIanlUNUtKbmFLandQVXl1LVpzWS1CbFlLbXN6eFA4M1NKWHN3a1B4QmtCbmZjNXhEWlE?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-11T17:30:39+00:00",
+   "summary": "Artificial intelligence, a new propaganda lever for JNIM in Mali? &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Jihadist groups"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "a315b2fb6e207388",
+   "title": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ?",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWGtKSWQ1Y1BkclphREFzTi0tZ1F2bHhKcWJjMHAxVkRSbXpfbkM3MHNzNXAzMDdtY2xob1F0SkZhcVhkeU5jYmpkS0JqSXQ4UTh1a09EbW9kbk8wQUJ2QmFub3E0V1RuS1lKc2hCMVRfbFdiYnNMZG16RkFYQjJvYi16QVBJd01fQTR4SGo1RTUwRHJzWGhHNFJfQXVNV3YzNFRZMkdBenFZeEtldHpTZDlpcUxhM0xtYVp0ZUxzVDluM0UxZmFEZG5walA0TVdoSmg3VjI3RUxOMFE?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Analyse francophone",
+   "lang": "fr",
+   "date": "2026-09-11T15:25:14+00:00",
+   "summary": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ? &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Jihadist groups"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "087aac71d5c94646",
+   "title": "Burkina Faso : Between Industrial Sovereignty, Youth Mobilization and Persistent Insecurity",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVDVlSWJlZFRpUWVSVzY0UWhXUWxQdlBCaThNV1dxdUJiMWJRSHJOX3Z6TTM2LTJSOUlMeFdjdUstOW1EWDdiQ3VvZFBFZ0N6cTZYWG5fQ1lYTkZ6dWp2bVB1b0hRbGtiVkU2Mm9tODItUm1BdFdnei1RZXFWNTQwaE1MMTN0MDczcW9aT1BXQjVBQnBpUEtsRDZjbEZHanRQSUJrcnJhZ2VodG5XUEZ5Ti1sYkpCZUtEeFdWeUtZY2ZjVE1IZ2ZOT2trX0x5WUFrMDA3cXk3U3Y1bzgtRGxkRzl5UXlrM2pBTUtOb2Joajc?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-09T07:00:00+00:00",
+   "summary": "Burkina Faso : Between Industrial Sovereignty, Youth Mobilization and Persistent Insecurity &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Burkina Faso"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "f636b18001812953",
+   "title": "Burkina Faso: when gold attracts armed groups and the transition settles its scores",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxORDNXYjVSZ0lYNWFmS3U4VEQ0b2thMUVLRlZHR2hmS2N3WU9oZ3BFMjNObmlFMjgteExYVW1EUlZRSWVBRFcxRUZ3azBOd3N6NVdfZ2tyVWxkNTMwVzhPa2FEMmZwU1lqN3pOQmJDZ2w3d2tlVmZWeGZITmJic2lUNHpENG9UTWZmRXg4VUM1NG1SWXJLYmNzV0EzS0NsajVtTHhwZE5XeDJkTUJydzdaTW56Q0luaFZiQ2prdTNiNUdPVTdxT2I2dFNDbzVxVzdTOW5vT3dKbmtJLWN1S1hxTzBmT3NmN2dz?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-08T11:45:05+00:00",
+   "summary": "Burkina Faso: when gold attracts armed groups and the transition settles its scores &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Burkina Faso"
+   ],
+   "themes": [
+    "Coups and transitions"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "3254b086c3dd57d1",
+   "title": "Niger : Tiani between military fragility and the fight against terrorism",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTUtKUnB1Q1VSRHhhNGxUTGxkUXczR1pCU3dFMlRVZmRvZEEtRnNhd0gwMFo1RDh6U0tKUUhTS3l1QUh1UjVCazVTMUhTQVpFdERWOURCV3RjS1VzT092c3hKMW9Ra1ZSODdLQWNqRkVmYjh4OGNaeVlZdWVHZ182X2VHdlh3QjQwTHltbU5wdlRPZ0lDWnN5aUZUTzRuWnBPWjhRdXNDRXI2ZmFKbHdyd3htdzlIcnFzYmd2bWpEaVNlVkdGa1JPLWRYUGt6X3BUTWRiZ0piemo?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-07T21:04:52+00:00",
+   "summary": "Niger : Tiani between military fragility and the fight against terrorism &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Niger"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "b6227ce8d9cf3e64",
+   "title": "Niger : Tiani entre fragilités militaires et lutte antiterroriste",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMVhXN2hhZ0VXRWNtakVrREI3cDJNdGFKeTJHQS1rWkItaW9rQ0pwWDZqX3BWQ3BOYVN5M2FiY18zMHpoSnFDR2hfVmVMUmtmWjF3eENnU2pRUFU2M3Jyb0UybWYyVHR4djRsRGNqN1FIOGZPRXEyVEcxUXQwS3V5WUluRDVUbkFmOUZ2TS1vX3VoM0tCa21TS0FHU2dyR1hRUTBWRHdkUENOczFjM2lNSWJ0UGJORlhuWVR2U0cxSVFqQlgxdEl1c1JIdGR3Ymc?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Analyse francophone",
+   "lang": "fr",
+   "date": "2026-09-07T21:04:15+00:00",
+   "summary": "Niger : Tiani entre fragilités militaires et lutte antiterroriste &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Niger"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "3283f8e303b19926",
+   "title": "Can Mali’s FLA-JNIM insurgent alliance survive its internal divisions?",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRFpNY1ZHTjlxSjJFWU51WEIzbnMySzQ4UHVVNE5WbFpJSnc3eUNuT2NxcHpGTS1PVjhsTTV1M3YtVGpMemh3R2pJbllwRFN6UjMzQ0lSZ1FCYkJ0U0FsYzE3ZURWOUw0cXVaVDdsT1Z1V3pfWDJJaEFZR0JINmZ5bkU1Z1Q1d2ZTN2Vrd2t5c2ZENHNVRHVvQnhURXVSNzgwdGdz?oc=5",
+   "publisher": "ISS Africa",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-02T07:00:00+00:00",
+   "summary": "Can Mali’s FLA-JNIM insurgent alliance survive its internal divisions? &nbsp;&nbsp; ISS Africa",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Jihadist groups",
+    "Azawad and FLA"
+   ],
+   "events": [
+    "Alliance shift"
+   ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "5607ae81f472e7da",
+   "title": "Protected: JNIM’s expansion in western Mali puts Senegal’s trade and mining sectors at risk",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTGctTUh0SVBsZDd3RzFXRzdnRGRtVUFqV05mRUJ3REV2bjVVM0hFVEVLU0NIS3hsMVp1NkJaQ3g3M2VFSUxSRVJnWmFEMkkzcGRiZWpvdktBaHJPLVFHOWhBUjl4LU5zTTZ4UDJwUVRhNEkxdmZwa0oxNXYxUjR6blozWGkyNUxlTlF2TFlDdm1lbGw2Q05TdFMydUNTMWh5U1g0?oc=5",
+   "publisher": "ACLED",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-01T21:30:00+00:00",
+   "summary": "Protected: JNIM’s expansion in western Mali puts Senegal’s trade and mining sectors at risk &nbsp;&nbsp; ACLED",
+   "countries": [
+    "Mali",
+    "Senegal"
+   ],
+   "themes": [
+    "Jihadist groups"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "67bce9d357db0b6b",
+   "title": "Niger’s capital rocked by failed mutiny attempt: Could jihadist groups benefit?",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQODdCbm5kV2RUc0V3V2dDdEYtUjhQbmlZbHdOeElpV00zeF9jRDVJNDEtRkNTMUtKS1FOT3RsMzV6djBPSm9yakVpTDkzcVdkWWM1V1VHb3NRM3l3OG5QN0pSODZ0SWVLc1lBLWtfNFM5S1NGRFNSNy1HdURwRlNmRTU5bkR3ekNNdXZ5U0FqWURjR0FudDgyZlRHU2xBYUlZRFZaR1pHS2U0M2VucU1B?oc=5",
+   "publisher": "ACLED",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-01T16:35:38+00:00",
+   "summary": "Niger’s capital rocked by failed mutiny attempt: Could jihadist groups benefit? &nbsp;&nbsp; ACLED",
+   "countries": [
+    "Niger"
+   ],
+   "themes": [
+    "Jihadist groups",
+    "Coups and transitions"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "cfaa3d915cb95c9c",
+   "title": "Mali : between a lull in léré and the assertion of sahelian sovereignty",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVlVTVmpuZHgwN2x6RnVKaW5SNzh5YUduR3Z2NjVQTm1PY0pOaFpmMXRId3hzQTNidGFiRHB3dmtUWmUxNmpYQTBtLXZKWU1aal9RaUx1TXFCM1FYQklkNXNvZlRodnpDaVlPa1M3UzYtZTFhSE94RFphV3RTUWdVZ2pkdzluNUJxdkd3Z3pRM2pMcl9UbUhyT1ZlSERVUEsycGwxeUNTOUEyLTI1dTBPQ200OXJMZGx0eFJOTi01Y3lTajh1YWdiemNoUEU0amhaTFJtZ2RPTQ?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-01T07:00:00+00:00",
+   "summary": "Mali : between a lull in léré and the assertion of sahelian sovereignty &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Regional"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "1a112ba65df98538",
+   "title": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence?",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbTVxLWdZeDRYWmQ0OXc1aEprelZodW9rbVhHc1lSRUtfZWtvdzU2c2o0NXY3UlpaMFFOUnRKV3lnU0dKWHBsdlc3RDBLcHd0WUk0SS03QjVKYXpqN1RYRHRuTm0yWUZtODV6bHdsS3c0WjV5UGFtbmY2VWdlTkxhaGQ4cDAyWjlQMkU1UExOb0Z0bXBOUllEWjF5R2hQSDBjeDdtTHRLV1lLbnBreXFKclFMQWN6VWRtTnBHRXhyNGZHbzgwWGhiSWFPN1c3RG9LZFdoYTdWdHJCX1BDUUpj?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-08-30T17:48:12+00:00",
+   "summary": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence? &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Niger"
+   ],
+   "themes": [
+    "Russia and Africa Corps",
+    "Coups and transitions"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "6275a8a557243b37",
+   "title": "Mutinerie du 29 août au Niger : une consolidation de la dépendance sécuritaire russe ?",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSGZsMnVZNWhyampBQU93amNyanhNcDhLNUEtdUJXakdkZ29VVGIxYUlKV2xtNlJpMlN1V1g0RFc5MHlDRldnZFBYMERiUWxZNjBZUGpqZkZnalZ4aFBTYXNQbGtsaDN3UEw5X1JaOWc4MHhZM21GWUlscUVfeTdLMElSUzJzb0xsVzluNmtlXzFuYUx4RXZrUjFQbkd0aXphZ1Z1Sl9HLTVBeF92TXlXelJ2RUZ0Y3VyVy1HNFNMY1M0QXltaTl5bHNGRG5nNGNGbFd5UmxHRFJwWUp6SUdV?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Analyse francophone",
+   "lang": "fr",
+   "date": "2026-08-30T07:00:00+00:00",
+   "summary": "Mutinerie du 29 août au Niger : une consolidation de la dépendance sécuritaire russe ? &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Niger"
+   ],
+   "themes": [
+    "Russia and Africa Corps",
+    "Coups and transitions"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "6693612aecd7921a",
+   "title": "La Belgique cherche-t-elle à compenser l’effacement européen au Sahel ?",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOXVQZVJ4VHEyLWRxenJoSDNLeEwwUzhTS3FFcWlzWTBxMERLTkFPQThHcms1aW1nTUlISkdINWk0Nkg2UFJ1R0JyR3VtYUVUdW5nVUFIMHltQlltenpLNnJmMGVJRHpCQ215S2RVdHhYSHpla3hKcWxycXBodkZ6MWt3N000TFFaY09Wcl92OVJNRFVhXzExb1dacldWTkZlLUVKaFpkTjVHUUwzNHVQRHdfbXJzUU52V1NaazdVRk9KV0NuelBzUw?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Analyse francophone",
+   "lang": "fr",
+   "date": "2026-08-29T07:00:00+00:00",
+   "summary": "La Belgique cherche-t-elle à compenser l’effacement européen au Sahel ? &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali",
+    "Regional"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  }
+ ],
+ "health": [
+  {
+   "name": "Long War Journal",
+   "ok": true,
+   "fetched": 30,
+   "kept": 0,
+   "error": null,
+   "dry_runs": 1
+  },
+  {
+   "name": "Institute for Security Studies",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "ValueError: feed did not parse",
+   "dry_runs": 0
+  },
+  {
+   "name": "Crisis Group",
+   "ok": true,
+   "fetched": 10,
+   "kept": 1,
+   "error": null,
+   "dry_runs": 0
+  },
+  {
+   "name": "ACLED",
+   "ok": false,
+   "fetched": 0,
+   "kept": 0,
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://acleddata.com/feed/",
+   "dry_runs": 0
+  },
+  {
+   "name": "Africa Center for Strategic Studies",
+   "ok": true,
+   "fetched": 0,
+   "kept": 0,
+   "error": null,
+   "dry_runs": 1
+  },
+  {
+   "name": "Think tanks via search",
+   "ok": true,
+   "fetched": 100,
+   "kept": 9,
+   "error": null,
+   "dry_runs": 0
+  },
+  {
+   "name": "Analyse francophone",
+   "ok": true,
+   "fetched": 100,
+   "kept": 4,
+   "error": null,
+   "dry_runs": 0
+  }
+ ]
+}
