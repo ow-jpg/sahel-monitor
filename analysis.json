@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T22:22:19.060753+00:00",
+ "generated": "2026-09-19T22:12:21.856445+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,22 +61,22 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 80,
+   "recent": 93,
    "baseline": 0.0
   },
   {
    "country": "Burkina Faso",
-   "recent": 17,
+   "recent": 20,
    "baseline": 0.0
   },
   {
    "country": "Niger",
-   "recent": 104,
+   "recent": 113,
    "baseline": 0.0
   },
   {
    "country": "Nigeria",
-   "recent": 68,
+   "recent": 78,
    "baseline": 0.0
   },
   {
@@ -86,42 +86,42 @@
   },
   {
    "country": "Mauritania",
-   "recent": 1,
-   "baseline": 0.0
-  },
-  {
-   "country": "Senegal",
-   "recent": 15,
-   "baseline": 0.0
-  },
-  {
-   "country": "Guinea",
    "recent": 3,
    "baseline": 0.0
   },
   {
+   "country": "Senegal",
+   "recent": 20,
+   "baseline": 0.0
+  },
+  {
+   "country": "Guinea",
+   "recent": 5,
+   "baseline": 0.0
+  },
+  {
    "country": "Côte d'Ivoire",
-   "recent": 9,
+   "recent": 12,
    "baseline": 0.0
   },
   {
    "country": "Ghana",
-   "recent": 38,
+   "recent": 48,
    "baseline": 0.0
   },
   {
    "country": "Togo",
-   "recent": 2,
+   "recent": 3,
    "baseline": 0.0
   },
   {
    "country": "Benin",
-   "recent": 19,
+   "recent": 21,
    "baseline": 0.0
   },
   {
    "country": "Regional",
-   "recent": 83,
+   "recent": 105,
    "baseline": 0.0
   }
  ],
@@ -227,7 +227,7 @@
    "publisher": "Timbuktu Institute",
    "feed": "Analyse francophone",
    "lang": "fr",
-   "date": "2026-09-11T15:25:14+00:00",
+   "date": "2026-09-11T07:00:00+00:00",
    "summary": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ? &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali"
@@ -278,6 +278,24 @@
    "events": [
     "Leadership change"
    ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "1f6253905362c0db",
+   "title": "In Mali, generative AI joins the information war",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV1ZtcFlzV2FUUXJDOUpiaUZpU1hjWkJtMDFLWWNTRHVQU3lIV3AyY040VVJUTkJFT2RrTXNYN3RuOXBWRkhaQjQ4ZUp1WDJ6UXN1WUl0MWJ0NnRCZDdRcWREaVlUdkE1ZzZjc2l4ajlRWVZDUU45THhZcU9pYUhTYkVuNWRfaWFRZUl3VG9mVWdWTl9GaldHa1RhajZQS2NjRy1DM3NlaE9uVjRTc2dyc0c1U3JSSVpuZFE?oc=5",
+   "publisher": "Timbuktu Institute",
+   "feed": "Think tanks via search",
+   "lang": "en",
+   "date": "2026-09-09T07:00:00+00:00",
+   "summary": "In Mali, generative AI joins the information war &nbsp;&nbsp; Timbuktu Institute",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [],
+   "events": [],
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
@@ -367,25 +385,6 @@
    "lang": "en",
    "date": "2026-09-07T21:04:52+00:00",
    "summary": "Niger : Tiani between military fragility and the fight against terrorism &nbsp;&nbsp; Timbuktu Institute",
-   "countries": [
-    "Mali",
-    "Niger"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "b6227ce8d9cf3e64",
-   "title": "Niger : Tiani entre fragilités militaires et lutte antiterroriste",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMVhXN2hhZ0VXRWNtakVrREI3cDJNdGFKeTJHQS1rWkItaW9rQ0pwWDZqX3BWQ3BOYVN5M2FiY18zMHpoSnFDR2hfVmVMUmtmWjF3eENnU2pRUFU2M3Jyb0UybWYyVHR4djRsRGNqN1FIOGZPRXEyVEcxUXQwS3V5WUluRDVUbkFmOUZ2TS1vX3VoM0tCa21TS0FHU2dyR1hRUTBWRHdkUENOczFjM2lNSWJ0UGJORlhuWVR2U0cxSVFqQlgxdEl1c1JIdGR3Ymc?oc=5",
-   "publisher": "Timbuktu Institute",
-   "feed": "Analyse francophone",
-   "lang": "fr",
-   "date": "2026-09-07T21:04:15+00:00",
-   "summary": "Niger : Tiani entre fragilités militaires et lutte antiterroriste &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali",
     "Niger"
@@ -499,13 +498,13 @@
    "anomaly": false
   },
   {
-   "id": "1a112ba65df98538",
+   "id": "a4464cfa68ad0232",
    "title": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence?",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbTVxLWdZeDRYWmQ0OXc1aEprelZodW9rbVhHc1lSRUtfZWtvdzU2c2o0NXY3UlpaMFFOUnRKV3lnU0dKWHBsdlc3RDBLcHd0WUk0SS03QjVKYXpqN1RYRHRuTm0yWUZtODV6bHdsS3c0WjV5UGFtbmY2VWdlTkxhaGQ4cDAyWjlQMkU1UExOb0Z0bXBOUllEWjF5R2hQSDBjeDdtTHRLV1lLbnBreXFKclFMQWN6VWRtTnBHRXhyNGZHbzgwWGhiSWFPN1c3RG9LZFdoYTdWdHJCX1BDUUpj?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVkQyYVJHYmUtdXp3V2RGYkFXRjZTZ1p2ZHF1UGRSc1BuQV8yck0zWmdqNWdOY01nX1hzZmEwTEZwbER3bDhyNU5MSUtvWXBCWnc3QWw3Mmc1XzJsbHJDZHAxQ2Fnc2czeC1URUFzQmJHODdfTFdYenBuaWVCVUgta2VCV0xPY2pJcUhZNFRlMnhRWUNMNnc5TDg4NWdYQ2FnUWlZaldUQzhMOVZwdnpWb1hxY0JXRXc4dlVPUl9HMUJDTi1DMnN0UGlSMS1ZQ25GS2s5ZkpURGVoODk1dnVxYlpmWmZCSmgyUDk1YkJCSWJKUFAyaXFFWg?oc=5",
    "publisher": "Timbuktu Institute",
    "feed": "Think tanks via search",
    "lang": "en",
-   "date": "2026-08-30T17:48:12+00:00",
+   "date": "2026-08-30T14:47:33+00:00",
    "summary": "Mutiny of 29 August in Niger : a consolidation of Russian security dependence? &nbsp;&nbsp; Timbuktu Institute",
    "countries": [
     "Mali",
@@ -541,25 +540,6 @@
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
-  },
-  {
-   "id": "b334df7425c3c473",
-   "title": "La Belgique cherche-t-elle à compenser l’effacement européen au Sahel ?",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWlUxV3ZrVDI4ODBMa29rN1FmX3lmWHl0Yk1Sc2NPMkZjbWJsbFAtYzcyNWhvZ3ZjU24wMVJ5R0VtUERtWWFjcHZUVG15a1NrUERqMmkyZWoyTnJqLUJDUmZQWExuMElXek5zN1V0TFRELWNveTZLckVOOGVtekh4amFQOGR3YlZQQzcwT0RfT0ktSTd3N1FtWjgyZklibE9mY092UGR4RThjRTV5OVppY1BwMDJGcEdmMFNjNzd3MHlid3ppVFoweQ?oc=5",
-   "publisher": "Timbuktu Institute",
-   "feed": "Analyse francophone",
-   "lang": "fr",
-   "date": "2026-08-30T04:01:48+00:00",
-   "summary": "La Belgique cherche-t-elle à compenser l’effacement européen au Sahel ? &nbsp;&nbsp; Timbuktu Institute",
-   "countries": [
-    "Mali",
-    "Regional"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
   }
  ],
  "health": [
@@ -569,7 +549,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 3
+   "dry_runs": 4
   },
   {
    "name": "Crisis Group",
@@ -593,7 +573,7 @@
    "fetched": 100,
    "kept": 0,
    "error": null,
-   "dry_runs": 2
+   "dry_runs": 3
   },
   {
    "name": "Humanitarian reporting",
@@ -607,7 +587,7 @@
    "name": "Think tanks via search",
    "ok": true,
    "fetched": 100,
-   "kept": 6,
+   "kept": 7,
    "error": null,
    "dry_runs": 0
   },
@@ -615,7 +595,7 @@
    "name": "Analyse francophone",
    "ok": true,
    "fetched": 100,
-   "kept": 4,
+   "kept": 2,
    "error": null,
    "dry_runs": 0
   }
