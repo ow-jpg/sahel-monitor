@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T01:58:42.439464+00:00",
+ "generated": "2026-09-21T02:11:02.173623+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,7 +61,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 103,
+   "recent": 104,
    "baseline": 0.0
   },
   {
@@ -505,7 +505,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 6
+   "dry_runs": 7
   },
   {
    "name": "Crisis Group",
@@ -529,7 +529,7 @@
    "fetched": 100,
    "kept": 0,
    "error": null,
-   "dry_runs": 5
+   "dry_runs": 6
   },
   {
    "name": "Humanitarian reporting",

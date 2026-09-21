@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T01:58:42.439464+00:00",
+ "generated": "2026-09-21T02:11:02.173623+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,7 +61,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 103,
+   "recent": 104,
    "baseline": 0.0
   },
   {
@@ -141,18 +141,18 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
    "id": "6707a3757cf4e08b",
-   "title": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps",
+   "title": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps - fratmat.info",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNOFd1Z1c0U0JXMlR4M1Q0MF9ZQTU3WjlFUVVrUy1teGdWelN6eEp6VmJ0aUpkZVo0dktsbC1CU201WkRDUjFZTVp6SE5HejRYdTBBVXlvX3dTeVpQZDBrU2ZuQS1pNXB4Z3NJMkxCNi13cFNyZl84YldQTEp1dUhWdDhYaVdqM0xmT092emVrMnlvbXJVMk56SFR3U3REUE90QVY0b1RLMU5UU2JrQXZPamptRUJTUWpyZC1FeEF2YkNKX1lHRU0zOUVHUW5LaE45WTVZZw?oc=5",
-   "publisher": "FratMat",
+   "publisher": "fratmat.info",
    "feed": "Russie au Sahel",
    "lang": "fr",
    "date": "2026-09-20T23:48:45+00:00",
-   "summary": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps &nbsp;&nbsp; FratMat",
+   "summary": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps &nbsp;&nbsp; fratmat.info",
    "countries": [
     "Mali"
    ],
@@ -179,7 +179,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -318,18 +318,18 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
    "id": "0ea1e3b36a52ca90",
-   "title": "Niger : Août en Putschland",
+   "title": "Niger : Août en Putschland - lsi-africa.com",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcmZrTE9HcUJXRDVCRGdBVFA3SGh4YTRfSzJBV0FyN0k2ak1BOEJ6bDdHaU5DM0FTVmdDd0J4VlJ6TEt4bEN1VGVYcE11RGFNOXpZTEZ6Sm1NWERMNEhLOWtqbV9lRjFiU1V1RUJyN1d2dERpV1BSam9sVF84UjZvc200Q0E?oc=5",
-   "publisher": "LSi Africa",
+   "publisher": "lsi-africa.com",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-20T16:32:42+00:00",
-   "summary": "Niger : Août en Putschland &nbsp;&nbsp; LSi Africa",
+   "summary": "Niger : Août en Putschland &nbsp;&nbsp; lsi-africa.com",
    "countries": [
     "Niger"
    ],
@@ -479,7 +479,7 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -581,13 +581,13 @@
   },
   {
    "id": "e0de1dec253d81f9",
-   "title": "EU Ambassador strengthens security cooperation with Ghana Police",
+   "title": "EU Ambassador strengthens security cooperation with Ghana Police - citinewsroom.com",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU1BXMGtUenEzeTRyQmpiMVhwLVZiV01BSjV2bE5JYkdKTFA5cmpCUzdlU0dMcDk5Q0F3bWQxZHdmU01ZYmdHbmRZVEJvRUp5YXlYdm5tem1jY0VBN0J5cTFHb3dDNzlQeGRRN2JyS29PazRNT3JWV0JwOXJPWkZPLVNWTkMtR29mYURJZTIxWHFhVW9rc2hVWHZrM09YQXM5Mjl3ZA?oc=5",
-   "publisher": "CitiNewsroom.com",
+   "publisher": "citinewsroom.com",
    "feed": "Coastal spillover",
    "lang": "en",
    "date": "2026-09-20T10:42:33+00:00",
-   "summary": "EU Ambassador strengthens security cooperation with Ghana Police &nbsp;&nbsp; CitiNewsroom.com",
+   "summary": "EU Ambassador strengthens security cooperation with Ghana Police &nbsp;&nbsp; citinewsroom.com",
    "countries": [
     "Ghana"
    ],
@@ -688,14 +688,15 @@
   },
   {
    "id": "83c3a68b4f86b4cf",
-   "title": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues - premiumtimesng.com",
+   "title": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQelZGb2hpdldQTFR5RWUyb1NWUk9UdldoVVIwek9wY3Q4R3pBMzllNEMzRThleVI1TExtWHV5QWVKeUJ0dmxodHBNVzBJY0l1MnI5T21YLWlLTTNFU2NlM0ZwaTZfNkpVcEZJMzlyNlZiWFVaN0w3ZllvMDJtbk05TmVnbWRkSGM0ajY1TE9XYldFbFFDc0tCaGdBOTBYWFhNT1BQdWNBRDEyYlFMbzNuUENoV2NLN25aNGpYV2xmTmp1czA2VklmTkIwbkdIN3ZzR2ZrRnRVcmRfTUwzV1E?oc=5",
-   "publisher": "premiumtimesng.com",
+   "publisher": "Premium Times Nigeria",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-20T08:08:24+00:00",
-   "summary": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues &nbsp;&nbsp; premiumtimesng.com",
+   "summary": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues &nbsp;&nbsp; Premium Times Nigeria",
    "countries": [
+    "Nigeria",
     "Regional"
    ],
    "themes": [
@@ -880,13 +881,13 @@
   },
   {
    "id": "0ea8c6850a7a5d03",
-   "title": "Intelligence leaks could jeopardise Ghana’s international security cooperation – Toobu",
+   "title": "Intelligence leaks could jeopardise Ghana’s international security cooperation – Toobu - citinewsroom.com",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWDVDZGQteXpRYk9ncEt2TGgxVDV0ejYyR0NaTWV4MUpLSVVQNksyVEZnNHc3QlFzY2pGOXJucEtpMDlTbEcteURoWXR0NnZLcF9wSktNZlZEcGZkVTd4V2VzRmdoLWNLckpuMldMbHNEbU5MTTJib05DQlprUFQ3MVIyMV9QSlpJc3VRcDViUVRnWkZpY0NoSFY2ZjRlUndjN0JlaVNkWXRZSTR2ZjJxT0EydUk1bXY4alVIWDNR?oc=5",
-   "publisher": "CitiNewsroom.com",
+   "publisher": "citinewsroom.com",
    "feed": "Coastal spillover",
    "lang": "en",
    "date": "2026-09-20T00:25:26+00:00",
-   "summary": "Intelligence leaks could jeopardise Ghana’s international security cooperation – Toobu &nbsp;&nbsp; CitiNewsroom.com",
+   "summary": "Intelligence leaks could jeopardise Ghana’s international security cooperation – Toobu &nbsp;&nbsp; citinewsroom.com",
    "countries": [
     "Ghana"
    ],
@@ -971,13 +972,13 @@
   },
   {
    "id": "9e83c11923041478",
-   "title": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers - ktvb.com",
+   "title": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers",
    "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxObnlvbE5rSWxXS2lMYlJmV0lMclhqWGJGdjBuVWd4YlB6a25JRUdxYWRDcXp0YmhBZU1GbVBZWm9GLTBuSG10MlFGNzFRbGxtUGNUbGVpMnlOSXM4ZVpseUg3bkd6Wk9uNGdzVUlLVGhPaWJRdmg0S1dfdzNtQUxNbmV1WVBsUXA0Mkw5TTZOMS1EbEVTV1dhVkc1UkdsYTY0MDZJd0U0S2k0UElSazFKTUZ1bFdBaGNfNnZXWDZNUGgya3AtVG1HbGl5ZHZjU2dub0dCX2gtZVNOZVpjeVlFdUs2dzFPRnZNVVJFZGg1WU9KYXE3LXREWTFGSWg3TUJTUnhSWUpFUjBLcHNSYzZpdnAtREVQU0dFZFVuQTlDcVJodw?oc=5",
-   "publisher": "ktvb.com",
+   "publisher": "KTVB",
    "feed": "Sahel security",
    "lang": "en",
    "date": "2026-09-19T19:48:00+00:00",
-   "summary": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers &nbsp;&nbsp; ktvb.com",
+   "summary": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers &nbsp;&nbsp; KTVB",
    "countries": [
     "Mali"
    ],
@@ -989,20 +990,20 @@
    ],
    "corroboration": 1,
    "also": [
-    "ktvb.com"
+    "KTVB"
    ],
    "thread": "developing",
    "anomaly": false
   },
   {
    "id": "c8be601fc8afddc0",
-   "title": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura - sahel-intelligence.com",
+   "title": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRUJOUXBwWEVvQWJoV1E4a0tRVUFFYTJySnhuWWFhX29KOGNJc2pxWjFTR2VtQ3RqQmtjS2g3MExRSENsLUtlVDBrV25lRncweFRJTjhBWlFlcTVHU0NLS2k1UHBzeW5HcGswTXpDTk8yQUlsNkxiS0VKMUxJTWgyRmFtOElTT2NWVFk5cF9NVFhjbmZNN05Ec0FLaFNQc2F4MmpoRnBPaEgyMVIzSkE?oc=5",
-   "publisher": "sahel-intelligence.com",
+   "publisher": "Sahel Intelligence",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-19T18:29:51+00:00",
-   "summary": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura &nbsp;&nbsp; sahel-intelligence.com",
+   "summary": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura &nbsp;&nbsp; Sahel Intelligence",
    "countries": [
     "Mali",
     "Regional"
@@ -1298,6 +1299,26 @@
    "anomaly": false
   },
   {
+   "id": "e8eaabd79b82382a",
+   "title": "Opening Battlefield To Media Broke Boko Haram’s Propaganda Grip – Buratai",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWlRfUEZmMDNWX1hydU5fTWtVVmE3QmMzZlVaVF9NTXFHNlVZQ3R3VktNSjBsR19uTTlmRUJ3ZHdaUlpfa0tEUlB4dW5WWmhIbFVrT1R5dTNiOV9DN3VPbURxM0tTUmFtajhac1lYQzZGWmtEMF9teDdaZVgwLVEwTjBqR0ZDNUk3SURCQ1ZwSE1CNC1h?oc=5",
+   "publisher": "News Agency of Nigeria",
+   "feed": "Nigeria and Lake Chad",
+   "lang": "en",
+   "date": "2026-09-19T04:19:03+00:00",
+   "summary": "Opening Battlefield To Media Broke Boko Haram’s Propaganda Grip – Buratai &nbsp;&nbsp; News Agency of Nigeria",
+   "countries": [
+    "Nigeria"
+   ],
+   "themes": [
+    "Jihadist groups"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
    "id": "979716d5e81bc442",
    "title": "Mali militants in Burkina Faso for mediation talks",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQVhJd0w3WU1UZUJBaUo2ZEVFS1pzUnFYRHZnanM5V0tkdXl2azJiNjZPREc1Q1dMZ1M5bXNQcU5hSTMtakhwSkMtcXJMNlBnejZ5QVBlZW5ZYVNjak5SdjMxTEdwSWpZM0g5WVhWOTBCNzVyNlQ0Y3d2dDZjN1hfRUJkTDJOWGhGcjJ4UVlHdVRmZw?oc=5",
@@ -1382,13 +1403,13 @@
   },
   {
    "id": "15edf8ac7a0054eb",
-   "title": "Plus de 100 soldats tués au Mali... Ce que l'on sait sur l'attaque djihadiste de Dioura - tv5monde",
+   "title": "Plus de 100 soldats tués au Mali... Ce que l'on sait sur l'attaque djihadiste de Dioura - information.tv5monde.com",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaHgtSWZISlV2UnREVUN3ajJZR05vaDdPR3JmUFVkTDlBMGpTem11Y2o4a2szRVdpSTJCSjhfbkhNVTVEbUswblYwR3oxTnF0cl9YN0NzMFJ4ZFJ1R0tDUEQ0eWJhREVkZzdkaGYxSW1pcG01ekY2OU55SDQ4dElMTVB2ZEFpNWNiaEQ1ZEhZMHQ1eFdFVmZKS0dOdHVaLVZoU2xSVi1aX3dyaklFZ1MwT3VJZjFtWjdlY1FTMFBYRWRMNTdvVE1KVGtiSQ?oc=5",
-   "publisher": "tv5monde",
+   "publisher": "information.tv5monde.com",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-18T20:20:14+00:00",
-   "summary": "Plus de 100 soldats tués au Mali... Ce que l'on sait sur l'attaque djihadiste de Dioura &nbsp;&nbsp; tv5monde",
+   "summary": "Plus de 100 soldats tués au Mali... Ce que l'on sait sur l'attaque djihadiste de Dioura &nbsp;&nbsp; information.tv5monde.com",
    "countries": [
     "Mali"
    ],
@@ -1397,31 +1418,6 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "76fcbf670f98ac76",
-   "title": "Au Mali, au moins 100 militaires et cinq mercenaires russes tués dans une attaque djihadiste, selon un dernier bilan - lemonde.fr",
-   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPVk05UFNXY3k5bnBGRHFhVEktV3NQRTctVG5pQk53U3RLYWhOVjdJbmt2dVl0N1BBeFRhaUdqanI4dG0zYktGWUlUQ2ZGVVBlV3ppSHFhbmROcWMzTXRnV0dFVHdaY29qZDBwUVduRS1welZ1OVBHZ1JjVUhzZ0Q0MGs0QW83V0FxeTV0bF9vQW5wemtTeG00N0hTNG1WRlpsZU9EMFROd1VSQWZXUFNNN0NSSWxTWjJKTEJYWV9mb3RDUlk3WDI0UGdydk1PZTdTT0gyRDhuUzVkWXZTUmVUZU16SkdOTU1tWG42V0xmaVRGVzZnZEtYd2xMTE1rYXMtaGo5SXBqa3UxbnN0ZEJJ?oc=5",
-   "publisher": "lemonde.fr",
-   "feed": "Sahel securite",
-   "lang": "fr",
-   "date": "2026-09-18T19:59:25+00:00",
-   "summary": "Au Mali, au moins 100 militaires et cinq mercenaires russes tués dans une attaque djihadiste, selon un dernier bilan &nbsp;&nbsp; lemonde.fr",
-   "countries": [
-    "Mali"
-   ],
-   "themes": [],
-   "events": [
-    "Conflict event"
-   ],
-   "corroboration": 3,
-   "also": [
-    "tv5monde",
-    "lemonde.fr",
-    "Le Figaro"
-   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -1630,13 +1626,13 @@
   },
   {
    "id": "163818e70b756314",
-   "title": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure - lemonde.fr",
+   "title": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure",
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOOURRY3dsa3Z5XzY2bmJhTmRFaFJqMW5rbkhfOVFRMEVMVGJmeTNxZ05pQlRQdlNjSVFjTlpsY0pidUptLW13MU5mazdXWnN5ekNhRnNrXzdJbU8zdHFwbXd4TlVLOHdsLWVsX3R6dzNaelBJd2FGa1hNUjk0ckkwVU9LWmV2N2JLczE0Z24xTXRUNjdtUWcxNnJFNktkNE9wV1NwTjdhdXVwSHM0VmI4YnFZRHlXV3l1VXVQN01ZampPc2dLRExLVlRfNUgzLV9NRFI2TDJ4WHBpckRqeVh6alNRT1RxUQ?oc=5",
-   "publisher": "lemonde.fr",
+   "publisher": "Le Monde.fr",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-18T16:00:06+00:00",
-   "summary": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure &nbsp;&nbsp; lemonde.fr",
+   "summary": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure &nbsp;&nbsp; Le Monde.fr",
    "countries": [
     "Mali"
    ],
@@ -2296,13 +2292,13 @@
   },
   {
    "id": "3075ddbfa14523c9",
-   "title": "Foreign agencies could lose trust in Ghana over security leaks – Muntaka",
+   "title": "Foreign agencies could lose trust in Ghana over security leaks – Muntaka - citinewsroom.com",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUzdyN3ZxUnBvQXBGNUFHSEtUU3NiWWduM3ItemFCNzNXeWZuOGE4bUJseTQtM190dmZIM3pMQUp6QVo2ZTlUNkxfSGEtbDFraS1veHpBbFg4MW1jODFxc1lfQmdJaTExUzdROWtqR19OWjdBbVlVNjN5dDZMNVVNTkVwLTRZWHp4YzVJa3lvOXZUczRqbklWVWV6SEJSX2ZrU3VmQzBPUnFtY1No?oc=5",
-   "publisher": "CitiNewsroom.com",
+   "publisher": "citinewsroom.com",
    "feed": "Coastal spillover",
    "lang": "en",
    "date": "2026-09-17T11:06:38+00:00",
-   "summary": "Foreign agencies could lose trust in Ghana over security leaks – Muntaka &nbsp;&nbsp; CitiNewsroom.com",
+   "summary": "Foreign agencies could lose trust in Ghana over security leaks – Muntaka &nbsp;&nbsp; citinewsroom.com",
    "countries": [
     "Ghana"
    ],
@@ -2355,13 +2351,13 @@
   },
   {
    "id": "2a4b6250a15350cf",
-   "title": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger - lemonde.fr",
+   "title": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger",
    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQWFl6b0NraXozTFVHOE81NHdnY0NCNmotT1F3ZXRFVGJqM2lKemswUE84UlY2bm1ITmh6MDVrcm5Sb1dqUzZRbENDMzdmaDhtR1N6TlVMdVpCSEhSM1ltZzNYbjRQTVotRXNNWjdNbFRpZUpaWUV5RTQyMGMzWU1xcFZzSFk5c3pnTTJGelBqdy1ibEdLaVZweXpoRXlVOHk0bHJ5UjNwcU00Z210bDcwbUFrMnl4eXNZOW9FRDlZWmRQdjZBeFJyZkF6bDhYSVZfMld6MFBNMjRoNXRLbXExZ1puOGtqVTlOQTJrcWtEMTJRc1NuYjRhcTFYZGNGVGdRbG13?oc=5",
-   "publisher": "lemonde.fr",
+   "publisher": "Le Monde.fr",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-17T10:00:02+00:00",
-   "summary": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger &nbsp;&nbsp; lemonde.fr",
+   "summary": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger &nbsp;&nbsp; Le Monde.fr",
    "countries": [
     "Niger"
    ],
@@ -2489,14 +2485,15 @@
   },
   {
    "id": "b6d6aae0693bc9e1",
-   "title": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate - nannews.ng",
+   "title": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpbFdlZzBKS2I3bHhwY2FJOGdsUjNqUTZ1ZEdLU195RThaMmJlRUhSUTB2cGNfa3kwVXZjV2t5NG9hU3phZWlKTHBQLVAyZHFHU3c5ZkQtQ0haZVFQVjlMWWxyT25EMEwyTzRKUVR1S1E?oc=5",
-   "publisher": "nannews.ng",
+   "publisher": "News Agency of Nigeria",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-16T23:08:38+00:00",
-   "summary": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate &nbsp;&nbsp; nannews.ng",
+   "summary": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate &nbsp;&nbsp; News Agency of Nigeria",
    "countries": [
+    "Nigeria",
     "Regional"
    ],
    "themes": [
@@ -2839,7 +2836,7 @@
    "events": [],
    "corroboration": 2,
    "also": [
-    "CitiNewsroom.com"
+    "citinewsroom.com"
    ],
    "thread": "developing",
    "anomaly": false
@@ -2964,13 +2961,13 @@
   },
   {
    "id": "dfcce5414cffbb27",
-   "title": "Mali : JNIM, FLA, Russie… l’IA ouvre une nouvelle guerre de l’information",
+   "title": "Mali : JNIM, FLA, Russie… l’IA ouvre une nouvelle guerre de l’information - afrik.com",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTZqanhVYjdMR1hpVjd5QTVoZXUxbGZmM2lEU0FHYmRpZ2ppUGphMm1WWjgwT0ZFSjZmZFF4aDVOY05GLVB5V0tvMktaMjF2b2VpU241NldPTVZaWHNGN0cwTUlWbVlTS2xDdlhaTFJ1SF90ZHBnYVFKTW1rTzJqNXVZSkpnczJvUVU0UWZLLUFLVkhQ?oc=5",
-   "publisher": "Afrik",
+   "publisher": "afrik.com",
    "feed": "Russie au Sahel",
    "lang": "fr",
    "date": "2026-09-15T06:15:58+00:00",
-   "summary": "Mali : JNIM, FLA, Russie… l’IA ouvre une nouvelle guerre de l’information &nbsp;&nbsp; Afrik",
+   "summary": "Mali : JNIM, FLA, Russie… l’IA ouvre une nouvelle guerre de l’information &nbsp;&nbsp; afrik.com",
    "countries": [
     "Mali"
    ],
@@ -2986,13 +2983,13 @@
   },
   {
    "id": "c59ab017a570fc16",
-   "title": "VIDÉO. Mali: cinq militaires russes d'Africa Corps tuées lors d'une attaque djihadiste - tv5monde",
+   "title": "VIDÉO. Mali: cinq militaires russes d'Africa Corps tuées lors d'une attaque djihadiste - information.tv5monde.com",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMGxoc0RKeFdfMHAyOHFVczRzdDE1UDQybHN2MUtqc092bzZ6R0N1eTk1VUt1Z0tZc05kY2l2RGJMMlYwbGtDNmNMc1M3Vk9fMHRHZ3pYSWl5Zmw5ZUFkVUxieVQxZHZOakwzVWJEV0JubmF3ZWxyak56UDRmd014cERaNm8xVnNOOVRWZ0pJeDZCMVhoMlBybndBd3ZOdTQ1RkpiR1Y2TmFaS0U0bDBuak9Vc0YxSXhXaTNmaTdrNFBBU2p0VFdoU29rQQ?oc=5",
-   "publisher": "tv5monde",
+   "publisher": "information.tv5monde.com",
    "feed": "Russie au Sahel",
    "lang": "fr",
    "date": "2026-09-15T05:48:42+00:00",
-   "summary": "VIDÉO. Mali: cinq militaires russes d'Africa Corps tuées lors d'une attaque djihadiste &nbsp;&nbsp; tv5monde",
+   "summary": "VIDÉO. Mali: cinq militaires russes d'Africa Corps tuées lors d'une attaque djihadiste &nbsp;&nbsp; information.tv5monde.com",
    "countries": [
     "Mali"
    ],
@@ -3083,6 +3080,31 @@
     "Conflict event"
    ],
    "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "24d47aa85d588a6d",
+   "title": "Mali: au moins 50 militaires et cinq mercenaires russes tués jeudi 10 septembre dans une attaque djihadiste - information.tv5monde.com",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNV3ZVUWpaZVlIZENuWFZQYnZFbmhYMUctRVhzUFdzWFMtVXlDU1pySnVqUzAtLUVSUF90blg5SmlPblM3NHJVbTEyVGozMjlTY3VUQ3RJU2dlM1oyV3kzUVFSdkZxeU84NmVSRm9lRE9sVGlna25MMG1UNTZmbmlhVXdJUmFuV0dZWlBBbzFpbjhDUHBySkV6TFgyeDh4MFRIaXJXYWE1VGNFZGxOOGkwS2NUN0oyN2lUSlZaV3gySVdWU1k3Y05DRXBmUFphMmFCWTBVVDNGR2FFekpNV2xkUmlDUVRWVXdkdnpV?oc=5",
+   "publisher": "information.tv5monde.com",
+   "feed": "Russie au Sahel",
+   "lang": "fr",
+   "date": "2026-09-14T11:24:00+00:00",
+   "summary": "Mali: au moins 50 militaires et cinq mercenaires russes tués jeudi 10 septembre dans une attaque djihadiste &nbsp;&nbsp; information.tv5monde.com",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [],
+   "events": [
+    "Conflict event"
+   ],
+   "corroboration": 3,
+   "also": [
+    "Le Monde.fr",
+    "Le Monde.fr",
+    "Le Figaro"
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -3290,13 +3312,13 @@
   },
   {
    "id": "6babdb4928e81c26",
-   "title": "Mali : Le JNIM attaque une base militaire stratégique à Dioura - sahel-intelligence.com",
+   "title": "Mali : Le JNIM attaque une base militaire stratégique à Dioura",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOHQzM0RWMkt3TWxNNE85YzQySy00SFRabGNzRThzQTFadlVoTG1aQTdGRmVUZDBhRW1OVGpZNndFbXlxaFNCUUR6M3BjTGJWckZvVkRtYjkwYzUxV1F4RXlPcEVZMy1ROHE1Q2VhWVk2NkxLcjdNSVc0WHpFS1cyLU14bTBtWUoxMDk3TnBFRl9sUzk1SXFZUm9pZjBrUEcxRU9qdw?oc=5",
-   "publisher": "sahel-intelligence.com",
+   "publisher": "Sahel Intelligence",
    "feed": "Jihadistes au Sahel",
    "lang": "fr",
    "date": "2026-09-11T07:00:00+00:00",
-   "summary": "Mali : Le JNIM attaque une base militaire stratégique à Dioura &nbsp;&nbsp; sahel-intelligence.com",
+   "summary": "Mali : Le JNIM attaque une base militaire stratégique à Dioura &nbsp;&nbsp; Sahel Intelligence",
    "countries": [
     "Mali",
     "Regional"
@@ -3313,13 +3335,13 @@
   },
   {
    "id": "2c9d77051df3cbcc",
-   "title": "In Dakar, the ECOWAS Commission puts youth at the centre of the regional democratic agenda",
+   "title": "In Dakar, the ECOWAS Commission puts youth at the centre of the regional democratic agenda - capmad.com",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZS1DUkw2RlowWDNmU2Q3OXhZNWdiMDRtcDVKblZ5Vl9LNm1KTm9vZzQ1anBEajNjQWwzdlBtR0NQeERVQldvbjZ0dzI0eG92aXZuZFlXcXRiQ1J4VlpLWVRUdGE5NUhCT1VFczRrY2NmaXNHODZEQ05qMVZ2QkszNXpuOWp3TzJHUjJ6dVJOODZkWmJjdG5IRnkzLWt2QWlteTBBWmJnaWFEa3JXVXJ1d043bVZtZHUy?oc=5",
-   "publisher": "Capmad",
+   "publisher": "capmad.com",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-11T01:14:00+00:00",
-   "summary": "In Dakar, the ECOWAS Commission puts youth at the centre of the regional democratic agenda &nbsp;&nbsp; Capmad",
+   "summary": "In Dakar, the ECOWAS Commission puts youth at the centre of the regional democratic agenda &nbsp;&nbsp; capmad.com",
    "countries": [
     "Senegal",
     "Regional"
@@ -3424,13 +3446,13 @@
   },
   {
    "id": "c7fc24efcbafc31b",
-   "title": "Mali: Jihadist attack in Mopti region kills eleven, including four Russian mercenaries - agenzianova.com",
+   "title": "Mali: Jihadist attack in Mopti region kills eleven, including four Russian mercenaries",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQXg5RDZXX1MycW53QjQtcWdGanB2RGEzaldBQkRwMDhCQmEwdTVCb3Z0RzMxeEM5RmJTODRkd2Q1N1VIMVMzOGJyd0JENzJGRGdOaTNTcHRyOGpPVXB6ZFhwQzVZLVl2OXBndmY0b1gzS2JjTmRjWFZUZ3NQNjJueUZxc3pvTzNPOVVEdnpMdWFhd2xuMlJTLVl6YVM0SWhzaThXY2NwUGR6SnItNUQ3dUtycXI4djBlT1U2WGdvYVpZNFJWMjZtaEUwRQ?oc=5",
-   "publisher": "agenzianova.com",
+   "publisher": "Agenzia Nova",
    "feed": "Russia and Africa Corps",
    "lang": "en",
    "date": "2026-09-09T10:12:22+00:00",
-   "summary": "Mali: Jihadist attack in Mopti region kills eleven, including four Russian mercenaries &nbsp;&nbsp; agenzianova.com",
+   "summary": "Mali: Jihadist attack in Mopti region kills eleven, including four Russian mercenaries &nbsp;&nbsp; Agenzia Nova",
    "countries": [
     "Mali"
    ],
@@ -3528,13 +3550,13 @@
   },
   {
    "id": "c5a80bfb8c8b93c5",
-   "title": "Nigeria names new commander to lead operations against Boko Haram - sabcnews.com",
+   "title": "Nigeria names new commander to lead operations against Boko Haram",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZkFIeXliLUZuc1ZoNkFzZjdrNEQ3Rkc5cm04c3hzTlE2YmQ0MGp2NVdmOFQ3VVEwWGZVQ243VDduOXFRZHNWRWdXRGZwclp6SHNQb2JnT2hYOXREVjFpNmd6eGZQRWo3emhPbXB6bnJTT1l0cU9xRUY2eDFhdWlIYVVxcnhmMWdHTGVpV1EtNGo4MnVaLUE5YkMzbm9sUWFuWVE?oc=5",
-   "publisher": "sabcnews.com",
+   "publisher": "SABC News",
    "feed": "Nigeria and Lake Chad",
    "lang": "en",
    "date": "2026-09-09T07:00:00+00:00",
-   "summary": "Nigeria names new commander to lead operations against Boko Haram &nbsp;&nbsp; sabcnews.com",
+   "summary": "Nigeria names new commander to lead operations against Boko Haram &nbsp;&nbsp; SABC News",
    "countries": [
     "Nigeria"
    ],
@@ -3686,7 +3708,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -4007,13 +4029,13 @@
   },
   {
    "id": "1134323e34f0a963",
-   "title": "Thwarted Niger mutiny exposes junta’s Russia dependence - clubofmozambique.com",
+   "title": "Thwarted Niger mutiny exposes junta’s Russia dependence",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVXlLOU03RjdSRlpIaDdFOXhrTW5xcnh6V0dYVDdXZVpmNXIxVkNSOERrUDk5WFFObjRFa2RhRlBWenBjVmxNb0c3N0tWOXltM1NpNFBIR2ZUYW1jWVptRUhJeTBvajBiRUxIR1NLQjI3OF9nLU1DNEN1aXBlc09ET24wSWxGdWgxbGR3ai1BczB4N1E?oc=5",
-   "publisher": "clubofmozambique.com",
+   "publisher": "CLUB OF MOZAMBIQUE",
    "feed": "Russia and Africa Corps",
    "lang": "en",
    "date": "2026-09-02T08:15:13+00:00",
-   "summary": "Thwarted Niger mutiny exposes junta’s Russia dependence &nbsp;&nbsp; clubofmozambique.com",
+   "summary": "Thwarted Niger mutiny exposes junta’s Russia dependence &nbsp;&nbsp; CLUB OF MOZAMBIQUE",
    "countries": [
     "Niger"
    ],
@@ -4299,13 +4321,13 @@
   },
   {
    "id": "ef1e4e85afd957bc",
-   "title": "Finies les tensions, l'Algérie s'affiche avec les juntes du Sahel et déploie son armée au Niger - lopinion.fr",
+   "title": "Finies les tensions, l'Algérie s'affiche avec les juntes du Sahel et déploie son armée au Niger - l'Opinion",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdkxycXRnNEo3dmdfZTRjdmVKVG12TTV1ZHZEMVJaYmhmcnk0OU9yWnJINHI2QXhyc3A3WlNqckxlSUQyZWY2TWNSNW55T2RjYXBaeUhqUWdaMjd4QXBuX3VRR21MZGp5TnRqWTlTYl9sY2wyYncyLVl2MUJFN3QzejBwOFMwdndtVjlXTy11dDZ3RGFtU1Jha2p4b1Y5VGloQmVia05hQnl6Q0w1VHB4YkhvWXBIZTIyQy1Jd2ZsQU9sUXRKMi1uWUdR?oc=5",
-   "publisher": "lopinion.fr",
+   "publisher": "l'Opinion",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-01T07:00:00+00:00",
-   "summary": "Finies les tensions, l'Algérie s'affiche avec les juntes du Sahel et déploie son armée au Niger &nbsp;&nbsp; lopinion.fr",
+   "summary": "Finies les tensions, l'Algérie s'affiche avec les juntes du Sahel et déploie son armée au Niger &nbsp;&nbsp; l'Opinion",
    "countries": [
     "Niger",
     "Regional"
@@ -4363,13 +4385,13 @@
   },
   {
    "id": "f789c8185776498c",
-   "title": "U.S. Donated Vehicles to Strengthen Senegal's Border Security - sn.usembassy.gov",
+   "title": "U.S. Donated Vehicles to Strengthen Senegal's Border Security",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KTi0wdU5ZZ3phd2VGNVJJZ2k4RjNIOFlTY0lyclBQS2F4ZWI4YUxDS0hHaFdaSmZvRXhqSG1wa09CdTVHUm5PVzQ4TjVubGhITUhLQVJ6Sm41c25TbV9IR1FmRXUxTDB3SWc?oc=5",
-   "publisher": "sn.usembassy.gov",
+   "publisher": "U.S. Embassy in Senegal (.gov)",
    "feed": "Coastal spillover",
    "lang": "en",
    "date": "2026-08-31T14:33:44+00:00",
-   "summary": "U.S. Donated Vehicles to Strengthen Senegal's Border Security &nbsp;&nbsp; sn.usembassy.gov",
+   "summary": "U.S. Donated Vehicles to Strengthen Senegal's Border Security &nbsp;&nbsp; U.S. Embassy in Senegal (.gov)",
    "countries": [
     "Senegal"
    ],
@@ -4402,13 +4424,13 @@
   },
   {
    "id": "822ab5c543ef03d0",
-   "title": "Tentative de coup d'État déjouée au Niger: comment la Russie a prêté main forte au régime militaire - tv5monde",
+   "title": "Tentative de coup d'État déjouée au Niger: comment la Russie a prêté main forte au régime militaire - information.tv5monde.com",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQclhPY2ZTb21LTllScG1XWkFHS0trOFpOWTl5QjFnZHhnMlIydW9ZcXY0RTlVX2lRTTNoOXIxTUxXeUJSdHA1ZXZkd1ZkaDhhVHBRSUs1ekZuclZNRzI1bjZ4WFVjWEFIRVMxeEpDUVJ2VVhXenRyRHM1M01teTZXcnZmaHItQUI1dktLTVF5R2N1NDlTSzRBczJScm0tWWZENVhaZnJiTWdXZVY1cVF0TEVZQ3J0WVZfaXM3a3owT0dLVXUwcW1hREppbkpBQ0tKYzhUSHE4LWQzbkpm?oc=5",
-   "publisher": "tv5monde",
+   "publisher": "information.tv5monde.com",
    "feed": "Russie au Sahel",
    "lang": "fr",
    "date": "2026-08-31T09:43:53+00:00",
-   "summary": "Tentative de coup d'État déjouée au Niger: comment la Russie a prêté main forte au régime militaire &nbsp;&nbsp; tv5monde",
+   "summary": "Tentative de coup d'État déjouée au Niger: comment la Russie a prêté main forte au régime militaire &nbsp;&nbsp; information.tv5monde.com",
    "countries": [
     "Niger"
    ],
@@ -4611,13 +4633,13 @@
   },
   {
    "id": "57c4bd23016bfc0d",
-   "title": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani - humanite.fr",
+   "title": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQN3pZa1FGOG1ZeDh2UkN1eDFLN3Z3SkNuTjlEZnVEQkpXYzhxaGxPMnoxMGRadU9BSVUzTU1WZl9uX2lMZUJwOVc1NUZxRkRRWHYwbjNWNGJiM2lGZUxkRkh1VWp4R3VkX3M0QkRJYUdjQkxNWG5tQ3g2RGRMYXUzN2ZkNVcySXJ0bHFXSzE0TlZvaFJ2LUpVd2FxTE9OcnlSNncxTXFoMFc5QXRpbl94VENUaUZhU3JXN2dnMHE0X1RuTDhNcDIwSWU4aDhmMXZMQ2xPd1hULWtFcXgxNmc?oc=5",
-   "publisher": "humanite.fr",
+   "publisher": "L'Humanité",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-08-31T07:00:00+00:00",
-   "summary": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani &nbsp;&nbsp; humanite.fr",
+   "summary": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani &nbsp;&nbsp; L'Humanité",
    "countries": [
     "Niger"
    ],
@@ -4815,7 +4837,7 @@
    "name": "Nigeria and Lake Chad",
    "ok": true,
    "fetched": 100,
-   "kept": 14,
+   "kept": 15,
    "error": null,
    "dry_runs": 0
   },
@@ -4905,7 +4927,7 @@
    "fetched": 0,
    "kept": 0,
    "error": null,
-   "dry_runs": 6
+   "dry_runs": 7
   }
  ]
 }

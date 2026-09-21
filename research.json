@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T01:58:42.439464+00:00",
+ "generated": "2026-09-21T02:11:02.173623+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,7 +61,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 103,
+   "recent": 104,
    "baseline": 0.0
   },
   {
