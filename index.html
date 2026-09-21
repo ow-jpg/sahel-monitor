@@ -61,11 +61,34 @@
   </h1>
   <div class="status-block">
     <span class="pill" id="status-pill"><span class="lamp"></span><span id="status-text">Checking</span></span>
-    <button class="linkish" id="diag-toggle" aria-expanded="false">Diagnostics</button>
+    <div class="row">
+      <button class="linkish" id="refresh">Refresh now</button>
+      <button class="linkish" id="diag-toggle" aria-expanded="false">Diagnostics</button>
+    </div>
+    <div class="refresh-state" id="refresh-state"></div>
   </div>
 </header>
 
 <nav class="tabs"></nav>
+
+<div class="refresh-panel" id="refresh-panel">
+  <h2>Run a collection now</h2>
+  <p>GitHub will not let a public web page start a job on its own, so this
+  takes two clicks on GitHub itself. Leave this tab open while you do it and
+  it will notice the new data and reload by itself.</p>
+  <ol>
+    <li>Click the button below. GitHub opens in a new tab.</li>
+    <li>On that page click <strong>Run workflow</strong>, then the green
+      <strong>Run workflow</strong> button in the small panel that appears.</li>
+    <li>Come back here. Nothing else to do.</li>
+  </ol>
+  <div class="row">
+    <a class="btn" id="open-workflow" target="_blank" rel="noopener noreferrer">Open GitHub and run it</a>
+    <button class="btn quiet" id="refresh-cancel">Close</button>
+  </div>
+  <p class="note">Collection takes a minute or two, then GitHub republishes the
+  site, which takes another minute. Three or four minutes all up.</p>
+</div>
 
 <div class="alert" id="alert" role="status">
   <h2 id="alert-title"></h2>
@@ -378,6 +401,68 @@
       var open = document.getElementById("diagnostics").classList.toggle("on");
       this.setAttribute("aria-expanded", String(open));
       this.textContent = open ? "Hide diagnostics" : "Diagnostics";
+    });
+
+    wireRefresh();
+  }
+
+  // ---------- refresh on demand ----------
+  //
+  // No credentials anywhere. The link opens GitHub, and meanwhile this page
+  // watches its own data file and reloads when the timestamp moves.
+
+  var watching = false;
+
+  function say(text, kind) {
+    var box = document.getElementById("refresh-state");
+    box.textContent = "";
+    box.className = "refresh-state" + (kind ? " " + kind : "");
+    if (kind === "working") box.appendChild(S.el("span", "spin"));
+    if (text) box.appendChild(S.el("span", null, text));
+  }
+
+  function showPanel(show) {
+    document.getElementById("refresh-panel").classList.toggle("on", show);
+  }
+
+  function startWatching() {
+    if (watching) return;
+    watching = true;
+    var known = store && store.meta && store.meta.generated;
+    say("Watching for new data", "working");
+
+    S.watchForUpdate(known, function (minutes) {
+      say("Watching for new data, " + minutes + " min", "working");
+    }, 900).then(function () {
+      say("New data is live. Reloading.", "good");
+      window.setTimeout(function () { window.location.reload(); }, 800);
+    }).catch(function (err) {
+      say(err.message || String(err), "bad");
+      watching = false;
+    });
+  }
+
+  function wireRefresh() {
+    var link = document.getElementById("open-workflow");
+    var url = S.workflowUrl();
+    if (url) {
+      link.href = url;
+    } else {
+      link.href = "#";
+      link.textContent = "Cannot work out the repository address";
+    }
+
+    document.getElementById("refresh").addEventListener("click", function () {
+      showPanel(!document.getElementById("refresh-panel").classList.contains("on"));
+    });
+
+    link.addEventListener("click", function () {
+      showPanel(false);
+      startWatching();
+    });
+
+    document.getElementById("refresh-cancel").addEventListener("click", function () {
+      showPanel(false);
     });
   }
 

@@ -12,30 +12,17 @@
   // =======================================================================
 
   var CONFIG = {
-    // Primary model for the chat page. The nightly brief uses its own setting
-    // inside the collector, so changing this does not affect the brief.
-    //
-    // Free options live on OpenRouter as of September 2026:
-    //   z-ai/glm-5.2:free
-    //   thinkingmachines/inkling:free          (1M context)
-    //   xiaomi/mimo-v2-flash:free
-    //   arcee-ai/trinity-large-thinking:free
-    model: "z-ai/glm-5.2:free",
-
-    // If the primary is retired, rate limited or erroring, OpenRouter falls
-    // through this list in order. openrouter/free is a router that picks from
-    // whatever free models exist at the time, so it should never go stale.
-    // Keep it last.
-    fallbacks: ["openrouter/free"],
-
-    // How many archive items to hand the model per question.
-    retrievalDepth: 40,
-
     // Used only for the "this page should have updated by now" check.
     // The collector also writes cadence_hours into the data; that wins if present.
     defaultCadenceHours: 24,
 
-    endpoint: "https://openrouter.ai/api/v1/chat/completions"
+    // Used by the Refresh button. Left blank, these are worked out from the
+    // address bar, which is correct for a normal username.github.io/repo
+    // site. Set them by hand only if you move to a custom domain.
+    owner: "",
+    repo: "",
+    workflowFile: "update.yml",
+    branch: "main"
   };
 
   // =======================================================================
@@ -96,7 +83,6 @@
   var PAGES = [
     { href: "index.html",   label: "Monitor" },
     { href: "brief.html",   label: "Brief" },
-    { href: "ask.html",     label: "Ask" },
     // Reference rather than daily reading, so it sits apart on the right.
     { href: "sources.html", label: "Sources", secondary: true }
   ];
@@ -308,78 +294,61 @@
   }
 
   // =======================================================================
-  //  Model access
+  //  Running a collection on demand
   //
-  //  The key is held in this browser only. It is never written to the repo
-  //  and never leaves the machine except in the request to OpenRouter.
+  //  GitHub will not start a workflow for an anonymous caller, and there is
+  //  no way around that from a public page. So the button simply opens the
+  //  workflow on GitHub, where two clicks start it, and this page then
+  //  watches its own data file and reloads the moment new data lands.
+  //  Watching needs no credentials, because it is only fetching a file that
+  //  is already public.
   // =======================================================================
 
-  var KEY_STORE = "sahel_monitor_openrouter_key";
-
-  function getKey() {
-    try { return localStorage.getItem(KEY_STORE) || ""; } catch (e) { return ""; }
-  }
-  function setKey(value) {
-    try { localStorage.setItem(KEY_STORE, value); return true; } catch (e) { return false; }
-  }
-  function clearKey() {
-    try { localStorage.removeItem(KEY_STORE); } catch (e) {}
+  function repoInfo() {
+    if (CONFIG.owner && CONFIG.repo) {
+      return { owner: CONFIG.owner, repo: CONFIG.repo };
+    }
+    var host = window.location.hostname.match(/^([^.]+)\.github\.io$/i);
+    var first = window.location.pathname.split("/").filter(Boolean)[0];
+    if (host && first) return { owner: host[1], repo: first };
+    return null;
   }
 
-  function askModel(messages, options) {
-    options = options || {};
-    var key = getKey();
-    if (!key) return Promise.reject(new Error("No API key stored in this browser."));
+  function workflowUrl() {
+    var info = repoInfo();
+    if (!info) return null;
+    return "https://github.com/" + info.owner + "/" + info.repo +
+           "/actions/workflows/" + CONFIG.workflowFile;
+  }
 
-    return fetch(CONFIG.endpoint, {
-      method: "POST",
-      headers: {
-        "Authorization": "Bearer " + key,
-        "Content-Type": "application/json",
-        "HTTP-Referer": window.location.origin,
-        "X-Title": "Sahel Monitor"
-      },
-      body: JSON.stringify({
-        model: options.model || CONFIG.model,
-        models: [options.model || CONFIG.model].concat(CONFIG.fallbacks),
-        messages: messages,
-        max_tokens: options.maxTokens || 1400,
-        temperature: options.temperature === undefined ? 0.3 : options.temperature
-      })
-    }).then(function (res) {
-      return res.json().then(function (data) {
-        if (!res.ok) {
-          var detail = (data && data.error && data.error.message) || ("HTTP " + res.status);
-          if (res.status === 401) {
-            throw new Error("OpenRouter rejected the key. Check it, or clear and re-enter it.");
-          }
-          if (res.status === 429) {
-            throw new Error("Rate limited. Free models allow roughly 20 requests a minute " +
-              "and a few hundred a day. Wait a moment and try again.");
-          }
-          throw new Error(detail);
+  // Polls the published data until its timestamp changes. Resolves when the
+  // new data is live, rejects on timeout. Nothing here is authenticated.
+  function watchForUpdate(knownStamp, onProgress, timeoutSeconds) {
+    var report = onProgress || function () {};
+    var limit = timeoutSeconds || 900;
+    var waited = 0;
+
+    return new Promise(function (resolve, reject) {
+      var poll = setInterval(function () {
+        waited += 10;
+        if (waited > limit) {
+          clearInterval(poll);
+          reject(new Error("No new data after " + Math.round(limit / 60) +
+            " minutes. The run may have failed, or may not have been started."));
+          return;
         }
-        var choice = (data.choices || [])[0] || {};
-        var text = (choice.message && choice.message.content) || "";
-        return { text: String(text).trim(), model: data.model || "", raw: data };
-      });
+        report(Math.round(waited / 60 * 10) / 10);
+        fetch("news.json?t=" + Date.now())
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (data) {
+            if (data && data.generated && data.generated !== knownStamp) {
+              clearInterval(poll);
+              resolve(data);
+            }
+          })
+          .catch(function () {});
+      }, 10000);
     });
-  }
-
-  // =======================================================================
-  //  Text safety
-  //
-  //  Item text is third party content. When it goes into a prompt it is
-  //  fenced, numbered and flattened so it cannot pose as an instruction.
-  // =======================================================================
-
-  function flatten(text, limit) {
-    return String(text || "")
-      .replace(/[\r\n]+/g, " ")
-      .replace(/```/g, "'''")
-      .replace(/(?:^|\s)(system|assistant|user|human)\s*:/gi, " $1 -")
-      .trim()
-      .slice(0, limit || 240);
   }
 
   // =======================================================================
@@ -398,11 +367,9 @@
     buildEntry: buildEntry,
     buildBadges: buildBadges,
     skeletons: skeletons,
-    getKey: getKey,
-    setKey: setKey,
-    clearKey: clearKey,
-    askModel: askModel,
-    flatten: flatten,
+    repoInfo: repoInfo,
+    workflowUrl: workflowUrl,
+    watchForUpdate: watchForUpdate,
     STREAMS: STREAMS
   };
 })();
