@@ -24,8 +24,8 @@
 <body>
 
 <header class="masthead">
-  <h1>The week from the feeds
-    <span>Written by a model from the monitored items, with every source listed below.</span>
+  <h1>The week in coverage
+    <span>What was reported and how heavily, summarised from headlines.</span>
   </h1>
   <div class="status-block">
     <span class="pill" id="status-pill"><span class="lamp"></span><span id="status-text">Checking</span></span>
@@ -46,11 +46,21 @@
       <h2 id="brief-heading">Summary</h2>
       <span class="when" id="brief-when"></span>
     </div>
+    <div class="basis-flag" id="basis-flag">
+      <strong>Written from headlines, not from articles.</strong>
+      The model that wrote this has read each headline, the short blurb the
+      feed carried, and the numbers around them: how many outlets ran each
+      story, what is new, and how each country compares with its own recent
+      volume. It has not opened a single article. So this describes the
+      coverage rather than the events, and it cannot tell you why something
+      happened or what it means. Use it to decide what to open.
+    </div>
     <div class="prose" id="brief-body"></div>
     <div class="provenance">
       <span id="prov-model"></span>
       <span id="prov-items"></span>
       <span id="prov-window"></span>
+      <span id="prov-basis"></span>
     </div>
   </div>
 
@@ -65,15 +75,18 @@
 </section>
 
 <div class="empty" id="no-brief" style="margin-top:2rem; display:none;">
-  No brief has been generated. The collector writes <code>brief.json</code> after it
-  finishes gathering. If the feeds ran but the brief did not, the model call failed
-  or was rate limited, and the run log in the Actions tab will say which.
+  No summary yet. It is written by <code>scripts/enrich.py</code> at the end of a
+  collection run, and only if an <code>OPENROUTER_API_KEY</code> secret is set on
+  the repository. If the feeds updated but this did not, open the most recent run
+  in the Actions tab and read the "Translate and summarise" step, which says
+  exactly what went wrong.
 </div>
 
 <section class="refs" id="refs-wrap" style="display:none;">
   <h2>References</h2>
-  <p class="col-note">Every item the model was given, in the order it received them.
-    If a claim above is not traceable to something here, it did not come from the feeds.</p>
+  <p class="col-note">Every item the model was given, numbered as it received
+    them, so a citation like [7] above points at item 7 here. If a claim is not
+    traceable to something in this list, it did not come from the feeds.</p>
   <div class="ref-filter">
     <input type="search" id="ref-q" placeholder="Filter references" aria-label="Filter references">
     <select id="ref-country" aria-label="Filter references by country">
@@ -85,10 +98,11 @@
 </section>
 
 <footer>
-  <p>The summary is generated text. It has not been checked by anyone, and a model
-  writing from headlines can misread what a headline meant. The reference list is
-  there so you can go to the reporting rather than take the summary on trust. Where
-  the feeds were thin, the summary will be thin, which is the intended behaviour.</p>
+  <p>Generated text, checked by nobody. A model working from headlines can
+  misread what a headline meant, and a headline can misrepresent its own
+  article. The reference list exists so you can go to the reporting rather
+  than take any of this on trust. Where the week's collection was thin, the
+  summary will be thin, which is intended.</p>
 </footer>
 
 <script src="shared.js"></script>
@@ -120,6 +134,11 @@
       if (href) { head.href = href; head.target = "_blank"; head.rel = "noopener noreferrer"; }
       body.appendChild(head);
 
+      if (ref.original_title) {
+        var orig = S.el("div", "ref-original", ref.original_title);
+        body.appendChild(orig);
+      }
+
       var meta = S.el("div", "ref-meta");
       if (ref.publisher) meta.appendChild(S.el("span", null, ref.publisher));
       meta.appendChild(S.el("span", null, S.relativeDate(ref.date)));
@@ -127,6 +146,10 @@
       if (Number(ref.corroboration) >= 2) {
         meta.appendChild(S.el("span", null, ref.corroboration + " outlets"));
       }
+      if (ref.stream && ref.stream !== "news") {
+        meta.appendChild(S.el("span", null, ref.stream));
+      }
+      if (ref.original_title) meta.appendChild(S.el("span", null, "translated"));
       body.appendChild(meta);
       li.appendChild(body);
       list.appendChild(li);
@@ -182,6 +205,8 @@
       (brief.items_used || (brief.references || []).length || 0) + " items given";
     document.getElementById("prov-window").textContent =
       "covering " + (brief.window_days || 7) + " days";
+    document.getElementById("prov-basis").textContent =
+      "basis  " + (brief.basis || "headlines");
 
     if (brief.context) {
       S.paragraphs(document.getElementById("context-body"), brief.context);

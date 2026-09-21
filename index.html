@@ -61,34 +61,13 @@
   </h1>
   <div class="status-block">
     <span class="pill" id="status-pill"><span class="lamp"></span><span id="status-text">Checking</span></span>
-    <div class="row">
-      <button class="linkish" id="refresh">Refresh now</button>
-      <button class="linkish" id="diag-toggle" aria-expanded="false">Diagnostics</button>
-    </div>
-    <div class="refresh-state" id="refresh-state"></div>
+    <button class="linkish" id="diag-toggle" aria-expanded="false">Diagnostics</button>
   </div>
 </header>
 
 <nav class="tabs"></nav>
 
-<div class="refresh-panel" id="refresh-panel">
-  <h2>Run a collection now</h2>
-  <p>GitHub will not let a public web page start a job on its own, so this
-  takes two clicks on GitHub itself. Leave this tab open while you do it and
-  it will notice the new data and reload by itself.</p>
-  <ol>
-    <li>Click the button below. GitHub opens in a new tab.</li>
-    <li>On that page click <strong>Run workflow</strong>, then the green
-      <strong>Run workflow</strong> button in the small panel that appears.</li>
-    <li>Come back here. Nothing else to do.</li>
-  </ol>
-  <div class="row">
-    <a class="btn" id="open-workflow" target="_blank" rel="noopener noreferrer">Open GitHub and run it</a>
-    <button class="btn quiet" id="refresh-cancel">Close</button>
-  </div>
-  <p class="note">Collection takes a minute or two, then GitHub republishes the
-  site, which takes another minute. Three or four minutes all up.</p>
-</div>
+
 
 <div class="alert" id="alert" role="status">
   <h2 id="alert-title"></h2>
@@ -116,49 +95,68 @@
 </div>
 
 <div class="filters" role="search">
-  <input type="search" id="q" placeholder="Search" aria-label="Search headlines">
-  <select id="tier" aria-label="Filter by tier">
-    <option value="">All countries</option>
-    <option value="1">Tier 1 only</option>
-    <option value="2">Tier 2 only</option>
-  </select>
-  <select id="country" aria-label="Filter by country">
-    <option value="">Any country</option>
-  </select>
-  <select id="days" aria-label="Timeframe">
-    <option value="7">Last 7 days</option>
-    <option value="14">Last 14 days</option>
-    <option value="0" selected>Everything held</option>
-  </select>
-  <span class="sep" aria-hidden="true"></span>
-  <span id="theme-chips" style="display:contents;"></span>
-  <span class="sep" aria-hidden="true"></span>
-  <span id="event-chips" style="display:contents;"></span>
-  <button class="linkish" id="reset" style="font-size:0.8rem;">Clear</button>
+  <div class="filter-group">
+    <label for="q">Search</label>
+    <input type="search" id="q" placeholder="Words in the headline" aria-label="Search headlines">
+  </div>
+  <div class="filter-group">
+    <label for="country">Country</label>
+    <select id="country"><option value="">All countries</option></select>
+  </div>
+  <div class="filter-group">
+    <label for="theme">Actor or topic</label>
+    <select id="theme"><option value="">All actors and topics</option></select>
+  </div>
+  <div class="filter-group">
+    <label for="event">Event type</label>
+    <select id="event"><option value="">All event types</option></select>
+  </div>
+  <div class="filter-group">
+    <label for="days">Period</label>
+    <select id="days">
+      <option value="7">Last 7 days</option>
+      <option value="14">Last 14 days</option>
+      <option value="0" selected>Everything held</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>&nbsp;</label>
+    <button class="btn quiet" id="reset">Clear</button>
+  </div>
   <span class="tally" id="tally"></span>
 </div>
 
 <main class="columns">
   <section class="col">
-    <h2>News</h2>
-    <p class="col-note">Wire services, regional outlets, local reporting.</p>
+    <header>
+      <h2>Analysis <span class="count" id="count-analysis"></span></h2>
+      <p class="col-note">Research institutes and specialist trackers.</p>
+    </header>
+    <ul class="stream" id="stream-analysis"></ul>
+  </section>
+
+  <section class="col">
+    <header>
+      <h2>News <span class="count" id="count-news"></span></h2>
+      <p class="col-note">Wire services, regional outlets, local reporting.</p>
+    </header>
     <ul class="stream" id="stream-news"></ul>
   </section>
+
   <section class="col">
-    <h2>Bluesky</h2>
-    <p class="col-note">Tracked accounts and terms.</p>
+    <header>
+      <h2>Bluesky <span class="count" id="count-social"></span></h2>
+      <p class="col-note">Tracked accounts and terms.</p>
+    </header>
     <ul class="stream" id="stream-social"></ul>
-  </section>
-  <section class="col">
-    <h2>Analysis</h2>
-    <p class="col-note">Research institutes and specialist trackers.</p>
-    <ul class="stream" id="stream-analysis"></ul>
   </section>
 </main>
 
 <section class="research">
-  <h2>Academic work</h2>
-  <p class="col-note">Recent papers. Slower cadence than everything above.</p>
+  <header>
+    <h2>Academic work <span class="count" id="count-research"></span></h2>
+    <p class="col-note">Recent papers from OpenAlex.</p>
+  </header>
   <ul class="stream" id="stream-research"></ul>
 </section>
 
@@ -169,17 +167,25 @@
   truth. Check diagnostics before concluding that a quiet week was quiet.</p>
 </footer>
 
+<div class="scrim" id="scrim" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2 id="sheet-title"></h2>
+      <button class="sheet-close" id="sheet-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</div>
+
 <script src="shared.js"></script>
 <script>
 (function () {
   "use strict";
   var S = window.SM;
 
+  var ORDER = ["analysis", "news", "social", "research"];
   var store = null;
-  var filters = {
-    query: "", tier: "", country: "", days: 0,
-    themes: new Set(), events: new Set()
-  };
+  var filters = { query: "", country: "", theme: "", event: "", days: 0 };
 
   // ---------- diagnostics ----------
 
@@ -240,36 +246,22 @@
 
   function passes(item) {
     if (filters.country && (item.countries || []).indexOf(filters.country) === -1) return false;
-
-    if (filters.tier) {
-      var wanted = Number(filters.tier);
-      var inTier = (item.countries || []).some(function (c) {
-        return Number(store.tiers[c]) === wanted;
-      });
-      if (!inTier) return false;
-    }
+    if (filters.theme && (item.themes || []).indexOf(filters.theme) === -1) return false;
+    if (filters.event && (item.events || []).indexOf(filters.event) === -1) return false;
 
     if (filters.days) {
       var age = S.hoursSince(item.date);
       if (age === null || age > filters.days * 24) return false;
     }
 
-    if (filters.themes.size) {
-      var themes = item.themes || [], themeHit = false;
-      filters.themes.forEach(function (t) { if (themes.indexOf(t) !== -1) themeHit = true; });
-      if (!themeHit) return false;
-    }
-
-    if (filters.events.size) {
-      var events = item.events || [], eventHit = false;
-      filters.events.forEach(function (e) { if (events.indexOf(e) !== -1) eventHit = true; });
-      if (!eventHit) return false;
-    }
-
     if (filters.query) {
-      var blob = ((item.title || "") + " " + (item.publisher || "") + " " +
-                  (item.summary || "")).toLowerCase();
-      if (blob.indexOf(filters.query) === -1) return false;
+      // Search the translation, the original, and everyone who carried it.
+      var parts = [item.title, item.title_en, item.summary, item.summary_en,
+                   item.publisher];
+      (item.also || []).forEach(function (o) {
+        parts.push(o.title); parts.push(o.publisher);
+      });
+      if (parts.join(" ").toLowerCase().indexOf(filters.query) === -1) return false;
     }
     return true;
   }
@@ -277,9 +269,9 @@
   function emptyState(key) {
     var box = S.el("div", "empty");
     if (!store.streams[key].length) {
-      box.appendChild(document.createTextNode("Nothing collected. Waiting on "));
-      box.appendChild(S.el("code", null, key + ".json"));
-      box.appendChild(document.createTextNode("."));
+      box.textContent = key === "social"
+        ? "Bluesky collection is not set up yet."
+        : "Nothing collected yet. Run the collection in GitHub.";
     } else {
       box.textContent = "Nothing here matches the current filters.";
     }
@@ -288,13 +280,26 @@
 
   function render() {
     var shown = 0, held = 0;
-    S.STREAMS.forEach(function (key) {
+    ORDER.forEach(function (key) {
       var list = document.getElementById("stream-" + key);
       list.textContent = "";
       var items = store.streams[key].filter(passes);
       held += store.streams[key].length;
       shown += items.length;
-      if (!items.length) { list.appendChild(emptyState(key)); return; }
+
+      var counter = document.getElementById("count-" + key);
+      if (counter) {
+        counter.textContent = items.length === store.streams[key].length
+          ? String(items.length)
+          : items.length + " of " + store.streams[key].length;
+      }
+
+      if (!items.length) {
+        var li = S.el("li");
+        li.appendChild(emptyState(key));
+        list.appendChild(li);
+        return;
+      }
       var frag = document.createDocumentFragment();
       items.forEach(function (it) { frag.appendChild(S.buildEntry(it, store.themes)); });
       list.appendChild(frag);
@@ -305,62 +310,12 @@
 
   // ---------- controls ----------
 
-  function toggleChip(btn, set, value, colour) {
-    if (set.has(value)) {
-      set.delete(value);
-      btn.setAttribute("aria-pressed", "false");
-      btn.style.background = "transparent";
-      btn.style.color = colour || "";
-      btn.style.borderColor = "";
-    } else {
-      set.add(value);
-      btn.setAttribute("aria-pressed", "true");
-      btn.style.background = colour || "var(--ink-2)";
-      btn.style.color = "var(--bg)";
-      btn.style.borderColor = colour || "var(--ink-2)";
-    }
-    render();
-  }
-
-  function buildThemeChips() {
-    var host = document.getElementById("theme-chips");
-    host.textContent = "";
-    Object.keys(store.themes).forEach(function (name) {
-      var colour = store.themes[name];
-      var chip = S.el("button", "chip");
-      chip.type = "button";
-      chip.setAttribute("aria-pressed", "false");
-      chip.style.color = colour;
-      chip.appendChild(S.el("span", "dot"));
-      chip.appendChild(document.createTextNode(name));
-      chip.addEventListener("click", function () {
-        toggleChip(chip, filters.themes, name, colour);
-      });
-      host.appendChild(chip);
-    });
-  }
-
-  function buildEventChips() {
-    var host = document.getElementById("event-chips");
-    host.textContent = "";
-    store.events.forEach(function (name) {
-      var chip = S.el("button", "chip", name);
-      chip.type = "button";
-      chip.setAttribute("aria-pressed", "false");
-      chip.addEventListener("click", function () {
-        toggleChip(chip, filters.events, name, null);
-      });
-      host.appendChild(chip);
-    });
-  }
-
-  function buildCountryList() {
-    var select = document.getElementById("country");
+  function fill(selectId, values, labeller) {
+    var select = document.getElementById(selectId);
     while (select.options.length > 1) select.remove(1);
-    store.countries.forEach(function (c) {
-      var o = S.el("option", null,
-        c + (store.tiers[c] ? "  (T" + store.tiers[c] + ")" : ""));
-      o.value = c;
+    values.forEach(function (v) {
+      var o = S.el("option", null, labeller ? labeller(v) : v);
+      o.value = v;
       select.appendChild(o);
     });
   }
@@ -375,25 +330,21 @@
       }, 150);
     });
 
-    document.getElementById("tier").addEventListener("change", function () {
-      filters.tier = this.value; render();
-    });
-    document.getElementById("country").addEventListener("change", function () {
-      filters.country = this.value; render();
-    });
-    document.getElementById("days").addEventListener("change", function () {
-      filters.days = Number(this.value); render();
+    [["country", "country"], ["theme", "theme"],
+     ["event", "event"], ["days", "days"]].forEach(function (pair) {
+      document.getElementById(pair[0]).addEventListener("change", function () {
+        filters[pair[1]] = pair[1] === "days" ? Number(this.value) : this.value;
+        render();
+      });
     });
 
     document.getElementById("reset").addEventListener("click", function () {
-      filters = { query: "", tier: "", country: "", days: 0,
-                  themes: new Set(), events: new Set() };
+      filters = { query: "", country: "", theme: "", event: "", days: 0 };
       search.value = "";
-      document.getElementById("tier").value = "";
-      document.getElementById("country").value = "";
+      ["country", "theme", "event"].forEach(function (id) {
+        document.getElementById(id).value = "";
+      });
       document.getElementById("days").value = "0";
-      buildThemeChips();
-      buildEventChips();
       render();
     });
 
@@ -402,76 +353,15 @@
       this.setAttribute("aria-expanded", String(open));
       this.textContent = open ? "Hide diagnostics" : "Diagnostics";
     });
-
-    wireRefresh();
-  }
-
-  // ---------- refresh on demand ----------
-  //
-  // No credentials anywhere. The link opens GitHub, and meanwhile this page
-  // watches its own data file and reloads when the timestamp moves.
-
-  var watching = false;
-
-  function say(text, kind) {
-    var box = document.getElementById("refresh-state");
-    box.textContent = "";
-    box.className = "refresh-state" + (kind ? " " + kind : "");
-    if (kind === "working") box.appendChild(S.el("span", "spin"));
-    if (text) box.appendChild(S.el("span", null, text));
-  }
-
-  function showPanel(show) {
-    document.getElementById("refresh-panel").classList.toggle("on", show);
-  }
-
-  function startWatching() {
-    if (watching) return;
-    watching = true;
-    var known = store && store.meta && store.meta.generated;
-    say("Watching for new data", "working");
-
-    S.watchForUpdate(known, function (minutes) {
-      say("Watching for new data, " + minutes + " min", "working");
-    }, 900).then(function () {
-      say("New data is live. Reloading.", "good");
-      window.setTimeout(function () { window.location.reload(); }, 800);
-    }).catch(function (err) {
-      say(err.message || String(err), "bad");
-      watching = false;
-    });
-  }
-
-  function wireRefresh() {
-    var link = document.getElementById("open-workflow");
-    var url = S.workflowUrl();
-    if (url) {
-      link.href = url;
-    } else {
-      link.href = "#";
-      link.textContent = "Cannot work out the repository address";
-    }
-
-    document.getElementById("refresh").addEventListener("click", function () {
-      showPanel(!document.getElementById("refresh-panel").classList.contains("on"));
-    });
-
-    link.addEventListener("click", function () {
-      showPanel(false);
-      startWatching();
-    });
-
-    document.getElementById("refresh-cancel").addEventListener("click", function () {
-      showPanel(false);
-    });
   }
 
   // ---------- go ----------
 
   S.buildNav("index.html");
+  S.wireSheet();
   wire();
-  S.STREAMS.forEach(function (k) {
-    S.skeletons(document.getElementById("stream-" + k), 4);
+  ORDER.forEach(function (k) {
+    S.skeletons(document.getElementById("stream-" + k), 3);
   });
 
   S.loadAll().then(function (data) {
@@ -479,9 +369,9 @@
     S.assessFreshness(data.meta);
     renderHealth();
     renderCoverage();
-    buildThemeChips();
-    buildEventChips();
-    buildCountryList();
+    fill("country", data.countries);
+    fill("theme", Object.keys(data.themes));
+    fill("event", data.events);
     render();
   });
 })();
