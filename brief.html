@@ -143,6 +143,9 @@
       if (ref.publisher) meta.appendChild(S.el("span", null, ref.publisher));
       meta.appendChild(S.el("span", null, S.relativeDate(ref.date)));
       (ref.countries || []).forEach(function (c) { meta.appendChild(S.el("span", null, c)); });
+      (ref.actors || []).slice(0, 2).forEach(function (a) {
+        meta.appendChild(S.el("span", null, a));
+      });
       if (Number(ref.corroboration) >= 2) {
         meta.appendChild(S.el("span", null, ref.corroboration + " outlets"));
       }

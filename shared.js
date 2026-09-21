@@ -202,10 +202,16 @@
           return String(b.date || "").localeCompare(String(a.date || ""));
         });
 
-        var themes = {};
+        // One palette covering both taxonomies, so any label can be coloured.
+        var palette = {}, actors = {}, topics = {};
         if (meta) {
-          Object.keys(meta.themes || {}).forEach(function (n) {
-            themes[n] = (meta.themes[n] || {}).colour || "#888";
+          Object.keys(meta.actors || {}).forEach(function (n) {
+            actors[n] = (meta.actors[n] || {}).colour || "#888";
+            palette[n] = actors[n];
+          });
+          Object.keys(meta.topics || {}).forEach(function (n) {
+            topics[n] = (meta.topics[n] || {}).colour || "#888";
+            palette[n] = topics[n];
           });
         }
 
@@ -215,7 +221,9 @@
           streams: streams,
           all: everything,
           health: health,
-          themes: themes,
+          palette: palette,
+          actors: actors,
+          topics: topics,
           tiers: (meta && meta.tiers) || {},
           events: (meta && meta.events) || [],
           coverage: (meta && meta.coverage) || [],
@@ -257,14 +265,22 @@
     return wrap.childNodes.length ? wrap : null;
   }
 
-  function buildEntry(item, themes) {
+  // Colour comes from the actor where there is one, because who is involved
+  // is the faster read. Topic is the fallback.
+  function accentFor(item, palette) {
+    var actor = (item.actors || [])[0];
+    var topic = (item.topics || [])[0];
+    return (actor && palette[actor]) || (topic && palette[topic]) || null;
+  }
+
+  function buildEntry(item, palette) {
     var li = el("li");
     var card = el("button", "card");
     card.type = "button";
 
     var accent = el("span", "card-accent");
-    var first = (item.themes || [])[0];
-    if (first && themes && themes[first]) accent.style.background = themes[first];
+    var colour = accentFor(item, palette || {});
+    if (colour) accent.style.background = colour;
     card.appendChild(accent);
 
     card.appendChild(el("p", "card-title", displayTitle(item)));
@@ -286,7 +302,7 @@
     });
     card.appendChild(meta);
 
-    card.addEventListener("click", function () { openSheet(item, themes); });
+    card.addEventListener("click", function () { openSheet(item, palette); });
     li.appendChild(card);
     return li;
   }
@@ -313,7 +329,7 @@
     return box;
   }
 
-  function openSheet(item, themes) {
+  function openSheet(item, palette) {
     var scrim = document.getElementById("scrim");
     if (!scrim) return;
     lastFocused = document.activeElement;
@@ -336,6 +352,15 @@
         "Machine translated. The original is shown so you can check it."));
     }
 
+    if (item.ai_summary) {
+      var note = section("Summary");
+      note.appendChild(el("p", "sheet-blurb", item.ai_summary));
+      note.appendChild(el("p", "sheet-note",
+        "Written by a model from " + (item.ai_basis || "the headline") +
+        ". No article was read, so treat this as a pointer towards the "
+        + "reporting rather than a substitute for it."));
+    }
+
     var blurb = displayBlurb(item);
     if (blurb) {
       section("From the feed").appendChild(el("p", "sheet-blurb", blurb));
@@ -348,7 +373,8 @@
      ["Independent outlets", String(item.corroboration || 1)],
      ["Story", item.thread === "developing" ? "Continuing" : "First seen this run"],
      ["Places", (item.countries || []).join(", ")],
-     ["Themes", (item.themes || []).join(", ")],
+     ["Actors", (item.actors || []).join(", ")],
+     ["Topics", (item.topics || []).join(", ")],
      ["Event type", (item.events || []).join(", ")],
      ["Feed", item.feed]].forEach(function (pair) {
       var f = fact(pair[0], pair[1]);

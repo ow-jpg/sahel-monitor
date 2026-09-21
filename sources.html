@@ -70,10 +70,18 @@
   </section>
 
   <section class="block">
-    <h2>Themes</h2>
-    <p class="block-note">Colour coded across the site and used as the filter
-      buttons. An item can carry several, or none.</p>
-    <div id="themes"></div>
+    <h2>Actors</h2>
+    <p class="block-note">Who an item is about. Colour coded across the site,
+      and its own filter. An item can carry several, or none.</p>
+    <div id="actors"></div>
+  </section>
+
+  <section class="block">
+    <h2>Topics</h2>
+    <p class="block-note">What an item is about, kept separate from actors so
+      the two can be combined. Asking for Russia and diplomacy is a different
+      question from asking for Russia and armed violence.</p>
+    <div id="topics"></div>
   </section>
 
   <section class="block">
@@ -223,9 +231,9 @@
     });
   }
 
-  function renderThemes(data) {
-    var host = document.getElementById("themes");
-    (data.themes || []).forEach(function (t) {
+  function renderTaxonomy(hostId, rows) {
+    var host = document.getElementById(hostId);
+    (rows || []).forEach(function (t) {
       var row = S.el("div", "def-row");
       var head = S.el("div", "def-head");
       var dot = S.el("span", "swatch");
@@ -336,7 +344,8 @@
       renderFeeds(data);
       renderResearch(data);
       renderCountries(data);
-      renderThemes(data);
+      renderTaxonomy("actors", data.actors);
+      renderTaxonomy("topics", data.topics);
       renderEvents(data);
       renderDiscounts(data);
     });

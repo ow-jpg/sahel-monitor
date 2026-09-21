@@ -288,8 +288,23 @@ input[type="search"], input[type="text"], input[type="password"], select, textar
   border: 1px solid var(--line); border-radius: 3px;
 }
 textarea { line-height: 1.5; resize: vertical; }
-.filters input[type="search"] { min-width: 12rem; flex: 1 1 12rem; max-width: 20rem; font-size: 0.82rem; }
-.filters select { font-size: 0.82rem; padding: 0.3rem 0.55rem; }
+/* The inputs sit inside .filter-group, which is a COLUMN flex container, so
+   any flex shorthand here would size their height rather than their width.
+   That is what made the search box enormous. Size them by width only. */
+.filters input[type="search"],
+.filters select {
+  flex: 0 0 auto;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.55rem;
+  height: 2rem;
+}
+.filters input[type="search"] { width: 13rem; }
+.filters select { width: 11rem; }
+.filters .btn { height: 2rem; padding: 0 0.9rem; }
+@media (max-width: 640px) {
+  .filter-group { flex: 1 1 100%; }
+  .filters input[type="search"], .filters select { width: 100%; }
+}
 .tally { margin-left: auto; font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3); }
 
 /* ---------- filters ---------- */
@@ -299,7 +314,7 @@ textarea { line-height: 1.5; resize: vertical; }
   font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.04em;
   color: var(--ink-3); padding-left: 0.1rem;
 }
-.filters select { min-width: 9.5rem; }
+
 
 /* ---------- streams ---------- */
 

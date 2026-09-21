@@ -104,8 +104,12 @@
     <select id="country"><option value="">All countries</option></select>
   </div>
   <div class="filter-group">
-    <label for="theme">Actor or topic</label>
-    <select id="theme"><option value="">All actors and topics</option></select>
+    <label for="actor">Actor</label>
+    <select id="actor"><option value="">All actors</option></select>
+  </div>
+  <div class="filter-group">
+    <label for="topic">Topic</label>
+    <select id="topic"><option value="">All topics</option></select>
   </div>
   <div class="filter-group">
     <label for="event">Event type</label>
@@ -185,7 +189,7 @@
 
   var ORDER = ["analysis", "news", "social", "research"];
   var store = null;
-  var filters = { query: "", country: "", theme: "", event: "", days: 0 };
+  var filters = { query: "", country: "", actor: "", topic: "", event: "", days: 0 };
 
   // ---------- diagnostics ----------
 
@@ -246,7 +250,8 @@
 
   function passes(item) {
     if (filters.country && (item.countries || []).indexOf(filters.country) === -1) return false;
-    if (filters.theme && (item.themes || []).indexOf(filters.theme) === -1) return false;
+    if (filters.actor && (item.actors || []).indexOf(filters.actor) === -1) return false;
+    if (filters.topic && (item.topics || []).indexOf(filters.topic) === -1) return false;
     if (filters.event && (item.events || []).indexOf(filters.event) === -1) return false;
 
     if (filters.days) {
@@ -257,7 +262,7 @@
     if (filters.query) {
       // Search the translation, the original, and everyone who carried it.
       var parts = [item.title, item.title_en, item.summary, item.summary_en,
-                   item.publisher];
+                   item.publisher, item.ai_summary];
       (item.also || []).forEach(function (o) {
         parts.push(o.title); parts.push(o.publisher);
       });
@@ -301,7 +306,7 @@
         return;
       }
       var frag = document.createDocumentFragment();
-      items.forEach(function (it) { frag.appendChild(S.buildEntry(it, store.themes)); });
+      items.forEach(function (it) { frag.appendChild(S.buildEntry(it, store.palette)); });
       list.appendChild(frag);
     });
     document.getElementById("tally").textContent =
@@ -330,7 +335,7 @@
       }, 150);
     });
 
-    [["country", "country"], ["theme", "theme"],
+    [["country", "country"], ["actor", "actor"], ["topic", "topic"],
      ["event", "event"], ["days", "days"]].forEach(function (pair) {
       document.getElementById(pair[0]).addEventListener("change", function () {
         filters[pair[1]] = pair[1] === "days" ? Number(this.value) : this.value;
@@ -339,9 +344,9 @@
     });
 
     document.getElementById("reset").addEventListener("click", function () {
-      filters = { query: "", country: "", theme: "", event: "", days: 0 };
+      filters = { query: "", country: "", actor: "", topic: "", event: "", days: 0 };
       search.value = "";
-      ["country", "theme", "event"].forEach(function (id) {
+      ["country", "actor", "topic", "event"].forEach(function (id) {
         document.getElementById(id).value = "";
       });
       document.getElementById("days").value = "0";
@@ -370,7 +375,8 @@
     renderHealth();
     renderCoverage();
     fill("country", data.countries);
-    fill("theme", Object.keys(data.themes));
+    fill("actor", Object.keys(data.actors));
+    fill("topic", Object.keys(data.topics));
     fill("event", data.events);
     render();
   });
