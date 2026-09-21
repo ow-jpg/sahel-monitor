@@ -43,7 +43,12 @@ ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 
 # Change these if a model is retired. openrouter/free is a router that picks
 # from whatever free models exist at the time, so it should never go stale.
-MODEL = "z-ai/glm-5.2:free"
+#
+# Prefer a non-reasoning model here. A reasoning model spends its token
+# budget thinking before it answers, which for structured output means the
+# JSON arrives truncated or the content field comes back empty. GLM 5.2 was
+# the first choice and failed exactly that way.
+MODEL = "xiaomi/mimo-v2-flash:free"
 FALLBACKS = ["openrouter/free"]
 
 STREAMS = ("news", "analysis", "social")
@@ -59,25 +64,91 @@ TIMEOUT = 180
 # model access
 # ---------------------------------------------------------------------------
 
-def call_model(messages: list[dict], max_tokens: int = 1600,
-               temperature: float = 0.2) -> str:
+def call_model(messages: list[dict], max_tokens: int = 2400,
+               temperature: float = 0.2, model: str | None = None) -> str:
+    """One request to OpenRouter, returning the text the model produced.
+
+    Two defences against reasoning models, which otherwise break structured
+    output. First, reasoning is switched off where the provider supports it,
+    because thinking tokens eat the budget and leave the answer truncated.
+    Second, if the content field is empty but a reasoning field is not, the
+    answer is dug out of the reasoning text, which is where some providers
+    put it when they run out of room.
+    """
     key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    chosen = model or MODEL
+    body = {
+        "model": chosen,
+        "models": [chosen] + [m for m in FALLBACKS if m != chosen],
+        "messages": messages,
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+        # Ignored by models that do not reason. Harmless where unsupported.
+        "reasoning": {"enabled": False, "exclude": True},
+    }
     response = requests.post(
         ENDPOINT,
         headers={"Authorization": f"Bearer {key}",
                  "Content-Type": "application/json",
                  "X-Title": "Sahel Monitor"},
-        json={"model": MODEL,
-              "models": [MODEL] + FALLBACKS,
-              "messages": messages,
-              "max_tokens": max_tokens,
-              "temperature": temperature},
-        timeout=TIMEOUT,
-    )
+        json=body, timeout=TIMEOUT)
     response.raise_for_status()
     data = response.json()
+
+    if data.get("error"):
+        raise RuntimeError(str(data["error"])[:200])
+
     choice = (data.get("choices") or [{}])[0]
-    return ((choice.get("message") or {}).get("content") or "").strip()
+    message = choice.get("message") or {}
+    text = (message.get("content") or "").strip()
+
+    if not text:
+        # Some providers return everything under reasoning when the budget
+        # is tight. Better to salvage it than to report nothing.
+        text = (message.get("reasoning") or "").strip()
+
+    if not text:
+        reason = choice.get("finish_reason") or "unknown"
+        served = data.get("model") or chosen
+        raise RuntimeError(
+            f"empty response from {served} (finish_reason={reason})")
+
+    return strip_thinking(text)
+
+
+def strip_thinking(text: str) -> str:
+    """Remove the visible think blocks some models emit around their answer."""
+    text = re.sub(r"<think>.*?</think>", " ", text, flags=re.S | re.I)
+    text = re.sub(r"<thinking>.*?</thinking>", " ", text, flags=re.S | re.I)
+    text = re.sub(r"^\s*(?:<\|?channel\|?>|<\|start\|>)[^\n]*\n", "", text)
+    return text.strip()
+
+
+def call_for_json(messages: list[dict], max_tokens: int, label: str):
+    """Ask for JSON, and try the fallback model once if the reply is unusable.
+
+    A model that cannot produce clean JSON on the first attempt usually
+    cannot on the second either, so the retry switches model rather than
+    simply asking again.
+    """
+    attempts = [(MODEL, max_tokens)] + [(m, max_tokens) for m in FALLBACKS]
+    last = None
+    for model, budget in attempts:
+        try:
+            raw = call_model(messages, max_tokens=budget,
+                             temperature=0.0, model=model)
+        except Exception as exc:  # noqa: BLE001
+            last = f"{type(exc).__name__}: {exc}"
+            print(f"  {label}: {model} errored, {last}")
+            continue
+        parsed = parse_json_block(raw)
+        if parsed is not None:
+            return parsed
+        preview = re.sub(r"\s+", " ", raw)[:160]
+        print(f"  {label}: {model} returned unparseable output: {preview!r}")
+    if last:
+        print(f"  {label}: giving up, last error {last}")
+    return None
 
 
 def flatten(text: str, limit: int = 240) -> str:
@@ -143,13 +214,12 @@ def translate_stream(items: list[dict]) -> int:
                     "blurb": flatten(item.get("summary"), 300)}
                    for idx, item in enumerate(batch)]
         try:
-            raw = call_model(
+            parsed = call_for_json(
                 [{"role": "system", "content": TRANSLATE_SYSTEM},
                  {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
-                max_tokens=3000, temperature=0.0)
-            parsed = parse_json_block(raw)
+                max_tokens=4000, label="translation")
             if not isinstance(parsed, list):
-                print(f"  translation batch returned no usable JSON, skipping {len(batch)} items")
+                print(f"  translation: skipping {len(batch)} items")
                 continue
             by_id = {}
             for row in parsed:
@@ -308,13 +378,12 @@ def summarise_items(items: list[dict]) -> int:
                 ],
             })
         try:
-            raw = call_model(
+            parsed = call_for_json(
                 [{"role": "system", "content": SUMMARY_SYSTEM},
                  {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
-                max_tokens=1400, temperature=0.15)
-            parsed = parse_json_block(raw)
+                max_tokens=2500, label="summaries")
             if not isinstance(parsed, list):
-                print(f"  summary batch returned no usable JSON, skipping {len(batch)}")
+                print(f"  summaries: skipping {len(batch)}")
                 continue
             by_id = {}
             for row in parsed:
@@ -426,21 +495,24 @@ def build_brief(items: list[dict], coverage: list[dict], now: datetime) -> dict 
                    "there is not yet enough history to tell.\n</coverage_anomalies>\n\n")
     prompt += "Write the summary."
 
-    try:
-        text = call_model([{"role": "system", "content": BRIEF_SYSTEM},
-                           {"role": "user", "content": prompt}],
-                          max_tokens=1800, temperature=0.25)
-    except Exception as exc:  # noqa: BLE001
-        print(f"  brief failed: {type(exc).__name__}: {exc}")
-        return None
-
+    text = ""
+    for model in [MODEL] + FALLBACKS:
+        try:
+            text = call_model([{"role": "system", "content": BRIEF_SYSTEM},
+                               {"role": "user", "content": prompt}],
+                              max_tokens=3000, temperature=0.25, model=model)
+            if text:
+                break
+        except Exception as exc:  # noqa: BLE001
+            print(f"  brief: {model} failed, {type(exc).__name__}: {exc}")
     if not text:
-        print("  model returned nothing for the brief")
+        print("  brief: every model failed")
         return None
 
     return {
         "generated": now.isoformat(),
         "model": MODEL,
+        "generated_by": "openrouter",
         "items_used": len(items),
         "window_days": BRIEF_DAYS,
         "basis": "headlines",
