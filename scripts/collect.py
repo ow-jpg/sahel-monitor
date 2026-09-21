@@ -165,7 +165,8 @@ class Classifier:
     def __init__(self, config: dict):
         self.countries = config.get("countries", {}) or {}
         self.traps = config.get("country_traps", {}) or {}
-        self.themes = config.get("themes", {}) or {}
+        self.actors = config.get("actors", {}) or {}
+        self.topics = config.get("topics", {}) or {}
         self.events = config.get("events", {}) or {}
         self.exclude = [normalise(x) for x in (config.get("exclude", []) or [])]
         self.agencies = [normalise(a) for a in (config.get("agencies", []) or [])]
@@ -253,7 +254,8 @@ def collect(sources: list[dict], classifier: Classifier,
                 "date": published.isoformat() if published else None,
                 "summary": summary[:300],
                 "countries": countries,
-                "themes": classifier.match(blob, classifier.themes),
+                "actors": classifier.match(blob, classifier.actors),
+                "topics": classifier.match(blob, classifier.topics),
                 "events": classifier.match(blob, classifier.events),
             })
             kept += 1
@@ -271,20 +273,75 @@ def collect(sources: list[dict], classifier: Classifier,
 # republishing one agency wire is not, so agency copy counts once.
 # ---------------------------------------------------------------------------
 
-def cluster(items: list[dict], threshold: float = 0.52) -> list[list[dict]]:
+def same_story(a: frozenset, b: frozenset, frequency: dict, ceiling: int) -> bool:
+    """Decide whether two headlines are telling the same story.
+
+    Plain word overlap is too blunt. "JNIM claims ambush on army convoy near
+    Djibo" and "Militants ambush army convoy close to Djibo" share only four
+    words out of nine, which no sensible Jaccard threshold catches, yet they
+    are obviously the same event.
+
+    What they do share is the words that are rare in this batch. Common ones
+    like army, attack or Mali appear everywhere and carry no information, so
+    requiring rare shared words stops unrelated Malian attacks being merged
+    while still catching genuine retellings.
+    """
+    shared = a & b
+    if len(shared) < 3:
+        return False
+    if len(shared) / len(a | b) > 0.5:
+        return True
+    if len(shared) / min(len(a), len(b)) < 0.6:
+        return False
+    distinctive = sum(1 for w in shared if frequency.get(w, 0) <= ceiling)
+    return distinctive >= 2
+
+
+def compatible(a: dict, b: dict, max_days: int = 4) -> bool:
+    """Two reports of one event happen in the same place at the same time.
+
+    A cheap guard against merging on wording alone. Formulaic headlines can
+    look alike across quite different stories, and without this a run of
+    similarly phrased items collapses into one.
+    """
+    ca, cb = set(a.get("countries") or []), set(b.get("countries") or [])
+    if ca and cb and not (ca & cb):
+        return False
+    da, db = a.get("date"), b.get("date")
+    if da and db:
+        try:
+            gap = abs((datetime.fromisoformat(da) - datetime.fromisoformat(db)).days)
+            if gap > max_days:
+                return False
+        except ValueError:
+            pass
+    return True
+
+
+def cluster(items: list[dict]) -> list[list[dict]]:
     """Group retellings of the same story.
 
-    Compares against every member of a cluster rather than only the first one,
+    Compares against every member of a cluster rather than only the first,
     because a reworded headline often resembles a later member more closely
     than the one that opened the cluster.
     """
+    prints = [fingerprint(i["title"]) for i in items]
+
+    frequency: dict[str, int] = defaultdict(int)
+    for fp in prints:
+        for word in fp:
+            frequency[word] += 1
+    ceiling = max(8, int(len(prints) * 0.08)) if prints else 8
+
     clusters: list[tuple[list[frozenset], list[dict]]] = []
-    for item in items:
-        fp = fingerprint(item["title"])
+    for item, fp in zip(items, prints):
         placed = False
-        for prints, members in clusters:
-            if any(similarity(fp, p) > threshold for p in prints):
-                prints.append(fp)
+        for existing, members in clusters:
+            hit = any(
+                same_story(fp, other, frequency, ceiling) and compatible(item, mate)
+                for other, mate in zip(existing, members))
+            if hit:
+                existing.append(fp)
                 members.append(item)
                 placed = True
                 break
@@ -394,7 +451,8 @@ def update_archive(archive: dict[str, dict], items: list[dict],
             "first_seen": now.isoformat(),
             "last_seen": now.isoformat(),
             "countries": item["countries"],
-            "themes": item["themes"],
+            "actors": item["actors"],
+            "topics": item["topics"],
             "events": item["events"],
             "corroboration": item.get("corroboration", 1),
             "fingerprint": item.get("fingerprint", []),
@@ -523,7 +581,7 @@ def fetch_research(queries: list[str], limit: int) -> tuple[list[dict], list[dic
                     "lang": work.get("language") or "en",
                     "date": work.get("publication_date"),
                     "summary": ", ".join(a for a in authors if a),
-                    "countries": [], "themes": [], "events": [],
+                    "countries": [], "actors": [], "topics": [], "events": [],
                     "corroboration": 1,
                     "thread": "new",
                 })
@@ -632,7 +690,8 @@ def write_sources(config: dict, health: list[dict], now: datetime) -> None:
             for name, spec in (config.get("countries", {}) or {}).items()
         ],
         "country_traps": config.get("country_traps", {}) or {},
-        "themes": terms_of(config.get("themes", {}), "colour"),
+        "actors": terms_of(config.get("actors", {}), "colour"),
+        "topics": terms_of(config.get("topics", {}), "colour"),
         "events": terms_of(config.get("events", {})),
         "exclude": config.get("exclude", []) or [],
         "agencies": config.get("agencies", []) or [],
@@ -696,8 +755,10 @@ def main() -> int:
         "window_days": window,
         "countries": list(countries_cfg.keys()),
         "tiers": {name: spec.get("tier", 2) for name, spec in countries_cfg.items()},
-        "themes": {name: {"colour": spec.get("colour", "#888888")}
-                   for name, spec in (config.get("themes", {}) or {}).items()},
+        "actors": {name: {"colour": spec.get("colour", "#888888")}
+                   for name, spec in (config.get("actors", {}) or {}).items()},
+        "topics": {name: {"colour": spec.get("colour", "#888888")}
+                   for name, spec in (config.get("topics", {}) or {}).items()},
         "events": list((config.get("events", {}) or {}).keys()),
         "coverage": coverage_rows,
     }
