@@ -558,6 +558,75 @@ def write_stream(name: str, items: list[dict], health: list[dict],
     print(f"  {name}.json  {len(items)} items")
 
 
+def write_sources(config: dict, health: list[dict], now: datetime) -> None:
+    """Publish what the collector is configured to look at.
+
+    Generated from sources.yml on every run, so the page can never drift out
+    of date with what is actually being collected.
+    """
+    by_name = {h["name"]: h for h in health}
+
+    def describe(feeds: list[dict]) -> list[dict]:
+        rows = []
+        for feed in feeds or []:
+            status = by_name.get(feed["name"], {})
+            rows.append({
+                "name": feed["name"],
+                "lang": feed.get("lang", "en"),
+                "url": feed["url"],
+                "kind": "search" if "news.google.com" in feed["url"] else "direct",
+                "ok": status.get("ok"),
+                "fetched": status.get("fetched", 0),
+                "kept": status.get("kept", 0),
+                "dry_runs": status.get("dry_runs", 0),
+                "error": status.get("error"),
+            })
+        return rows
+
+    def terms_of(table: dict, extra: str | None = None) -> list[dict]:
+        rows = []
+        for name, spec in (table or {}).items():
+            row = {"name": name, "terms": spec.get("terms", [])}
+            if extra:
+                row[extra] = spec.get(extra)
+            rows.append(row)
+        return rows
+
+    payload = {
+        "generated": now.isoformat(),
+        "settings": config.get("settings", {}),
+        "streams": [
+            {"stream": "news", "label": "News",
+             "note": "Wire services, regional outlets and local reporting.",
+             "sources": describe(config.get("news", []))},
+            {"stream": "analysis", "label": "Analysis",
+             "note": "Research institutes and specialist trackers.",
+             "sources": describe(config.get("analysis", []))},
+        ],
+        "research_queries": [
+            {"query": q,
+             "ok": by_name.get(f"OpenAlex: {q}", {}).get("ok"),
+             "kept": by_name.get(f"OpenAlex: {q}", {}).get("kept", 0)}
+            for q in config.get("research_queries", []) or []
+        ],
+        "countries": [
+            {"name": name, "tier": spec.get("tier", 2), "terms": spec.get("terms", [])}
+            for name, spec in (config.get("countries", {}) or {}).items()
+        ],
+        "country_traps": config.get("country_traps", {}) or {},
+        "themes": terms_of(config.get("themes", {}), "colour"),
+        "events": terms_of(config.get("events", {})),
+        "exclude": config.get("exclude", []) or [],
+        "agencies": config.get("agencies", []) or [],
+        "aggregators": config.get("aggregators", []) or [],
+    }
+    (ROOT / "sources.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    counted = sum(len(s["sources"]) for s in payload["streams"])
+    print(f"  sources.json  {counted} feeds, "
+          f"{len(payload['research_queries'])} research queries")
+
+
 def main() -> int:
     config = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
     settings = config.get("settings", {}) or {}
@@ -618,6 +687,7 @@ def main() -> int:
     write_stream("news", news, news_health, meta)
     write_stream("analysis", analysis, analysis_health, meta)
     write_stream("research", research, research_health, meta)
+    write_sources(config, all_health, now)
 
     save_archive(archive)
     STATE_PATH.write_text(json.dumps(state, indent=1), encoding="utf-8")
