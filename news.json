@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T22:14:37.115724+00:00",
+ "generated": "2026-09-21T01:58:42.439464+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,7 +61,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 102,
+   "recent": 103,
    "baseline": 0.0
   },
   {
@@ -71,12 +71,12 @@
   },
   {
    "country": "Niger",
-   "recent": 117,
+   "recent": 118,
    "baseline": 0.0
   },
   {
    "country": "Nigeria",
-   "recent": 88,
+   "recent": 90,
    "baseline": 0.0
   },
   {
@@ -106,7 +106,7 @@
   },
   {
    "country": "Ghana",
-   "recent": 59,
+   "recent": 60,
    "baseline": 0.0
   },
   {
@@ -116,16 +116,72 @@
   },
   {
    "country": "Benin",
-   "recent": 29,
+   "recent": 31,
    "baseline": 0.0
   },
   {
    "country": "Regional",
-   "recent": 120,
+   "recent": 122,
    "baseline": 0.0
   }
  ],
  "items": [
+  {
+   "id": "a41cda18934252e1",
+   "title": "The Sahel and the UN: a smaller footprint, a different role",
+   "link": "https://www.aljazeera.com/news/2026/9/21/the-sahel-and-the-un-a-smaller-footprint-a-different-role?traffic_source=rss",
+   "publisher": "Al Jazeera",
+   "feed": "Al Jazeera",
+   "lang": "en",
+   "date": "2026-09-21T00:53:15+00:00",
+   "summary": "As UNGA 81 begins, the UN faces a changing Sahel demanding greater sovereignty.",
+   "countries": [
+    "Regional"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "6707a3757cf4e08b",
+   "title": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNOFd1Z1c0U0JXMlR4M1Q0MF9ZQTU3WjlFUVVrUy1teGdWelN6eEp6VmJ0aUpkZVo0dktsbC1CU201WkRDUjFZTVp6SE5HejRYdTBBVXlvX3dTeVpQZDBrU2ZuQS1pNXB4Z3NJMkxCNi13cFNyZl84YldQTEp1dUhWdDhYaVdqM0xmT092emVrMnlvbXJVMk56SFR3U3REUE90QVY0b1RLMU5UU2JrQXZPamptRUJTUWpyZC1FeEF2YkNKX1lHRU0zOUVHUW5LaE45WTVZZw?oc=5",
+   "publisher": "FratMat",
+   "feed": "Russie au Sahel",
+   "lang": "fr",
+   "date": "2026-09-20T23:48:45+00:00",
+   "summary": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps &nbsp;&nbsp; FratMat",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Russia and Africa Corps"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "1057f99f3268cc10",
+   "title": "Niger-Soudan : \"dans les jours qui viennent, on espère voir de bons résultats\"",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcnV0NG0tR1FOY1ZZcHlTU1pIb2hYX0ZUMjVwaUwtQ3ljY0M1V1JEaE5GSko3aENSTHQ0d3dmbG1XNFBUMFY5YWtTVFZVYVY1MUZzaUhWOC1XczA4Q3BKQW95SDhtSHZHdGhhTS1vQUdmYko2N1Y0ZkhsbE5Bc1gyN2ZTSEtieGxyTkszcmw0a29rakFORlhRWXhmb2tyQURiSmVXMA?oc=5",
+   "publisher": "Alwihda Info",
+   "feed": "Sahel securite",
+   "lang": "fr",
+   "date": "2026-09-20T21:33:31+00:00",
+   "summary": "Niger-Soudan : \"dans les jours qui viennent, on espère voir de bons résultats\" &nbsp;&nbsp; Alwihda Info",
+   "countries": [
+    "Niger"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
   {
    "id": "b975bfe8d4a64973",
    "title": "Au Nigeria, les familles des 37 mineurs morts à Minna, dans le centre du pays, réclament justice",
@@ -165,7 +221,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -175,7 +231,7 @@
    "publisher": "Daily Post Nigeria",
    "feed": "Nigeria and Lake Chad",
    "lang": "en",
-   "date": "2026-09-20T17:47:13+00:00",
+   "date": "2026-09-20T17:48:58+00:00",
    "summary": "Banditry, kidnapping could trigger national security crisis – PRP warns &nbsp;&nbsp; Daily Post Nigeria",
    "countries": [
     "Nigeria"
@@ -183,7 +239,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -201,7 +257,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -221,7 +277,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -234,6 +290,27 @@
    "date": "2026-09-20T17:04:37+00:00",
    "summary": "BUSINESS – ECOWAS REPORT : USD 303.36 million in customs revenue in the first half of 2026 &nbsp;&nbsp; Africa24 TV",
    "countries": [
+    "Regional"
+   ],
+   "themes": [
+    "Regional bloc politics"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "7199d9a9d9ae63d1",
+   "title": "INTERVIEW – ECOWAS REPORT : Aisha AUGIE, Director, Center for Black and African Arts and Civilization , Nigeria",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORWhsYzJ3SGtoeFFCT3lFVFBBUDRhM1FHcnVCMmNoaWo1WkZIeXN4U09heS0yMHlGX2ZOOVVoX2pmRFJNZjYybm9vUnVoMUVSS3BWRUJnenNHMHFvLTRobW83X1Rfb0ZPQURlcEJvaUktSU5WUVZub1NFZmNFZ25Wdm92dG4wdkVNSFE0N3lOMGVJaWlnZmJ0ZnlBYWh3OVZDM25nSFI0MXZ1bUgxYUZnczVsSVZERUJOS01CTE80bzZCbm4wbnc?oc=5",
+   "publisher": "Africa24 TV",
+   "feed": "AES et CEDEAO",
+   "lang": "fr",
+   "date": "2026-09-20T16:36:00+00:00",
+   "summary": "INTERVIEW – ECOWAS REPORT : Aisha AUGIE, Director, Center for Black and African Arts and Civilization , Nigeria &nbsp;&nbsp; Africa24 TV",
+   "countries": [
+    "Nigeria",
     "Regional"
    ],
    "themes": [
@@ -259,7 +336,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -279,7 +356,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -299,7 +376,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -319,7 +396,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -339,7 +416,7 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -360,7 +437,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -377,10 +454,31 @@
    ],
    "themes": [],
    "events": [],
-   "corroboration": 2,
+   "corroboration": 3,
    "also": [
-    "Vanguard News"
+    "Vanguard News",
+    "The Sun Nigeria"
    ],
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "92a5f43d2904046f",
+   "title": "US strike against a vessel in the Caribbean leaves four dead",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeGQ3elJvY012YW91eVNnel9BYWFRY18tRHJrQlNWOGZSeXVmdmlCNEd6OEtqV0VUTG5uT2Q2Z2ZUcWpQUHJkMndscnY5NW9pX053d0pfSEVJSzJPbGNsTUNvbGV0Ul9sTnpVUnJkc3JRbXcwbk5hRjRCeUlVQ0JZRjlxRllyQXRrTkZPXzYtNA?oc=5",
+   "publisher": "Benin Web TV",
+   "feed": "Coastal spillover",
+   "lang": "en",
+   "date": "2026-09-20T14:03:12+00:00",
+   "summary": "US strike against a vessel in the Caribbean leaves four dead &nbsp;&nbsp; Benin Web TV",
+   "countries": [
+    "Benin"
+   ],
+   "themes": [],
+   "events": [
+    "Conflict event"
+   ],
+   "corroboration": 1,
    "thread": "new",
    "anomaly": false
   },
@@ -399,7 +497,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -419,7 +517,7 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -437,18 +535,18 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
    "id": "98a2fe2733f26312",
-   "title": "CEDEAO: conférence de la Cour de justice lundi à Dakar - al24news.dz",
+   "title": "CEDEAO: conférence de la Cour de justice lundi à Dakar",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcG1pRUxUV0VROUNUWUZCY2NDYUVtaVRPYUYyeDNRUVo5dnBRcTh5aUM1TVpCQWI4NzV6LUZHMnZvbWtfdFh4WkpoVjlLeW5maXNGR2hPVGUtWUswRC05amo0bXNrbzBET2hpSTk2TVVtRTFQcGJMN0VMWlg5blR2TlVCaw?oc=5",
-   "publisher": "al24news.dz",
+   "publisher": "AL24 News",
    "feed": "AES et CEDEAO",
    "lang": "fr",
    "date": "2026-09-20T11:35:52+00:00",
-   "summary": "CEDEAO: conférence de la Cour de justice lundi à Dakar &nbsp;&nbsp; al24news.dz",
+   "summary": "CEDEAO: conférence de la Cour de justice lundi à Dakar &nbsp;&nbsp; AL24 News",
    "countries": [
     "Senegal",
     "Regional"
@@ -478,7 +576,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -508,7 +606,7 @@
    "publisher": "Benin Web TV",
    "feed": "Coastal spillover",
    "lang": "en",
-   "date": "2026-09-20T10:03:25+00:00",
+   "date": "2026-09-20T10:03:14+00:00",
    "summary": "Moscow hit by record drone attack, two dead and a refinery damaged &nbsp;&nbsp; Benin Web TV",
    "countries": [
     "Benin"
@@ -520,7 +618,7 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -547,40 +645,20 @@
   },
   {
    "id": "b77df18a15f6c75d",
-   "title": "(Multimédia) Mali : l'armée affirme avoir \"désorganisé\" le dispositif terroriste dans le centre du pays - french.news.cn",
+   "title": "(Multimédia) Mali : l'armée affirme avoir \"désorganisé\" le dispositif terroriste dans le centre du pays",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5WaXlZSkF6N2FiM191ZUNEOWV4Yjd1Sm1qaGVpZzdKdVhDTmRhdkRjemY3S0hGNW0wMU1CXy1vUkJZeHEyc2tYbS1hRlVOWVVDdmpzSWk3V01STm1tcFNVaDh1bk9WM2VidXA4R29kVXlBdTF6RHFYOWM2Yw?oc=5",
-   "publisher": "french.news.cn",
+   "publisher": "新华网",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-20T09:33:00+00:00",
-   "summary": "(Multimédia) Mali : l'armée affirme avoir \"désorganisé\" le dispositif terroriste dans le centre du pays &nbsp;&nbsp; french.news.cn",
+   "summary": "(Multimédia) Mali : l'armée affirme avoir \"désorganisé\" le dispositif terroriste dans le centre du pays &nbsp;&nbsp; 新华网",
    "countries": [
     "Mali"
-   ],
-   "themes": [
-    "External actors"
-   ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "new",
-   "anomaly": false
-  },
-  {
-   "id": "a77f8f2033426597",
-   "title": "Niger / Région de Diffa : Gueskérou et Assaga se mobilisent pour réaffirmer leur soutien à Tiani",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaGh0b2VPR2sxX0pzYURBUk5SQ182eVV3MDI1Y0d1eG8zbTBrcWJiWlZIdHZaaEQ1NmU2RkdhRENPeGx2V282TkhCTmYxdWtwTnlzODhsTUlMSDBncWtHVDZuSGdzQVFRMkNKa1VQZk5BbEk4NWtscXQ1ZXV2QUpSN3R4eE1jNmxYT3oxM2h5Qkg2OS1oQm56ZE1qenZ6UU95YlctWWNGTVhnQzVyUENNT0Q5alk0ZFhiSUVmVXJ0M3lnb0E?oc=5",
-   "publisher": "24heureinfo.com",
-   "feed": "Sahel securite",
-   "lang": "fr",
-   "date": "2026-09-20T08:47:05+00:00",
-   "summary": "Niger / Région de Diffa : Gueskérou et Assaga se mobilisent pour réaffirmer leur soutien à Tiani &nbsp;&nbsp; 24heureinfo.com",
-   "countries": [
-    "Niger"
    ],
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -610,15 +688,14 @@
   },
   {
    "id": "83c3a68b4f86b4cf",
-   "title": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues",
+   "title": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues - premiumtimesng.com",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQelZGb2hpdldQTFR5RWUyb1NWUk9UdldoVVIwek9wY3Q4R3pBMzllNEMzRThleVI1TExtWHV5QWVKeUJ0dmxodHBNVzBJY0l1MnI5T21YLWlLTTNFU2NlM0ZwaTZfNkpVcEZJMzlyNlZiWFVaN0w3ZllvMDJtbk05TmVnbWRkSGM0ajY1TE9XYldFbFFDc0tCaGdBOTBYWFhNT1BQdWNBRDEyYlFMbzNuUENoV2NLN25aNGpYV2xmTmp1czA2VklmTkIwbkdIN3ZzR2ZrRnRVcmRfTUwzV1E?oc=5",
-   "publisher": "Premium Times Nigeria",
+   "publisher": "premiumtimesng.com",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-20T08:08:24+00:00",
-   "summary": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues &nbsp;&nbsp; Premium Times Nigeria",
+   "summary": "ECOWAS Court convenes conference to address judgment enforcement challenges, other issues &nbsp;&nbsp; premiumtimesng.com",
    "countries": [
-    "Nigeria",
     "Regional"
    ],
    "themes": [
@@ -646,7 +723,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -685,7 +762,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -703,7 +780,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -721,7 +798,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -760,7 +837,7 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -780,7 +857,7 @@
    ],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -798,27 +875,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
-   "anomaly": false
-  },
-  {
-   "id": "6707a3757cf4e08b",
-   "title": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps - fratmat.info",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNOFd1Z1c0U0JXMlR4M1Q0MF9ZQTU3WjlFUVVrUy1teGdWelN6eEp6VmJ0aUpkZVo0dktsbC1CU201WkRDUjFZTVp6SE5HejRYdTBBVXlvX3dTeVpQZDBrU2ZuQS1pNXB4Z3NJMkxCNi13cFNyZl84YldQTEp1dUhWdDhYaVdqM0xmT092emVrMnlvbXJVMk56SFR3U3REUE90QVY0b1RLMU5UU2JrQXZPamptRUJTUWpyZC1FeEF2YkNKX1lHRU0zOUVHUW5LaE45WTVZZw?oc=5",
-   "publisher": "fratmat.info",
-   "feed": "Russie au Sahel",
-   "lang": "fr",
-   "date": "2026-09-20T01:04:40+00:00",
-   "summary": "Mali: Les jihadistes remettent la pression aux Fama et leurs alliés de l'Africa Corps &nbsp;&nbsp; fratmat.info",
-   "countries": [
-    "Mali"
-   ],
-   "themes": [
-    "Russia and Africa Corps"
-   ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -852,43 +909,6 @@
    "summary": "En Mauritanie, un fléau silencieux gagne du terrain et détruit un peu plus chaque jour : salinisation des terres. Dans certains quartiers périphériques de Nouakchott, comme à Dar Naim par exemple, des maisons se désagrègent, le sel qui remonte du sol ronge les murs et fait tomber les briques une à u",
    "countries": [
     "Mauritania"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "5ee2c5c353373fbb",
-   "title": "«Au Mali, quand les animaux dansent»: une plongée dans un théâtre ancestral menacé",
-   "link": "https://www.rfi.fr/fr/podcasts/reportage-culture/20260919-au-mali-quand-les-animaux-dansent-une-plong%C3%A9e-dans-un-th%C3%A9%C3%A2tre-ancestral-menac%C3%A9",
-   "publisher": "RFI Afrique",
-   "feed": "RFI Afrique",
-   "lang": "fr",
-   "date": "2026-09-19T22:03:51+00:00",
-   "summary": "Le musée des Confluences de Lyon invite à un voyage sur les rives du Niger avec l'exposition « Au Mali, quand les animaux dansent ». À travers 110 masques, marionnettes et instruments issus de la collection de Sonia et Albert Loeb, dont une centaine ont été donnés au musée, elle dévoile l'univers du",
-   "countries": [
-    "Mali",
-    "Niger"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "e61f2c767fd85b1f",
-   "title": "Sénégal: la disparition de l'arbre «Faidherbia albida», un risque pour les cultures",
-   "link": "https://www.rfi.fr/fr/podcasts/reportage-international/20260919-s%C3%A9n%C3%A9gal-la-disparition-de-l-arbre-faidherbia-albida-un-risque-pour-les-cultures",
-   "publisher": "RFI Afrique",
-   "feed": "RFI Afrique",
-   "lang": "fr",
-   "date": "2026-09-19T22:00:05+00:00",
-   "summary": "À Diohine et dans ses environs, les agriculteurs connaissent bien le Faidherbia albida. Cet arbre joue un rôle important dans les cultures. Ses feuilles et ses résidus contribuent à enrichir le sol en matière organique, tandis que son système racinaire participe au maintien de sa fertilité. Mais alo",
-   "countries": [
-    "Senegal"
    ],
    "themes": [],
    "events": [],
@@ -951,13 +971,13 @@
   },
   {
    "id": "9e83c11923041478",
-   "title": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers",
+   "title": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers - ktvb.com",
    "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxObnlvbE5rSWxXS2lMYlJmV0lMclhqWGJGdjBuVWd4YlB6a25JRUdxYWRDcXp0YmhBZU1GbVBZWm9GLTBuSG10MlFGNzFRbGxtUGNUbGVpMnlOSXM4ZVpseUg3bkd6Wk9uNGdzVUlLVGhPaWJRdmg0S1dfdzNtQUxNbmV1WVBsUXA0Mkw5TTZOMS1EbEVTV1dhVkc1UkdsYTY0MDZJd0U0S2k0UElSazFKTUZ1bFdBaGNfNnZXWDZNUGgya3AtVG1HbGl5ZHZjU2dub0dCX2gtZVNOZVpjeVlFdUs2dzFPRnZNVVJFZGg1WU9KYXE3LXREWTFGSWg3TUJTUnhSWUpFUjBLcHNSYzZpdnAtREVQU0dFZFVuQTlDcVJodw?oc=5",
-   "publisher": "KTVB",
+   "publisher": "ktvb.com",
    "feed": "Sahel security",
    "lang": "en",
    "date": "2026-09-19T19:48:00+00:00",
-   "summary": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers &nbsp;&nbsp; KTVB",
+   "summary": "Al-Qaida-linked JNIM claims a deadly Mali army camp attack and releases video of captured soldiers &nbsp;&nbsp; ktvb.com",
    "countries": [
     "Mali"
    ],
@@ -969,20 +989,20 @@
    ],
    "corroboration": 1,
    "also": [
-    "KTVB"
+    "ktvb.com"
    ],
    "thread": "developing",
    "anomaly": false
   },
   {
    "id": "c8be601fc8afddc0",
-   "title": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura",
+   "title": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura - sahel-intelligence.com",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRUJOUXBwWEVvQWJoV1E4a0tRVUFFYTJySnhuWWFhX29KOGNJc2pxWjFTR2VtQ3RqQmtjS2g3MExRSENsLUtlVDBrV25lRncweFRJTjhBWlFlcTVHU0NLS2k1UHBzeW5HcGswTXpDTk8yQUlsNkxiS0VKMUxJTWgyRmFtOElTT2NWVFk5cF9NVFhjbmZNN05Ec0FLaFNQc2F4MmpoRnBPaEgyMVIzSkE?oc=5",
-   "publisher": "Sahel Intelligence",
+   "publisher": "sahel-intelligence.com",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-19T18:29:51+00:00",
-   "summary": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura &nbsp;&nbsp; Sahel Intelligence",
+   "summary": "Mali : Plus de 100 soldats tués dans l’attaque jihadiste contre Dioura &nbsp;&nbsp; sahel-intelligence.com",
    "countries": [
     "Mali",
     "Regional"
@@ -1034,7 +1054,7 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -1056,31 +1076,11 @@
    "anomaly": false
   },
   {
-   "id": "9b0294e14d731229",
-   "title": "ECOWAS meets Qatar, Sudan envoys to discuss regional peace, security",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeFpsQmM2Zm9wMHFNTDE0UmFlcy1POEw2Smw0RzlZYTBORHFJQWtrOXRWS3d2b1RJVGVFVGxlWlF3b193OWFtZEhuRmtnMGdOUVpQV0h3dXY0b2hOd0JlQmM4OU83OUs5bndZME5fTGtaOWdMWkZ6Vl9meDdhT3NTcDMxVzNFdWctV0tIM2tiYzBQM05xZzVncmEyZ2VNZFMzQzBVSzlOVDUzTTFaODcyOWw4TXZ4VmU1NlE?oc=5",
-   "publisher": "Channel Africa",
-   "feed": "AES and ECOWAS",
-   "lang": "en",
-   "date": "2026-09-19T14:23:56+00:00",
-   "summary": "ECOWAS meets Qatar, Sudan envoys to discuss regional peace, security &nbsp;&nbsp; Channel Africa",
-   "countries": [
-    "Regional"
-   ],
-   "themes": [
-    "Regional bloc politics"
-   ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "5b6b6aaeb45191f5",
    "title": "Army dismisses Boko Haram, ISWAP attack alert as fake",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbUtiaXg3WURORHY2elE4cTNpMDhvbDdvQlNlMDVqdkVDSVBCWnRWWVA4bWp2UVZMZjI5eWprWW1vUVY2eVlmZG9DV1RsR3VWaHFxeWtLTjRsQ0Z3Z3daOFF0VzViaF9DVDd4Y3JaRzFSWV9iak96bUlIblNIUVY5MGZRZGNscXdOX3dXeDZn?oc=5",
    "publisher": "Daily Post Nigeria",
-   "feed": "JNIM and Islamic State Sahel",
+   "feed": "Nigeria and Lake Chad",
    "lang": "en",
    "date": "2026-09-19T14:12:08+00:00",
    "summary": "Army dismisses Boko Haram, ISWAP attack alert as fake &nbsp;&nbsp; Daily Post Nigeria",
@@ -1094,23 +1094,21 @@
     "Conflict event"
    ],
    "corroboration": 1,
-   "also": [
-    "Daily Post Nigeria"
-   ],
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
    "id": "3c423892365533d8",
-   "title": "Lutte contre le terrorisle au Mali : L'Armée annonce la destruction de plusieurs positions de groupes armés - lefaso.net",
+   "title": "Lutte contre le terrorisle au Mali : L'Armée annonce la destruction de plusieurs positions de groupes armés - leFaso.net",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5fQld1ZXhad0l1V0dzcE13c095bkdOTXN0R3Y0MnNWSE42blU0WEVVZGxhN0NibE9ZWFFaM3VjQXJ0cGxKUURkM1RMVy1QZF80VjA4?oc=5",
-   "publisher": "lefaso.net",
+   "publisher": "leFaso.net - L'actualité au Burkina Faso",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-19T12:37:00+00:00",
-   "summary": "Lutte contre le terrorisle au Mali : L'Armée annonce la destruction de plusieurs positions de groupes armés &nbsp;&nbsp; lefaso.net",
+   "summary": "Lutte contre le terrorisle au Mali : L'Armée annonce la destruction de plusieurs positions de groupes armés &nbsp;&nbsp; leFaso.net - L'actualité au Burkina Faso",
    "countries": [
-    "Mali"
+    "Mali",
+    "Burkina Faso"
    ],
    "themes": [],
    "events": [],
@@ -1137,26 +1135,6 @@
    "anomaly": false
   },
   {
-   "id": "f88fd3070144a86e",
-   "title": "Côte d'Ivoire: Petrobras obtient un accord de prospection sur huit blocs pétroliers",
-   "link": "https://www.rfi.fr/fr/afrique/20260919-c%C3%B4te-d-ivoire-petrobras-obtient-un-accord-de-prospection-sur-huit-blocs-p%C3%A9troliers",
-   "publisher": "REUTERS - Paulo Whitaker",
-   "feed": "RFI Afrique",
-   "lang": "fr",
-   "date": "2026-09-19T11:14:26+00:00",
-   "summary": "Petrobras fait son entrée en Côte d’Ivoire. Le géant pétrolier brésilien vient de décrocher un vaste programme d’exploration offshore, en signant jeudi 17 septembre huit contrats de partage de production, pour la prospection de blocs pétroliers au large du bassin ivoirien. Cette initiative s’inscrit",
-   "countries": [
-    "Côte d'Ivoire"
-   ],
-   "themes": [],
-   "events": [
-    "Alliance shift"
-   ],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "eefb9dac50e70cbd",
    "title": "Death of 37 Niger miners state-sponsored banditry, prosecute those responsible - Activist, Idam",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbWpqMmJiWXNPa2tGbHdNdVk5V3R0aklRaGNzYVVmazB6WG9sN1BoUkRjRWxKOXh5d1JyTUdwM3pxc3NMNXFEeFVSaHJtbzlSb3ItVmlxYnZkOGF1cnBvdm5NRmFXcmphVDB4aUlYZzB3MjZ3VWFaUHlab3hwLXlVMm03elFjOFBpSjhJUTNaQVNTdmlYTkNaUld5YlJoTlBTN3FVNlZRQVZlejVmY01sdlBFVzdIZVJSQnkwd2k0VXRWdw?oc=5",
@@ -1177,34 +1155,13 @@
   },
   {
    "id": "d404fdaa152f7920",
-   "title": "ECOWAS President Diop Meets Qatar, Sudan Ambassadors In Abuja - tvcnews.tv",
+   "title": "ECOWAS President Diop Meets Qatar, Sudan Ambassadors In Abuja",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT1NRZFNoSVhQTlVSX2wtTjd4djR6b2V6X0J3cS1qamFqOElYVVJTbTF0S0l6Yl9Ob3d2LXdmTmRYRnhreEg3V0ZycVhKdEQ4T1RSNnVSczliRFBBLVFuOUctQWVXWW53Znc1MmV1bWx1QTRzcW5XNzEzd1lieE5NNlFvZGhUQUFnZzg1ZA?oc=5",
-   "publisher": "tvcnews.tv",
+   "publisher": "TVC News",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-19T10:59:00+00:00",
-   "summary": "ECOWAS President Diop Meets Qatar, Sudan Ambassadors In Abuja &nbsp;&nbsp; tvcnews.tv",
-   "countries": [
-    "Nigeria",
-    "Regional"
-   ],
-   "themes": [
-    "Regional bloc politics"
-   ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "6fc0ccbc21fab902",
-   "title": "The President of the Economic Community of West African States (ECOWAS) Commission Receives the Ambassadors of Qatar and Sudan at the ECOWAS Commission Headquarters in Abuja",
-   "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPbHJMZjB3dHlNWXRUN3lwaUlmWDNkZC1zN1QtUkJZeFJrQmg4Zzh1akNQc3RKeDZlVWMyUm5tV1BBM0ptS2M5YXhBQ25BdkdTRXJfaDF2aXlUVWgwM2U4aEUxdlJCdE5RRW43NTVZcmswLUF4WkJSTXp1MEZvZld3Q1RsOHhBRU5YcGtKaTNUb2lCdjdPZUlRcW5xSzlwQnB5aDJ4eGpEQmdjWFJhRWtGV0hYWi1NdzhxWE5KMTZIcWFWR3k2X0NaVzN3MTJxbDhMQ2hfWUx0Y2tfZzhGcDVRcFowUi1MZ2pJaVFFT1Q1UExYel85ZlppRV9PTUNBSVNLV1lMa2xiSWx6Y3JzZlpkeG1GVUpkRkZsbVhxMkVFUk00Y0JOalFOS2tqSW5kXzdWNGhPY2piY0RfTUVPX1JzM2lGUlE5MVNieU5LZlVOUUlabHFNMnNPTXpkNlg?oc=5",
-   "publisher": "Zawya",
-   "feed": "AES and ECOWAS",
-   "lang": "en",
-   "date": "2026-09-19T09:21:00+00:00",
-   "summary": "The President of the Economic Community of West African States (ECOWAS) Commission Receives the Ambassadors of Qatar and Sudan at the ECOWAS Commission Headquarters in Abuja &nbsp;&nbsp; Zawya",
+   "summary": "ECOWAS President Diop Meets Qatar, Sudan Ambassadors In Abuja &nbsp;&nbsp; TVC News",
    "countries": [
     "Nigeria",
     "Regional"
@@ -1258,26 +1215,6 @@
    "events": [
     "Alliance shift"
    ],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "bee927eafbeb933e",
-   "title": "ECOWAS Commission President Meets Qatari and Sudanese Envoys",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcl9CSDExc1JSQTk0SjBKeGZnVDN0UEFKSmhIU3FYaEtSclg3LUtBdW9UbmtMQkF5U1FTZHp2RGNIOUFjSk9rOEpzci1hMkp0MmhnVlpsRUJDb2U3aThJcGRWMXRjU2NiLWpIdW1EVXY4Vm5lb2ZoUmtsalN2LXY4clhEVmtwZnl2TW11am93?oc=5",
-   "publisher": "The Diplomatic Insight",
-   "feed": "AES and ECOWAS",
-   "lang": "en",
-   "date": "2026-09-19T07:52:39+00:00",
-   "summary": "ECOWAS Commission President Meets Qatari and Sudanese Envoys &nbsp;&nbsp; The Diplomatic Insight",
-   "countries": [
-    "Regional"
-   ],
-   "themes": [
-    "Regional bloc politics"
-   ],
-   "events": [],
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
@@ -1361,26 +1298,6 @@
    "anomaly": false
   },
   {
-   "id": "e8eaabd79b82382a",
-   "title": "Opening Battlefield To Media Broke Boko Haram’s Propaganda Grip – Buratai",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWlRfUEZmMDNWX1hydU5fTWtVVmE3QmMzZlVaVF9NTXFHNlVZQ3R3VktNSjBsR19uTTlmRUJ3ZHdaUlpfa0tEUlB4dW5WWmhIbFVrT1R5dTNiOV9DN3VPbURxM0tTUmFtajhac1lYQzZGWmtEMF9teDdaZVgwLVEwTjBqR0ZDNUk3SURCQ1ZwSE1CNC1h?oc=5",
-   "publisher": "News Agency of Nigeria",
-   "feed": "Nigeria and Lake Chad",
-   "lang": "en",
-   "date": "2026-09-19T04:19:03+00:00",
-   "summary": "Opening Battlefield To Media Broke Boko Haram’s Propaganda Grip – Buratai &nbsp;&nbsp; News Agency of Nigeria",
-   "countries": [
-    "Nigeria"
-   ],
-   "themes": [
-    "Jihadist groups"
-   ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "979716d5e81bc442",
    "title": "Mali militants in Burkina Faso for mediation talks",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQVhJd0w3WU1UZUJBaUo2ZEVFS1pzUnFYRHZnanM5V0tkdXl2azJiNjZPREc1Q1dMZ1M5bXNQcU5hSTMtakhwSkMtcXJMNlBnejZ5QVBlZW5ZYVNjak5SdjMxTEdwSWpZM0g5WVhWOTBCNzVyNlQ0Y3d2dDZjN1hfRUJkTDJOWGhGcjJ4UVlHdVRmZw?oc=5",
@@ -1421,6 +1338,24 @@
    "events": [
     "Conflict event"
    ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "cfada2559719e207",
+   "title": "Niger : qui sont les personnalités déchues de leur nationalité par Abdourahamane Tiani ?",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWjdoQVdDV2laWkZkb3B1b3oxb1BBb3dndGZCVExlRG83OExNMm5fOTd1QXJmbkVOc2JZWGtRVFZIU3dlbC1VaUNrUmVRZjllX3dBMUhCeEFiNkJTQUVTaU5UakdOWWFLTmNmcUtRTThUblhKNVF5bFpES1B0TE5abGxFN0thUzJfeng4eDF3MUc4MTNXUzV6d3o5ZGFjNHVQWk1XT3lZbVc0Q3U5bllmbjBFM2RaWWhiM3RWOUpSQnQtYXNCMkg5MXhkejg?oc=5",
+   "publisher": "Jeune Afrique",
+   "feed": "Sahel securite",
+   "lang": "fr",
+   "date": "2026-09-19T00:45:00+00:00",
+   "summary": "Niger : qui sont les personnalités déchues de leur nationalité par Abdourahamane Tiani ? &nbsp;&nbsp; Jeune Afrique",
+   "countries": [
+    "Niger"
+   ],
+   "themes": [],
+   "events": [],
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
@@ -1467,13 +1402,13 @@
   },
   {
    "id": "76fcbf670f98ac76",
-   "title": "Au Mali, au moins 100 militaires et cinq mercenaires russes tués dans une attaque djihadiste, selon un dernier bilan",
+   "title": "Au Mali, au moins 100 militaires et cinq mercenaires russes tués dans une attaque djihadiste, selon un dernier bilan - lemonde.fr",
    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPVk05UFNXY3k5bnBGRHFhVEktV3NQRTctVG5pQk53U3RLYWhOVjdJbmt2dVl0N1BBeFRhaUdqanI4dG0zYktGWUlUQ2ZGVVBlV3ppSHFhbmROcWMzTXRnV0dFVHdaY29qZDBwUVduRS1welZ1OVBHZ1JjVUhzZ0Q0MGs0QW83V0FxeTV0bF9vQW5wemtTeG00N0hTNG1WRlpsZU9EMFROd1VSQWZXUFNNN0NSSWxTWjJKTEJYWV9mb3RDUlk3WDI0UGdydk1PZTdTT0gyRDhuUzVkWXZTUmVUZU16SkdOTU1tWG42V0xmaVRGVzZnZEtYd2xMTE1rYXMtaGo5SXBqa3UxbnN0ZEJJ?oc=5",
-   "publisher": "Le Monde.fr",
+   "publisher": "lemonde.fr",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-18T19:59:25+00:00",
-   "summary": "Au Mali, au moins 100 militaires et cinq mercenaires russes tués dans une attaque djihadiste, selon un dernier bilan &nbsp;&nbsp; Le Monde.fr",
+   "summary": "Au Mali, au moins 100 militaires et cinq mercenaires russes tués dans une attaque djihadiste, selon un dernier bilan &nbsp;&nbsp; lemonde.fr",
    "countries": [
     "Mali"
    ],
@@ -1484,8 +1419,7 @@
    "corroboration": 3,
    "also": [
     "tv5monde",
-    "Le Monde.fr",
-    "Le Monde.fr",
+    "lemonde.fr",
     "Le Figaro"
    ],
    "thread": "developing",
@@ -1601,29 +1535,6 @@
    "anomaly": false
   },
   {
-   "id": "9bbd49ca446e4818",
-   "title": "BREAKING: Terrorists Attack Military Base In Borno, Kill Seven Soldiers, Burn Gun Trucks",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSGxHam5vckFYaWNzRWtkNEVKOEhYanpGamIzTlMta3J2aGdJMVNJMnpBY3p0Q3dJTFI1YUUyMlhjdmtkajNjUXVVNmFoS3dnODk2S2dhSUlqdmh0MG9aeXVNVUtHVklxa1lnVWYyRGpmbVBCVktkUWhGSzBCRzJnazhBVmhzei1PODRYT2hfRUVBSS1neHduMjczRVJHWmpKLUc5dkYzNjVBbWc3eFFucjlEY3NyZWcxNVhBa3RB?oc=5",
-   "publisher": "Sahara Reporters",
-   "feed": "JNIM and Islamic State Sahel",
-   "lang": "en",
-   "date": "2026-09-18T18:27:53+00:00",
-   "summary": "BREAKING: Terrorists Attack Military Base In Borno, Kill Seven Soldiers, Burn Gun Trucks &nbsp;&nbsp; Sahara Reporters",
-   "countries": [
-    "Nigeria"
-   ],
-   "themes": [],
-   "events": [
-    "Conflict event"
-   ],
-   "corroboration": 2,
-   "also": [
-    "Nigerian Voice"
-   ],
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "d84d0c0dbb689ad6",
    "title": "Sécurité au Mali : Frappes chirurgicales et montée en puissance de la coordination militaire à Mopti et Kidal",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSFcwN0lxTXhUamRhNHBubXJxZzJnTFhSeTVqbjYyajUtTmpBZDN0Ry1wZ29qQTNEOXpleGFqanNXRUtNdE1kc1g4YXlLM0FUNUV3TnpfcHAzVmVkREEwbFJVOEJWd2RSNGZjXzBpVm1BUk5hMWRlMlNueXRUWkU4ZENpOTBXVjI4d1hna3l2OGNsLTI4MUhXaU9Fd0JGTWpuUnlLQkJUSXhucXVhc2ZoVnp2emFHcDFlOERaV0ltSkhCODdPS0hmONIB0AFBVV95cUxQQUZOM0xZWldLNXhOR05KcEVBaEFleENzWVhKZEJSTXc1WkhwU2xxYzJDQnowZnFrWjFqaTZGS2I3WTVVUTItYTVsVWQyUmNpSHo3X2NLQWxPYkZwVVdTRTlPVkkyeUl0dWs5M3dNelEtZC1ZczVFOC1FVEljZzdxYjd5OXJtTEZwSmMwU3JSbnc2TFVkdlFzVTFnRENHaFVUOHRnamhuYnpoWDFNbUdnSUNldWk5cTI2NmNRMV9sYkZUVWVvN3VXNXZLQnluVjRi?oc=5",
@@ -1638,7 +1549,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -1719,33 +1630,15 @@
   },
   {
    "id": "163818e70b756314",
-   "title": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure",
+   "title": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure - lemonde.fr",
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOOURRY3dsa3Z5XzY2bmJhTmRFaFJqMW5rbkhfOVFRMEVMVGJmeTNxZ05pQlRQdlNjSVFjTlpsY0pidUptLW13MU5mazdXWnN5ekNhRnNrXzdJbU8zdHFwbXd4TlVLOHdsLWVsX3R6dzNaelBJd2FGa1hNUjk0ckkwVU9LWmV2N2JLczE0Z24xTXRUNjdtUWcxNnJFNktkNE9wV1NwTjdhdXVwSHM0VmI4YnFZRHlXV3l1VXVQN01ZampPc2dLRExLVlRfNUgzLV9NRFI2TDJ4WHBpckRqeVh6alNRT1RxUQ?oc=5",
-   "publisher": "Le Monde.fr",
+   "publisher": "lemonde.fr",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-18T16:00:06+00:00",
-   "summary": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure &nbsp;&nbsp; Le Monde.fr",
+   "summary": "Dans le centre du Mali, les djihadistes du GSIM relancent des offensives d’envergure &nbsp;&nbsp; lemonde.fr",
    "countries": [
     "Mali"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "cfada2559719e207",
-   "title": "Niger : qui sont les personnalités déchues de leur nationalité par Abdourahamane Tiani ?",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWjdoQVdDV2laWkZkb3B1b3oxb1BBb3dndGZCVExlRG83OExNMm5fOTd1QXJmbkVOc2JZWGtRVFZIU3dlbC1VaUNrUmVRZjllX3dBMUhCeEFiNkJTQUVTaU5UakdOWWFLTmNmcUtRTThUblhKNVF5bFpES1B0TE5abGxFN0thUzJfeng4eDF3MUc4MTNXUzV6d3o5ZGFjNHVQWk1XT3lZbVc0Q3U5bllmbjBFM2RaWWhiM3RWOUpSQnQtYXNCMkg5MXhkejg?oc=5",
-   "publisher": "Jeune Afrique",
-   "feed": "Sahel securite",
-   "lang": "fr",
-   "date": "2026-09-18T15:45:36+00:00",
-   "summary": "Niger : qui sont les personnalités déchues de leur nationalité par Abdourahamane Tiani ? &nbsp;&nbsp; Jeune Afrique",
-   "countries": [
-    "Niger"
    ],
    "themes": [],
    "events": [],
@@ -1768,42 +1661,6 @@
    "themes": [
     "External actors"
    ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "c4a53c10ea5d1124",
-   "title": "Niger : dans la tête d’Abdourahamane Tiani, président retranché",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZHgxbVlMeWVtNDlNUFliV1M0SENIakNyNFRkZkFOUHJCX3RYYmgwbEtzVjJRLUVSTm04Sk9UbTNKd0xHVlNrallQTGdVOUV2aFhwRXlMOXNiNEFNcEN2cHJPeF9nMVRnX3hteDlfdUtYaVhFNDRadGhNN2hjVnNDUklVY3R5UG8tb2NPUjQyRGhLSlZrUVUwZkkxZ1NVQWhhMzBmUTh2a3lneVE?oc=5",
-   "publisher": "Jeune Afrique",
-   "feed": "Sahel securite",
-   "lang": "fr",
-   "date": "2026-09-18T14:58:00+00:00",
-   "summary": "Niger : dans la tête d’Abdourahamane Tiani, président retranché &nbsp;&nbsp; Jeune Afrique",
-   "countries": [
-    "Niger"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "195a9d867869260c",
-   "title": "Operation HADIN KAI Foils Attacks on Two Borno FOBs",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA4NXJoeVpYbS1FVEloZEd1bEQtUFNENEVobWtDeGw2OGtWNHdZUG9xQ0FKMmZHM1d0Tld1NmF6TVduSVB3TVJYR1Z5SEdZbkE5NzZjV2lpUWROT3NnNTVFQ09xUFVpTm1VWGdmeFNYNEdzN1dmTXNtejdkTQ?oc=5",
-   "publisher": "Voice of Nigeria",
-   "feed": "Nigeria and Lake Chad",
-   "lang": "en",
-   "date": "2026-09-18T14:32:24+00:00",
-   "summary": "Operation HADIN KAI Foils Attacks on Two Borno FOBs &nbsp;&nbsp; Voice of Nigeria",
-   "countries": [
-    "Nigeria"
-   ],
-   "themes": [],
    "events": [],
    "corroboration": 1,
    "thread": "developing",
@@ -1964,24 +1821,6 @@
    "anomaly": false
   },
   {
-   "id": "fade184c0c8cec0d",
-   "title": "Niger : cinq nouvelles déchéances de nationalité - APAnews",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNy15VjBCeG8tNW95eVVGUkRobmU0U2ZKdFZ1UC1faURVUGhGZkFuempKbkt1Y3NxQm53V05XNDB2bTBsN05aeEZ1eFhjUWxiNzZfQUlLLWo2bS1ZUDhVdGw4eG1FVnM4SWY4RXpzV2ExVGlvWEt6cEJsSzN5SjhMaA?oc=5",
-   "publisher": "APAnews - Agence de Presse Africaine",
-   "feed": "Sahel securite",
-   "lang": "fr",
-   "date": "2026-09-18T09:14:00+00:00",
-   "summary": "Niger : cinq nouvelles déchéances de nationalité &nbsp;&nbsp; APAnews - Agence de Presse Africaine",
-   "countries": [
-    "Niger"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "0901bbe7cd3d0353",
    "title": "Benin no longer checks yellow fever vaccination certificates on arrival",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZTJhdzYzYnJDUFRaeTh0MTlkcFVFd3M1Q3hQSFNfVkRVZkptY3d3ZFpEVERYYk11cmd2eGl0MkJIZlF6NUpKTGYtQS1IOVExSjlGXzAwUERFeUhMSm5SNkN1M3NrdWlWYV9uazVHNFpYRVpjQjdPVEZQV2p3VUJCRUNDX1ZYTXoya3ZjWnhuYjFxcWxqdjlSMGo3SjRyQQ?oc=5",
@@ -1995,28 +1834,6 @@
    ],
    "themes": [],
    "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "c6bfaf0be8046968",
-   "title": "JNIM claims killing of 150 Malian soldiers, capture of 93 others in Dioura attack - zagazola.org",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZDFMa0xUbXhoZTFrQmZ3Wk1nQU1iTlhNQWpxNm85cTBhRXllSTBmMVBHOVFTNk5XZUEtcXBLX1E5YkVISmF4TXpyMGFuQ2Rjd1E0cFlhY1JTUmxHV2tLejNHS1V1a1IyUnFHazBoV0hzZ1pGbGNqS21GMnNfSlZTd0tySVFuUTJNX3J6c0tuSnZ2UG40bVRIYlJGQzdpR0Ztdk1uZDZ6bUxPSG9PR2lwaFpfLU9DeHk5dG1LWUpLblp4Ums?oc=5",
-   "publisher": "zagazola.org",
-   "feed": "JNIM and Islamic State Sahel",
-   "lang": "en",
-   "date": "2026-09-18T07:40:16+00:00",
-   "summary": "JNIM claims killing of 150 Malian soldiers, capture of 93 others in Dioura attack &nbsp;&nbsp; zagazola.org",
-   "countries": [
-    "Mali"
-   ],
-   "themes": [
-    "Jihadist groups"
-   ],
-   "events": [
-    "Conflict event"
-   ],
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
@@ -2121,13 +1938,13 @@
   },
   {
    "id": "e697531df48f63a4",
-   "title": "Lutte contre les violences basées sur le genre : la CEDEAO renforce les capacités de plus de 50 acteurs de première ligne - pressecotedivoire.fr",
+   "title": "Lutte contre les violences basées sur le genre : la CEDEAO renforce les capacités de plus de 50 acteurs de première ligne",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPb25XTUowdVVfaTNxN0dmaVpqc1RTYkRISXFFclVmX0hKMHh2TF9VSHhRck5GdFQyTjczRGc5andWVUZkb0ZkM0FOYU1FdGRFLU00dldTV0MxanJKVG9MRGNIcmE5QmN1ZnFhdDEteDhSNGFELWRtU19aMlNrbmpoVldYWE43ZkNTaEN0QjdfN1FxaEYtYTQyWlBobEh3ZTJWbzhfQkNISi01VVhVdmtGWlFScWpfWE1xUlM0MkpQNG4yUHpGcmk4bnN0OHZIb0dTQ2lXMUcwRTg1RkxjNTc0THBiWlhTZnhIQk1XWG5Xbw?oc=5",
-   "publisher": "pressecotedivoire.fr",
+   "publisher": "Pressecotedivoire",
    "feed": "AES et CEDEAO",
    "lang": "fr",
    "date": "2026-09-17T22:32:15+00:00",
-   "summary": "Lutte contre les violences basées sur le genre : la CEDEAO renforce les capacités de plus de 50 acteurs de première ligne &nbsp;&nbsp; pressecotedivoire.fr",
+   "summary": "Lutte contre les violences basées sur le genre : la CEDEAO renforce les capacités de plus de 50 acteurs de première ligne &nbsp;&nbsp; Pressecotedivoire",
    "countries": [
     "Regional"
    ],
@@ -2137,26 +1954,6 @@
    "events": [],
    "corroboration": 1,
    "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "219b06d445bf92a5",
-   "title": "Afenyo-Markin commends police response after deadly New Winneba attack",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRXl0Qkxja3NNQk5WakxucENLMWhia2NCY0JFRmdab2djT0ViNkJ4cE01c2hCYU1uTUhGbk1WRm5EaWVtUkFQYWF5LWMtNWVoTHd3d3YtX19RM0MyOEx0ZTMxcW91NGUtbzJ6aENMQjdCWThvSkFkSzE1d0RmSUF0My1fb3hzckc3c0dJYW1ZeWFMRjE0RkNkVENfckvSAZsBQVVfeXFMUHpXQVVaVnA2SmZWQU1FSHdFWnNodV9yQUVtbjJVVmtVVHF5UFZ2dlh0YXFybUF2aEdjOG1GaHNVV1ljdGo5RG5HeXVwbjFmSzNkS3AzV1Rja2NKYkEtTnRuZ2d1YzZ6c0k4RTRQeUR4QXh4TnFGcjY0Qk9GM25ELTlJVkVPcGU5c051eEtmUHl3aW1nRW8yV1NUd3M?oc=5",
-   "publisher": "Modern Ghana",
-   "feed": "Coastal spillover",
-   "lang": "en",
-   "date": "2026-09-17T22:04:36+00:00",
-   "summary": "Afenyo-Markin commends police response after deadly New Winneba attack &nbsp;&nbsp; Modern Ghana",
-   "countries": [
-    "Ghana"
-   ],
-   "themes": [],
-   "events": [
-    "Conflict event"
-   ],
-   "corroboration": 1,
-   "thread": "new",
    "anomaly": false
   },
   {
@@ -2317,24 +2114,6 @@
    "anomaly": false
   },
   {
-   "id": "c2e17cfff5139592",
-   "title": "Muntaka Raises Concern Over Security Personnel Allegedly Facilitating Crime",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE50YUpJT1I5VWx4TE5SNkgwbjNUQWNfcEY5VmMwOU4zaWE2YnhHUkt2ZkxibU53RG5kTTEyUnBGRzZQQ25LNEVMM0IzV2RiUW1NcXY0NU92eXpTVk1vdlkxaVVHQdIBXEFVX3lxTE5JTDFoOTVaY0w4OElIT09laFdOcDNtQ1hXbHJ3NGNmNm41Q2VqNktQNWpubERVZzNWV2YyVGFXbjZxNW9PNmp4eXlRLXpXRG9Sa0dBRVJ0azJaZ2dQ?oc=5",
-   "publisher": "Modern Ghana",
-   "feed": "Coastal spillover",
-   "lang": "en",
-   "date": "2026-09-17T17:23:05+00:00",
-   "summary": "Muntaka Raises Concern Over Security Personnel Allegedly Facilitating Crime &nbsp;&nbsp; Modern Ghana",
-   "countries": [
-    "Ghana"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "c78270b4c42a4837",
    "title": "Mutinerie au Niger : Tiani réorganise le haut commandement militaire",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WZXBzMFVfS0VEWlFtajJwZzcwX2k3VmZabHpPcjJUQWM1ekQzM1g3ekRjeTQxNVZMN3RkbW1xSVJhcnhLV1FNWFNnNGsyb2lTal9Gd0duQ1FCNkNGTzh30gFkQVVfeXFMUGpSMWRraXZLQ1BtU25tLXN1RUx6UGJpYVlNZy1tS0tvM3QzSFNxZjZsejZESnBWTUExS1o1aTg1OGdYZU1TbnZZc0RYZGlrZDI5UG1NYjdrSW5KSDJiZkRqTk9rRg?oc=5",
@@ -2390,7 +2169,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -2534,6 +2313,26 @@
    "anomaly": false
   },
   {
+   "id": "3992100a162591c9",
+   "title": "ECOWAS Biometric Card To Transform Border Clearance, Strengthen Security",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTnBpRWt2M09keTQ5dmc2WTdEUlBYVGVzeERqYXpTWS1XQk9YY1QzdTNieFJRTDFiQ3JuWkNVNnhWV0xfeGQ0c1pmRlZzWHpQTS1RWjNSTlhiVHB6emlXMUlvSjF1d0FjNXpZSGs3S3B4YzB6ejkzaElvb3lQX2RpblZETUkzeEZ2V0ZzMTlwOTNMZHVPRUx3MEp3?oc=5",
+   "publisher": "LEADERSHIP Newspapers",
+   "feed": "AES and ECOWAS",
+   "lang": "en",
+   "date": "2026-09-17T10:38:49+00:00",
+   "summary": "ECOWAS Biometric Card To Transform Border Clearance, Strengthen Security &nbsp;&nbsp; LEADERSHIP Newspapers",
+   "countries": [
+    "Regional"
+   ],
+   "themes": [
+    "Regional bloc politics"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
    "id": "5de620ea0bbea76a",
    "title": "ECOWAS convene experts in The Gambia to advance regional competition policy",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd0FaZTVTSkw3SThHRU5EaTFRd0djQzdZWUVkWnlOZG93VTZJM2tKWkd0YjBUQ2MySjVwSzhQVnlQdTJReVFVNS1STVNmZE5CMUtDTE5IakZWXzZTdEY0dEtVYm1ycDR5ZTNLT1UyRWtCcC14d1NOLUIxbDRTcVpEaVJKZGNMTFlRcTd6YUFwdERmRE45TTVQVNIBlwFBVV95cUxNMzlaaG5LRGNkeFMwYVBZQWRlUzU5cV8wWFhSNmhtWWFxdjlMTU9pTjZHRjRHZXlRSVV1WjhUOGJIS1J3eWNXMXRwcG1JM084MGdDYk5RNDRjNkVjVE8yM2h6M2hlRFRYVkRaZXRXY1Y4bWJXM2lzVi0yVk1rOWdpOVhvVlVVNXdnbFZxU3RxU2VKYjZ1dnBr?oc=5",
@@ -2556,13 +2355,13 @@
   },
   {
    "id": "2a4b6250a15350cf",
-   "title": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger",
+   "title": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger - lemonde.fr",
    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQWFl6b0NraXozTFVHOE81NHdnY0NCNmotT1F3ZXRFVGJqM2lKemswUE84UlY2bm1ITmh6MDVrcm5Sb1dqUzZRbENDMzdmaDhtR1N6TlVMdVpCSEhSM1ltZzNYbjRQTVotRXNNWjdNbFRpZUpaWUV5RTQyMGMzWU1xcFZzSFk5c3pnTTJGelBqdy1ibEdLaVZweXpoRXlVOHk0bHJ5UjNwcU00Z210bDcwbUFrMnl4eXNZOW9FRDlZWmRQdjZBeFJyZkF6bDhYSVZfMld6MFBNMjRoNXRLbXExZ1puOGtqVTlOQTJrcWtEMTJRc1NuYjRhcTFYZGNGVGdRbG13?oc=5",
-   "publisher": "Le Monde.fr",
+   "publisher": "lemonde.fr",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-17T10:00:02+00:00",
-   "summary": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger &nbsp;&nbsp; Le Monde.fr",
+   "summary": "Du gouvernement à l’armée, le général Tiani resserre les rangs après la tentative de putsch au Niger &nbsp;&nbsp; lemonde.fr",
    "countries": [
     "Niger"
    ],
@@ -2614,13 +2413,13 @@
   },
   {
    "id": "7d9c19347ef4e0f4",
-   "title": "ECOWAS Court rulings: Media called to drive regional compliance - dailytrust.com",
+   "title": "ECOWAS Court rulings: Media called to drive regional compliance",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaE5HME9WNEQ4bFliRXhTUl9saTZXaHFTLTZmZ2RsYmhURFVIN0dVaGFwSTVkTnB1YWk0NVM1RjhyWUZnMTZHeWx2R2hfVmRIWE5tMGhRU3FVdXlKb3BqRTJOUzd2T2MzVEtSYjE4dDJLbjZvd0c1UXJVYzkzOS1xNjhMckRXRXZuM0tPRkozdw?oc=5",
-   "publisher": "dailytrust.com",
+   "publisher": "Daily Trust",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-17T05:42:18+00:00",
-   "summary": "ECOWAS Court rulings: Media called to drive regional compliance &nbsp;&nbsp; dailytrust.com",
+   "summary": "ECOWAS Court rulings: Media called to drive regional compliance &nbsp;&nbsp; Daily Trust",
    "countries": [
     "Regional"
    ],
@@ -2647,7 +2446,7 @@
    "themes": [],
    "events": [],
    "corroboration": 1,
-   "thread": "new",
+   "thread": "developing",
    "anomaly": false
   },
   {
@@ -2690,15 +2489,14 @@
   },
   {
    "id": "b6d6aae0693bc9e1",
-   "title": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate",
+   "title": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate - nannews.ng",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpbFdlZzBKS2I3bHhwY2FJOGdsUjNqUTZ1ZEdLU195RThaMmJlRUhSUTB2cGNfa3kwVXZjV2t5NG9hU3phZWlKTHBQLVAyZHFHU3c5ZkQtQ0haZVFQVjlMWWxyT25EMEwyTzRKUVR1S1E?oc=5",
-   "publisher": "News Agency of Nigeria",
+   "publisher": "nannews.ng",
    "feed": "AES and ECOWAS",
    "lang": "en",
    "date": "2026-09-16T23:08:38+00:00",
-   "summary": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate &nbsp;&nbsp; News Agency of Nigeria",
+   "summary": "ECOWAS Court Trains Journalists To Enhance Understanding Of Own Mandate &nbsp;&nbsp; nannews.ng",
    "countries": [
-    "Nigeria",
     "Regional"
    ],
    "themes": [
@@ -2729,46 +2527,6 @@
    "also": [
     "Voice of Nigeria"
    ],
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "303af047b4c1b8b7",
-   "title": "Ghana risks losing international intelligence sharing support over alleged security leaks - Muntaka",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBSTm1Gb29lam9ueG1lRGFHSzR1UlhpblBsZlZUN2JZVGQxZldkQnRNVzZHTzByaGZ6SjBiT1dLOWlMZ0wzTFVEd3h6aFBwLWhpMlFaWU80R3NwUjYzNGVfcm9PXzPSAVxBVV95cUxPdm1VWGxFMVFOMjNqT2FPdEV4UGxLNTFpU1ZPWWpxQVpqZlR1RlZUY0YxdE9yODhCcE9laVBlTTBMZ19NOXRBQmh2OFo4ODRJWFJvUHBvT2RSa3g4VA?oc=5",
-   "publisher": "Modern Ghana",
-   "feed": "Coastal spillover",
-   "lang": "en",
-   "date": "2026-09-16T20:32:30+00:00",
-   "summary": "Ghana risks losing international intelligence sharing support over alleged security leaks - Muntaka &nbsp;&nbsp; Modern Ghana",
-   "countries": [
-    "Ghana"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "30f3150f566d73f2",
-   "title": "Emir Sanusi reveals how Boko Haram, other terrorist activities started in Nigeria",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc0xfRlhCS3JTRWkxQ0dPcVluQmNZalRKLVRMWXpIMUJwU3JJS1FwMkhZeTNlenltc2ZRbDRUVlduRlM4QU9tWEJYT1FyQzJGZjYzWTFNQ2ZOczJ1ZTBWT0JkODluR1NlSWdSQW1rcTRoQlJldHdYSFpkcEo4RTNpa0lJRGNFX1NVZ1BRUDhTSWNUVGtiQmVoM0E4UGhldlc4Vno3VjhiNlJyOEd6YVk2cUdyYw?oc=5",
-   "publisher": "Daily Post Nigeria",
-   "feed": "Nigeria and Lake Chad",
-   "lang": "en",
-   "date": "2026-09-16T20:28:02+00:00",
-   "summary": "Emir Sanusi reveals how Boko Haram, other terrorist activities started in Nigeria &nbsp;&nbsp; Daily Post Nigeria",
-   "countries": [
-    "Nigeria"
-   ],
-   "themes": [
-    "Jihadist groups"
-   ],
-   "events": [
-    "Leadership change"
-   ],
-   "corroboration": 1,
    "thread": "developing",
    "anomaly": false
   },
@@ -2927,13 +2685,13 @@
   },
   {
    "id": "8bc3c0df0f67e303",
-   "title": "Le coup d'État manqué au Niger rappelle aux dirigeants militaires leurs promesses - theconversation.com",
+   "title": "Le coup d'État manqué au Niger rappelle aux dirigeants militaires leurs promesses",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPLW8xR3k2SXZ1LUljMVY1TTNLSFRRSDd0RU82ZXJwd3lVRnRPRWlhZDZVZFlldUduenpFNTdHQ3dIWEVVcHF4cFBlQzBtV3Q2NzBUU2R2UXJRWDh3RHcwV2p3ZGdMSFBpWG01elREWUh4T3lQUFVCQTdYLU1fMlp0cUFWN1VPaGZpVzVjRUU2V3hpTlAwNVN6VVpiN2hmZ003MWdRTHRHTUpNaHdDanFJNGMxVndUdw?oc=5",
-   "publisher": "theconversation.com",
+   "publisher": "The Conversation",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-09-16T09:51:55+00:00",
-   "summary": "Le coup d'État manqué au Niger rappelle aux dirigeants militaires leurs promesses &nbsp;&nbsp; theconversation.com",
+   "summary": "Le coup d'État manqué au Niger rappelle aux dirigeants militaires leurs promesses &nbsp;&nbsp; The Conversation",
    "countries": [
     "Niger"
    ],
@@ -3045,27 +2803,6 @@
    "anomaly": false
   },
   {
-   "id": "7e59d1606a77eaf3",
-   "title": "Accra- Kumasi expressway is part of Ghana’s contribution to ECOWAS initiative - Presidential Aide",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObzZUVkpnc1oyWEQ3MlVqVGdBWVZhWVBxZTlfRHRfSEVXR2tWY2JrVzByMWk4cnVsSXYwTGJFUkFLQ3R2cXU0eHcwSzM2cUVRcnA1b2lPUmY5OWtuUmtnYU1maVhxVHNUVzd3YXVnWXVDY3FSTDhFeXhnVnI4WXNjRnJadE9vaXJDZThfOTQzTDB4SHBkR1lfeW9lT29lZG41ZXlQVGJIV0JCTU4xT3JTTUFEdHg1NWc?oc=5",
-   "publisher": "3News",
-   "feed": "AES and ECOWAS",
-   "lang": "en",
-   "date": "2026-09-15T21:57:19+00:00",
-   "summary": "Accra- Kumasi expressway is part of Ghana’s contribution to ECOWAS initiative - Presidential Aide &nbsp;&nbsp; 3News",
-   "countries": [
-    "Ghana",
-    "Regional"
-   ],
-   "themes": [
-    "Regional bloc politics"
-   ],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "d020efd4dd7b5e2b",
    "title": "JNIM Expansion Across Malian Border Threatens Guinea",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObU11aFAtbzVYT2ZMN2IyaTBaM2V3eDJCLTVPbUhEMExxWXFpbEY5eGJZdXhlVWlsRS0xWElVaTlOUThHUWU3eUlyUnRseURKcHh4aTdSQTd3ZnI0WXQ5c08yMFdvT2ZRVExrcnhROEtIUi10NkJzbXNSclVieU5xY3FacVpkSnBTMVFuTTdocw?oc=5",
@@ -3104,6 +2841,24 @@
    "also": [
     "CitiNewsroom.com"
    ],
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "e67fe77018bf4e56",
+   "title": "Mahama convenes meeting to strengthen border security and narcotics control | News Desk",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DN1JyRFdPbWM4MHk4SkU0LTYxbXBvU2NFMjNvZU1LX2pTUVZ1LXg0Q1pNUF9qU3ZJT0c1VG9RUzhIZXB1YkFZNmx4U0RHalMwMUdoOWdjTzZoSzRtUnMtTzVHY0_SAVxBVV95cUxNdF9hMDhiQTBYcGg2bjZmREhEOFB5dTBWVWZQUEtlMFNWWFJnN3lCM3lZWUNUOF8tOThuejNSalN0M05mWDFLME4wb1JtX3dBR0FUaGlZYUZFLXhuOQ?oc=5",
+   "publisher": "Modern Ghana",
+   "feed": "Coastal spillover",
+   "lang": "en",
+   "date": "2026-09-15T14:30:00+00:00",
+   "summary": "Mahama convenes meeting to strengthen border security and narcotics control | News Desk &nbsp;&nbsp; Modern Ghana",
+   "countries": [
+    "Ghana"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
    "thread": "developing",
    "anomaly": false
   },
@@ -3188,28 +2943,6 @@
    "anomaly": false
   },
   {
-   "id": "3f62c062c8609564",
-   "title": "BREAKING: Nigerian Army Uncovers Plot By ISWAP Terrorists To Attack Churches, Schools, NYSC Camps Nationwide",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLXg1Z3pMWWphOTVkSm5vODhNSnQ0YW5DRlN3eFFnUDc1UE9CV3pMRV92cTZwNzFxNEJMeHZKSjB1OE1FeDBmNDRwcV9CeFhaMVFiTlZvWVllUm1la0dWU3A5X3JIMTBpM3NQMkNaanlIeGllNFE2NEtXeHI1ZkhkZ1JGTHMtdnhleTVldmJhNkhzSGZKR2NBdmFHWWtybDktNUFadlBhLXpMN09zeEVEN3dpOExHNFNZaVoyUEJOS2h5dWd3SFE?oc=5",
-   "publisher": "Sahara Reporters",
-   "feed": "JNIM and Islamic State Sahel",
-   "lang": "en",
-   "date": "2026-09-15T09:21:56+00:00",
-   "summary": "BREAKING: Nigerian Army Uncovers Plot By ISWAP Terrorists To Attack Churches, Schools, NYSC Camps Nationwide &nbsp;&nbsp; Sahara Reporters",
-   "countries": [
-    "Nigeria"
-   ],
-   "themes": [
-    "Jihadist groups"
-   ],
-   "events": [
-    "Conflict event"
-   ],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "802e05a22638d72f",
    "title": "Revue de presse Afrique - À la Une: au Niger, la junte militaire resserre les rangs",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSVdhLXBndjZQcmQ2YU5BdjhhNW9zN0VjYm0tMmJNLW9naVJmeTNNU2I2c2NMdVZ5SGxPT25kREFscE9MbVAwNVI4Ymh1Z0pua3J1c3Z3TFJ1emozcHp2b3J5cmpNNkVPandfcnloaUdRU1c5V0U2YTFzTnd5aXdzWW9YYW4xaWhLSnFVTnRrcWlES2VUQmlUVk9rakRnUlo1ZE1GdGxDNV96SFUwSVhUM3ZoNW4xb0M0VTRybVh5SzlEUQ?oc=5",
@@ -3274,6 +3007,24 @@
    "anomaly": false
   },
   {
+   "id": "c2d829f7272eb5f2",
+   "title": "Prez Mahama Summons Security Agencies Over Ghana’s Border Controls After Cocaine Seizure",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByMUZySjRMYTNwZDFsMEtjd3VwWlhGT01EUjUtSXF5X2Z2VHBVd0I2bFB5dmJ2aEFUTjhIUW55aUVxRWVRNjd3ZnNWOVZBQVBkNHZ4Z2Q1UXV0RHJxeldOZHByUdIBXEFVX3lxTE5BS24zTEo3a3B2bmhLT3RuYWpOdjROYllpUHUzTmtHR1ZoQ2FMRFlFUmdMNjBMMjRpTDNtTVR3c3RscDJkZ3lKR0pGMzZUb1hqeXVXamFBeGdzZUhj?oc=5",
+   "publisher": "Modern Ghana",
+   "feed": "Coastal spillover",
+   "lang": "en",
+   "date": "2026-09-14T20:22:28+00:00",
+   "summary": "Prez Mahama Summons Security Agencies Over Ghana’s Border Controls After Cocaine Seizure &nbsp;&nbsp; Modern Ghana",
+   "countries": [
+    "Ghana"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
    "id": "9bba73718e245bd9",
    "title": "Mahama convenes meeting on Ghana’s border security, narcotics trafficking",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPREJadTlxOTlodzN2Z2V5VDFFa1Zxb2h2TVZPWW0xbUJvdWd0aTFlME03NzRFbV9kTWdqak84SkxidGFRMElDbU1FQ29veVR0VW94Znd4dkRSY3IyXzg2THBFMTRNTTZDMEw2Tk9jOU8zenlXMzI4NWdobU5VOEs4TExURHJaSG5pTG9taExOOWplRHAtMGxMcVRubHY?oc=5",
@@ -3292,24 +3043,6 @@
    "anomaly": false
   },
   {
-   "id": "3182d0760d8928e0",
-   "title": "Mali: Vers un retour en force des rebelles? - fratmat.info",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOd2xmMTF2N0dSYklHQk1maUFrQnM2SGNGUXkwdk5tam9xOThMNHNJbl80cWhKd1REWGZfWDh1NUdrMm9HWHJxTXI1X3F1MVFIcG5UdlRHbXAyd0xRVklPR2I3bU9DWDg3aEZTYmdHOUpYc3AtUG42eUFQdnZjYnhxMTVfNjMzOE93X196M092eFZLVU1YT3ppaHQ0eVg?oc=5",
-   "publisher": "fratmat.info",
-   "feed": "Azawad et FLA",
-   "lang": "fr",
-   "date": "2026-09-14T17:49:00+00:00",
-   "summary": "Mali: Vers un retour en force des rebelles? &nbsp;&nbsp; fratmat.info",
-   "countries": [
-    "Mali"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
    "id": "94ca53c4659b2c1f",
    "title": "Mali: au moins 5 soldats du groupe paramilitaire russe Africa Corps tués lors de l'attaque de Dioura",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOWdqTGNlVXZiTkFYNEVyVGdxQWlQTmRXT3pFa0g1Q09zSTlFaGpYdTVuUS0zQVlHQXVqU3pHMml5X1ZVeGZkYmltcTAxNzVPZVFPdGtobW5YR1Q2WVlmLXBJN2dXMVBLSXRuV2htYzhhTk5PT3ZjLUNkQ3ZjOGtvbkdRNXdHZ3Zva0c2aW5SVVNnZ1ZTNnZFU0prVW9mcE91anJOR1gxVUY0WEx5N0tjWkRXdjRfaDl5ckhONGIweWR6ZGRFaTVRd3pYeW5CUDRaYVhmU0dhLW0tWDQ?oc=5",
@@ -3318,6 +3051,28 @@
    "lang": "fr",
    "date": "2026-09-14T16:49:18+00:00",
    "summary": "Mali: au moins 5 soldats du groupe paramilitaire russe Africa Corps tués lors de l'attaque de Dioura &nbsp;&nbsp; RFI",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Russia and Africa Corps"
+   ],
+   "events": [
+    "Conflict event"
+   ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "9f4140f85c7b257d",
+   "title": "Mali attack kills dozens of soldiers, 5 Russian mercenaries",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTXdXbDVaTDI1dFlLTERxSGdFemdqd1A5MnpMSXk3dEhLZ0NSUzM3bk5GaGllWk1xRHlZNnhaVG9Nd1A1Ny01aE9UR28tcDRqczhlU1BiMk9PU081SDZaczRUdjFaY3NucDFhRFFSXzBLSGlMN3I3ZXM3ZUZIaEI5MlBEcVgtQklDNF83aTNCMzZRQ05VRUR3X2VPaWhLVFRteTkwREh1WnlzUVppcThjUDMyaTBlVkRSZzhEcnNod2lFT05ObEFIaQ?oc=5",
+   "publisher": "Free Malaysia Today",
+   "feed": "Russia and Africa Corps",
+   "lang": "en",
+   "date": "2026-09-14T12:05:00+00:00",
+   "summary": "Mali attack kills dozens of soldiers, 5 Russian mercenaries &nbsp;&nbsp; Free Malaysia Today",
    "countries": [
     "Mali"
    ],
@@ -3513,14 +3268,35 @@
    "anomaly": false
   },
   {
+   "id": "2dcfa13d184da77c",
+   "title": "When AI becomes the weapon: China’s model race, Russian spying, Mali surveillance and Yemen missiles",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMU5DZ04tbTI1YWg1ZTRfS2I2b0xrUC1yZ0E5RmlrbDZNVVdRR0hIQmZtbW5QbjdqZjYzalg0dzVmNllvOVB2MEc5WTlkYlRYNXVrTkRxbjJDYk84U04tU1F0VFFtVENEZVpQNHJNcGNybU1KOG5IWWRRSE5OVUEwWS1pQVVMOHN0eHgzNTRzNmgwNUFVektiSjc5dkthTnVCQ3RnOGNHV2w0OVlDLVRWelRMb29vWjQ1STVpTWwyWDNodElJaHdmSEs0RDk1cVFid2RKUXlPOFHSAd4BQVVfeXFMUG81TVlSdU1zWWpqdlV2bENCSWh3d0pLRnJUb0tlR2JBc1BTV1R3SzE5bHZyLVZZdVdnd0N4M0N5cHpKUHpWdnRhR1ZZXzY1ejNEVzVtTWk5WXJiSHFmc1RTMTljTjFwTWE1X2ZmVE1nSW9sdVg0QUlYZTB2LTh2U0tzdkpYeDQwanJhRzdUXzhmUEptbGJaYThoeG1oa0prdlJ3R0htOFU0aEdrdVNkR3JHS1FZRWdNb3F6ZlpZb21DTkRzWjdpTk9IYWNjTG44Wmx0WnlLcEF3dk4wTFNB?oc=5",
+   "publisher": "Firstpost",
+   "feed": "Russia and Africa Corps",
+   "lang": "en",
+   "date": "2026-09-11T07:00:00+00:00",
+   "summary": "When AI becomes the weapon: China’s model race, Russian spying, Mali surveillance and Yemen missiles &nbsp;&nbsp; Firstpost",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Russia and Africa Corps",
+    "External actors"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
    "id": "6babdb4928e81c26",
-   "title": "Mali : Le JNIM attaque une base militaire stratégique à Dioura",
+   "title": "Mali : Le JNIM attaque une base militaire stratégique à Dioura - sahel-intelligence.com",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOHQzM0RWMkt3TWxNNE85YzQySy00SFRabGNzRThzQTFadlVoTG1aQTdGRmVUZDBhRW1OVGpZNndFbXlxaFNCUUR6M3BjTGJWckZvVkRtYjkwYzUxV1F4RXlPcEVZMy1ROHE1Q2VhWVk2NkxLcjdNSVc0WHpFS1cyLU14bTBtWUoxMDk3TnBFRl9sUzk1SXFZUm9pZjBrUEcxRU9qdw?oc=5",
-   "publisher": "Sahel Intelligence",
+   "publisher": "sahel-intelligence.com",
    "feed": "Jihadistes au Sahel",
    "lang": "fr",
    "date": "2026-09-11T07:00:00+00:00",
-   "summary": "Mali : Le JNIM attaque une base militaire stratégique à Dioura &nbsp;&nbsp; Sahel Intelligence",
+   "summary": "Mali : Le JNIM attaque une base militaire stratégique à Dioura &nbsp;&nbsp; sahel-intelligence.com",
    "countries": [
     "Mali",
     "Regional"
@@ -3583,44 +3359,20 @@
    "anomaly": false
   },
   {
-   "id": "f27040d6089f9ebe",
-   "title": "JNIM Terrorists Ambush Russian Africa Corps Convoy in Mali",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTllLY3l1eXM1Q2dDNW5EcjF5SEtXUXh2UlVCUlVqX0NYOGhxSFNub1BvWGtNUFV0TkRQT1MzX0I3OFQ1WlliZnlzTlk0emdQMVh0STdtY0hUMk5QUkducDdMd19WVGZjdVZNNkFtbjZ1T1JvQU80Y3RfSWZhLWk0VFVSaUw1VkpHSFlOY3JacWJTcE1p?oc=5",
-   "publisher": "Мілітарний",
-   "feed": "JNIM and Islamic State Sahel",
+   "id": "06a3a75a6baeabb0",
+   "title": "JNIM ambushes Russian convoy in Mali",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hUVZFbVhySmtvbjJ5dkUtR3JlVUNWbXZrcllmYVlsbFJEODZ4WGhlaGZVNzJ5UnN0dVJXR1FFUml0SjIxTWZkSzJ6NG1JdFJkZmR6RXJSMFJCRkoxSE45ZkE0bkFlajh4?oc=5",
+   "publisher": "Latest news from Azerbaijan",
+   "feed": "Russia and Africa Corps",
    "lang": "en",
-   "date": "2026-09-10T07:40:40+00:00",
-   "summary": "JNIM Terrorists Ambush Russian Africa Corps Convoy in Mali &nbsp;&nbsp; Мілітарний",
+   "date": "2026-09-10T07:54:39+00:00",
+   "summary": "JNIM ambushes Russian convoy in Mali &nbsp;&nbsp; Latest news from Azerbaijan",
    "countries": [
     "Mali"
    ],
    "themes": [
     "Jihadist groups",
     "Russia and Africa Corps"
-   ],
-   "events": [
-    "Conflict event"
-   ],
-   "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "b7dd18336a95ba3d",
-   "title": "JNIM Signals a New Phase of War in the Sahel, Warns of Intensified Attacks on Burkina Faso Civilians",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakpPelcwcnZ1WmpYSENaYWx3OEs2UzlzNVlQSGprbXVvVFdBRUpHdktWcnp4R3BrdGJQUVhJTmpwTE1PY2Y0blBvRG9QNXptbHA1enZoZGk4dml2STJqWjVQTkNTUXlSaUk2djA1VUwzMHdmZ3g3VjV3WFB3cTgyQmVVLUxON1AyRnZONnVhangxYVVjTnJQRDdIYw?oc=5",
-   "publisher": "Modern Ghana",
-   "feed": "JNIM and Islamic State Sahel",
-   "lang": "en",
-   "date": "2026-09-10T07:00:00+00:00",
-   "summary": "JNIM Signals a New Phase of War in the Sahel, Warns of Intensified Attacks on Burkina Faso Civilians &nbsp;&nbsp; Modern Ghana",
-   "countries": [
-    "Burkina Faso",
-    "Ghana",
-    "Regional"
-   ],
-   "themes": [
-    "Jihadist groups"
    ],
    "events": [],
    "corroboration": 1,
@@ -3671,19 +3423,43 @@
    "anomaly": false
   },
   {
+   "id": "c7fc24efcbafc31b",
+   "title": "Mali: Jihadist attack in Mopti region kills eleven, including four Russian mercenaries - agenzianova.com",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQXg5RDZXX1MycW53QjQtcWdGanB2RGEzaldBQkRwMDhCQmEwdTVCb3Z0RzMxeEM5RmJTODRkd2Q1N1VIMVMzOGJyd0JENzJGRGdOaTNTcHRyOGpPVXB6ZFhwQzVZLVl2OXBndmY0b1gzS2JjTmRjWFZUZ3NQNjJueUZxc3pvTzNPOVVEdnpMdWFhd2xuMlJTLVl6YVM0SWhzaThXY2NwUGR6SnItNUQ3dUtycXI4djBlT1U2WGdvYVpZNFJWMjZtaEUwRQ?oc=5",
+   "publisher": "agenzianova.com",
+   "feed": "Russia and Africa Corps",
+   "lang": "en",
+   "date": "2026-09-09T10:12:22+00:00",
+   "summary": "Mali: Jihadist attack in Mopti region kills eleven, including four Russian mercenaries &nbsp;&nbsp; agenzianova.com",
+   "countries": [
+    "Mali"
+   ],
+   "themes": [
+    "Jihadist groups",
+    "Russia and Africa Corps"
+   ],
+   "events": [
+    "Conflict event"
+   ],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
    "id": "c20f384d7fc42421",
-   "title": "The Observers - JNIM jihadists step up incursions into northern Benin - france24.com",
+   "title": "The Observers - JNIM jihadists step up incursions into northern Benin",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTzlaaURUOVFBNHdpa01ucE1QMDFGMkctQm9KUVdKYnhLdVlhTi1BV1ZDZFlxTk9mNlh6QlB0eDhGbE9mVnJJcjZtY2plOEE0eHVCamp0Q0d1ZjNmR09MVkJBQXFvM2prUFE0RVFBVEJxU29pLXNfUUNCYWhXV3A2NUQyWHdQN0VQdXRzZ3JzNXFySEJQdzB1djgtcFh4SzRSMGVSV0hGbEZLMDQ3?oc=5",
-   "publisher": "france24.com",
+   "publisher": "France 24",
    "feed": "JNIM and Islamic State Sahel",
    "lang": "en",
    "date": "2026-09-09T07:00:00+00:00",
-   "summary": "The Observers - JNIM jihadists step up incursions into northern Benin &nbsp;&nbsp; france24.com",
+   "summary": "The Observers - JNIM jihadists step up incursions into northern Benin &nbsp;&nbsp; France 24",
    "countries": [
     "Benin"
    ],
    "themes": [
-    "Jihadist groups"
+    "Jihadist groups",
+    "External actors"
    ],
    "events": [],
    "corroboration": 1,
@@ -3752,13 +3528,13 @@
   },
   {
    "id": "c5a80bfb8c8b93c5",
-   "title": "Nigeria names new commander to lead operations against Boko Haram",
+   "title": "Nigeria names new commander to lead operations against Boko Haram - sabcnews.com",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZkFIeXliLUZuc1ZoNkFzZjdrNEQ3Rkc5cm04c3hzTlE2YmQ0MGp2NVdmOFQ3VVEwWGZVQ243VDduOXFRZHNWRWdXRGZwclp6SHNQb2JnT2hYOXREVjFpNmd6eGZQRWo3emhPbXB6bnJTT1l0cU9xRUY2eDFhdWlIYVVxcnhmMWdHTGVpV1EtNGo4MnVaLUE5YkMzbm9sUWFuWVE?oc=5",
-   "publisher": "SABC News",
+   "publisher": "sabcnews.com",
    "feed": "Nigeria and Lake Chad",
    "lang": "en",
    "date": "2026-09-09T07:00:00+00:00",
-   "summary": "Nigeria names new commander to lead operations against Boko Haram &nbsp;&nbsp; SABC News",
+   "summary": "Nigeria names new commander to lead operations against Boko Haram &nbsp;&nbsp; sabcnews.com",
    "countries": [
     "Nigeria"
    ],
@@ -3816,6 +3592,27 @@
    "anomaly": false
   },
   {
+   "id": "c42429ebf547bf94",
+   "title": "Russian Ambassador Underscores Algeria’s Strategic Role in Sahel Stability – الشروق أونلاين",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVWRnbzctMDVXcHhjRS1oSXFBZGlaQUtmYnd3aFlBNVBWSlhxc2VDSk1RMmlibDV2aXk4a1h5VVh1RWVaZHhYLWNYOFpnNzdLeTJnNjl4NzFlWUQ4QWtBeE9VWTFENWVIWWZ1RGtHMFNtcldvY0VXSXlISjJEVGotRnJtR2R3OU8zUGE4WWJXN05oa3pkMEVIaTNJa0NNa3dmdWl6Z0x0TQ?oc=5",
+   "publisher": "الشروق أونلاين",
+   "feed": "Russia and Africa Corps",
+   "lang": "en",
+   "date": "2026-09-07T07:00:00+00:00",
+   "summary": "Russian Ambassador Underscores Algeria’s Strategic Role in Sahel Stability – الشروق أونلاين &nbsp;&nbsp; الشروق أونلاين",
+   "countries": [
+    "Regional"
+   ],
+   "themes": [
+    "Russia and Africa Corps",
+    "External actors"
+   ],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
    "id": "156add79834322ad",
    "title": "Mali: un journaliste jugé pour avoir déploré la situation à Kidal après la défaite de l'armée",
    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxONkdyRWp5Rjl1b1FFOU9YWG5ZUVVZb2xHWWhObGJNcmNGcWFLbWtmTzFJTFRfcEphWFF6bmtrMzk0WEk5SjItSmRqSGtmVmxsSG5XM1VGTlhhdEVwZTFCTG5fZGphZ2xoQm15SFJRWUwtRVlib0dUNDhVOFh5NnVvLXA1WGJJUWItZkhpYlZyQWtTemZQd0xjNGM4MW9IU3B5WWlOaTRkWXdaNlo3eGlNV216T2c4VmVNV0R0b0Zra2RlS2x6eTdmUW8tMjRfUHdmMkxVTDEyaWNvY0VmVDRwNlZyR1Q5TUdTd3V6NmtqTDVpZGNDTkZUc1FR?oc=5",
@@ -3862,7 +3659,7 @@
    "publisher": "Ahram Online",
    "feed": "Coastal spillover",
    "lang": "en",
-   "date": "2026-09-07T04:23:32+00:00",
+   "date": "2026-09-06T07:00:00+00:00",
    "summary": "Senegal FA dismiss social media rumors over airport security video &nbsp;&nbsp; Ahram Online",
    "countries": [
     "Senegal"
@@ -3874,21 +3671,44 @@
    "anomaly": false
   },
   {
-   "id": "45dc8fef3cd7b56a",
-   "title": "Boko Haram, ISWAP clashes claim 23 terrorists in Sambisa Forest",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcHoyZ3UwSHMyWl9vNG1Sd254OUt6Ylh6cFBQTGloMUhyN1VpeGk1RGpfVFJmQ2FjMW1pQjUtLXloNnJPWHc5blhnV21xS2NxLTZCZEpSLVBUNHBGOTd2SVB2czRIemx5TDZrV2xNVl9YbDV0dXNZREk4RHlSbUpIRHBPZUNZZ0Iwem5vUjhQc051TW5UWkhJREtUbHNtaFNnclk4Mw?oc=5",
-   "publisher": "The Guardian Nigeria News",
-   "feed": "JNIM and Islamic State Sahel",
+   "id": "36ce8bbdf80c7d93",
+   "title": "Insecurity drives Borgu residents across Benin border, disrupts farming, trade",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMF9DOUpDNEliY0lqTjlfX1UxRy1uSUp4OXpPSmxFR0FkdXBSMUQydHNmb2F1TGJncXc2cFJ2YV9Ua2laazhXdDlmTk5BTmlCYjRTQTM0OTVuQ3hUemJKaE1Ub3ZDQTdnS2FWcjY0N0VDMXpFWVlLVVVSMmN2elJhZ0Q3N1lmRXRCc2dzRjdRMllaR0VZbmlUWnR5N0JScnM3cURTYjlRMkxsMXlndFhCLXVlSQ?oc=5",
+   "publisher": "Business News Nigeria",
+   "feed": "Coastal spillover",
+   "lang": "en",
+   "date": "2026-09-06T07:00:00+00:00",
+   "summary": "Insecurity drives Borgu residents across Benin border, disrupts farming, trade &nbsp;&nbsp; Business News Nigeria",
+   "countries": [
+    "Nigeria",
+    "Benin"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "new",
+   "anomaly": false
+  },
+  {
+   "id": "0b1cc9c25e059b41",
+   "title": "Niger coup attempt: Is Russia proving better at protecting friends than fighting enemies in West Africa?",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VNjJia0QwemxtSzVEamhyY185RXBqbnQ2QVYtUmQzZkNGVTV1NlNHbE1raHoxUXlMWjg1ZHluUE1RTVNHaGFwdFA4LTlIWmNaRDhjVHZKOHNJNjMz?oc=5",
+   "publisher": "BBC",
+   "feed": "Russia and Africa Corps",
    "lang": "en",
    "date": "2026-09-05T07:00:00+00:00",
-   "summary": "Boko Haram, ISWAP clashes claim 23 terrorists in Sambisa Forest &nbsp;&nbsp; The Guardian Nigeria News",
+   "summary": "Niger coup attempt: Is Russia proving better at protecting friends than fighting enemies in West Africa? &nbsp;&nbsp; BBC",
    "countries": [
-    "Nigeria"
+    "Niger",
+    "Regional"
    ],
    "themes": [
-    "Jihadist groups"
+    "Russia and Africa Corps",
+    "Coups and transitions"
    ],
-   "events": [],
+   "events": [
+    "Conflict event"
+   ],
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
@@ -4187,13 +4007,13 @@
   },
   {
    "id": "1134323e34f0a963",
-   "title": "Thwarted Niger mutiny exposes junta’s Russia dependence",
+   "title": "Thwarted Niger mutiny exposes junta’s Russia dependence - clubofmozambique.com",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVXlLOU03RjdSRlpIaDdFOXhrTW5xcnh6V0dYVDdXZVpmNXIxVkNSOERrUDk5WFFObjRFa2RhRlBWenBjVmxNb0c3N0tWOXltM1NpNFBIR2ZUYW1jWVptRUhJeTBvajBiRUxIR1NLQjI3OF9nLU1DNEN1aXBlc09ET24wSWxGdWgxbGR3ai1BczB4N1E?oc=5",
-   "publisher": "CLUB OF MOZAMBIQUE",
+   "publisher": "clubofmozambique.com",
    "feed": "Russia and Africa Corps",
    "lang": "en",
    "date": "2026-09-02T08:15:13+00:00",
-   "summary": "Thwarted Niger mutiny exposes junta’s Russia dependence &nbsp;&nbsp; CLUB OF MOZAMBIQUE",
+   "summary": "Thwarted Niger mutiny exposes junta’s Russia dependence &nbsp;&nbsp; clubofmozambique.com",
    "countries": [
     "Niger"
    ],
@@ -4231,13 +4051,13 @@
   },
   {
    "id": "743561310694ac6e",
-   "title": "Russian mercenaries put down Niger coup attempt - nationalsecuritynews.com",
+   "title": "Russian mercenaries put down Niger coup attempt",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWGVHcXhlRTdJR3c0RG9uaHVjM1JfX0xIaVlMYlkweHg3TnlTUTAtZmpobkRUbmFkVlVOV3pKeDdGS2F2VzBEMnM5cmVoZ3Mwd2xiZmFhNTVoZjZfMUhsbEVzSzNDaTdGZHNBUkwwWkRuWGxDRE5QS2hEc1ZDZVUxcll6MnlpbGJZUzhXR0lXTWIwa1nSAZgBQVVfeXFMT0RXYVByc285RGFseDlVRWFQUnMyVnNQcktieGFyaTVKTmdwTV84ZkVTRFd5RS1qNno4bXQxaWpRanhvMTBqQ3djSTZIVWRBZUVvQ0pDa2dSQ2VLVklVZjc5Z2ZyaFZJV0p1dEpHQ0ZjakhkQldWNDNjZHJSY2Q5cHRfcjdOT1dWekNYUVVmcGYtS0dDeF9zMnE?oc=5",
-   "publisher": "nationalsecuritynews.com",
+   "publisher": "National Security News",
    "feed": "Russia and Africa Corps",
    "lang": "en",
    "date": "2026-09-02T07:00:00+00:00",
-   "summary": "Russian mercenaries put down Niger coup attempt &nbsp;&nbsp; nationalsecuritynews.com",
+   "summary": "Russian mercenaries put down Niger coup attempt &nbsp;&nbsp; National Security News",
    "countries": [
     "Niger"
    ],
@@ -4377,13 +4197,13 @@
   },
   {
    "id": "1bb31ef5d00d68a7",
-   "title": "Events in Niger highlight Russia’s Sahel role as Algeria enters the fray - thearabweekly.com",
+   "title": "Events in Niger highlight Russia’s Sahel role as Algeria enters the fray",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWVpwNG1DSTlmMm91QVJhTlZjWEVFQXQ4YWw2UzJuNWRLTDlJM1I4QmUtVUhYalgySU81S3cyZUYtRmRHNW1hZGJ4eFplcFM5LWxWTXhBUmdFcGJHRlJ5QWZSMzlqcXZuLVBBWG9fa0Y2cUVQWWN0TElLWEdpX2tmUHBWUTEyMXFmNGhXV19VZ00?oc=5",
-   "publisher": "thearabweekly.com",
+   "publisher": "The Arab Weekly",
    "feed": "Russia and Africa Corps",
    "lang": "en",
    "date": "2026-09-01T17:18:03+00:00",
-   "summary": "Events in Niger highlight Russia’s Sahel role as Algeria enters the fray &nbsp;&nbsp; thearabweekly.com",
+   "summary": "Events in Niger highlight Russia’s Sahel role as Algeria enters the fray &nbsp;&nbsp; The Arab Weekly",
    "countries": [
     "Niger",
     "Regional"
@@ -4461,13 +4281,13 @@
   },
   {
    "id": "93ad80db59fe3be8",
-   "title": "Terrorism forces 57 primary schools to shut in Nigeria’s Borno, 80 students remain captive: Official - aa.com.tr",
+   "title": "Terrorism forces 57 primary schools to shut in Nigeria’s Borno, 80 students remain captive: Official",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTDhCUXZhS0JOS3ktbHJxcy1Qa1J2QjRMdFFtRWktSlZMUklQaXdHbExvMDBGRWpXeF9mdkEzU1ZLZmU5MHF2WTBZdmdfWnR4WGNnNzRROVY1WGZSb2ZZVU9qTkNic1NucTQ2R3pvSzZwZmF4d0Y5U2pXanVQRWFNQndzaUN1QzdkTVJyQ3BCM2c2bDRZQjlRX2luRHRYY21QeU1FWlZmMDM4VFFVcXJocWItcDFvNFRiT1gxZDV1UTliYjV3N0JObE56Zzd5VndOekdXMg?oc=5",
-   "publisher": "aa.com.tr",
+   "publisher": "Anadolu Ajansı",
    "feed": "Nigeria and Lake Chad",
    "lang": "en",
    "date": "2026-09-01T07:00:00+00:00",
-   "summary": "Terrorism forces 57 primary schools to shut in Nigeria’s Borno, 80 students remain captive: Official &nbsp;&nbsp; aa.com.tr",
+   "summary": "Terrorism forces 57 primary schools to shut in Nigeria’s Borno, 80 students remain captive: Official &nbsp;&nbsp; Anadolu Ajansı",
    "countries": [
     "Nigeria"
    ],
@@ -4543,17 +4363,38 @@
   },
   {
    "id": "f789c8185776498c",
-   "title": "U.S. Donated Vehicles to Strengthen Senegal's Border Security",
+   "title": "U.S. Donated Vehicles to Strengthen Senegal's Border Security - sn.usembassy.gov",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KTi0wdU5ZZ3phd2VGNVJJZ2k4RjNIOFlTY0lyclBQS2F4ZWI4YUxDS0hHaFdaSmZvRXhqSG1wa09CdTVHUm5PVzQ4TjVubGhITUhLQVJ6Sm41c25TbV9IR1FmRXUxTDB3SWc?oc=5",
-   "publisher": "U.S. Embassy in Senegal (.gov)",
+   "publisher": "sn.usembassy.gov",
    "feed": "Coastal spillover",
    "lang": "en",
    "date": "2026-08-31T14:33:44+00:00",
-   "summary": "U.S. Donated Vehicles to Strengthen Senegal's Border Security &nbsp;&nbsp; U.S. Embassy in Senegal (.gov)",
+   "summary": "U.S. Donated Vehicles to Strengthen Senegal's Border Security &nbsp;&nbsp; sn.usembassy.gov",
    "countries": [
     "Senegal"
    ],
    "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
+  },
+  {
+   "id": "757e8d52f4c48b7d",
+   "title": "Niger’s junta survives mutiny with Russian support - defenceWeb",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWWN4dGFiOHJwOVJrek5uc1Y5a3Fva0drd2tDYlEzSXRlSGVKcWFEcWR6VnItTUlsbWJfb2daT2p0bFYwUERqU3RGZHlRWnA3cm9KZFNlY2hFeE1fdGxKNXNYMnhEQWxfWTFfVHhLQmxKNFBhdFJBY1hVMWNVRWUyVXltSVp1c183VUN0Wm9GSldzMHlm?oc=5",
+   "publisher": "defenceWeb",
+   "feed": "Russia and Africa Corps",
+   "lang": "en",
+   "date": "2026-08-31T10:38:12+00:00",
+   "summary": "Niger’s junta survives mutiny with Russian support &nbsp;&nbsp; defenceWeb",
+   "countries": [
+    "Niger"
+   ],
+   "themes": [
+    "Russia and Africa Corps",
+    "Coups and transitions"
+   ],
    "events": [],
    "corroboration": 1,
    "thread": "developing",
@@ -4770,13 +4611,13 @@
   },
   {
    "id": "57c4bd23016bfc0d",
-   "title": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani",
+   "title": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani - humanite.fr",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQN3pZa1FGOG1ZeDh2UkN1eDFLN3Z3SkNuTjlEZnVEQkpXYzhxaGxPMnoxMGRadU9BSVUzTU1WZl9uX2lMZUJwOVc1NUZxRkRRWHYwbjNWNGJiM2lGZUxkRkh1VWp4R3VkX3M0QkRJYUdjQkxNWG5tQ3g2RGRMYXUzN2ZkNVcySXJ0bHFXSzE0TlZvaFJ2LUpVd2FxTE9OcnlSNncxTXFoMFc5QXRpbl94VENUaUZhU3JXN2dnMHE0X1RuTDhNcDIwSWU4aDhmMXZMQ2xPd1hULWtFcXgxNmc?oc=5",
-   "publisher": "L'Humanité",
+   "publisher": "humanite.fr",
    "feed": "Sahel securite",
    "lang": "fr",
    "date": "2026-08-31T07:00:00+00:00",
-   "summary": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani &nbsp;&nbsp; L'Humanité",
+   "summary": "Au Niger, l'échec du putsch révèle les divisions au sein de l’armée du général Abdourahamane Tiani &nbsp;&nbsp; humanite.fr",
    "countries": [
     "Niger"
    ],
@@ -4851,24 +4692,6 @@
    "also": [
     "BBC"
    ],
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "9d66803324d64789",
-   "title": "Niger : des \"insurgés de l'armée\" ont tenté de pénétrer dans le palais présidentiel",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQUNGUXJjRk96SHNhcE9CYWl2QW1Ib0lRalBkRGY1ZkoycDRzV2xUOEVWTzJqRU9Jb2NZdDFPaUtiY0pBQk1Qa3UwdzlqaDJ0MXUyMVdlbURZX3hFenRGSThPTVFhRWdLRnZvUmd6T0NxbUtWRjVSUVI3OFRDdk9SZC00ZW5MXzhBbGpEWkJpM2czTVRMbF9tWmNDZWhhYlFXNE9EcHpNY1VieDRRcWVncy1EbldidTTSAbwBQVVfeXFMTjdPMy1mcG5EWUU5QnVGSXBJM2VYeFJyRVhFZFdaQmdZZDNVUmI5X2JaeXFkNUpKNVUxdF9yRllVVFB5WEczWmtIVHp1cUZQZnc1YkdsaEVSYnRQZGxTdEw3al9yZkRFS0FwNFctc2RXVE5jdlpFUUhZV0xXd1FNTWhJY2VyN1hqNkcyYXRWVEs3QzRRNi1nOUx6X21NaUFJR1JYNjVfUXl2QVB4Y3BzUkY4N0FlNjdCdHpfTFA?oc=5",
-   "publisher": "Africanews",
-   "feed": "Sahel securite",
-   "lang": "fr",
-   "date": "2026-08-31T07:00:00+00:00",
-   "summary": "Niger : des \"insurgés de l'armée\" ont tenté de pénétrer dans le palais présidentiel &nbsp;&nbsp; Africanews",
-   "countries": [
-    "Niger"
-   ],
-   "themes": [],
-   "events": [],
-   "corroboration": 1,
    "thread": "developing",
    "anomaly": false
   },
@@ -4968,7 +4791,7 @@
    "name": "JNIM and Islamic State Sahel",
    "ok": true,
    "fetched": 100,
-   "kept": 18,
+   "kept": 10,
    "error": null,
    "dry_runs": 0
   },
@@ -4976,7 +4799,7 @@
    "name": "Russia and Africa Corps",
    "ok": true,
    "fetched": 100,
-   "kept": 15,
+   "kept": 22,
    "error": null,
    "dry_runs": 0
   },
@@ -4984,7 +4807,7 @@
    "name": "AES and ECOWAS",
    "ok": true,
    "fetched": 100,
-   "kept": 36,
+   "kept": 33,
    "error": null,
    "dry_runs": 0
   },
@@ -4992,7 +4815,7 @@
    "name": "Nigeria and Lake Chad",
    "ok": true,
    "fetched": 100,
-   "kept": 16,
+   "kept": 14,
    "error": null,
    "dry_runs": 0
   },
@@ -5000,7 +4823,7 @@
    "name": "Coastal spillover",
    "ok": true,
    "fetched": 100,
-   "kept": 48,
+   "kept": 49,
    "error": null,
    "dry_runs": 0
   },
@@ -5008,7 +4831,7 @@
    "name": "Sahel securite",
    "ok": true,
    "fetched": 100,
-   "kept": 58,
+   "kept": 55,
    "error": null,
    "dry_runs": 0
   },
@@ -5024,7 +4847,7 @@
    "name": "Azawad et FLA",
    "ok": true,
    "fetched": 100,
-   "kept": 8,
+   "kept": 7,
    "error": null,
    "dry_runs": 0
   },
@@ -5032,7 +4855,7 @@
    "name": "Russie au Sahel",
    "ok": true,
    "fetched": 100,
-   "kept": 19,
+   "kept": 18,
    "error": null,
    "dry_runs": 0
   },
@@ -5040,15 +4863,15 @@
    "name": "AES et CEDEAO",
    "ok": true,
    "fetched": 100,
-   "kept": 8,
+   "kept": 9,
    "error": null,
    "dry_runs": 0
   },
   {
    "name": "RFI Afrique",
    "ok": true,
-   "fetched": 23,
-   "kept": 10,
+   "fetched": 24,
+   "kept": 7,
    "error": null,
    "dry_runs": 0
   },
@@ -5064,9 +4887,9 @@
    "name": "Al Jazeera",
    "ok": true,
    "fetched": 25,
-   "kept": 0,
+   "kept": 1,
    "error": null,
-   "dry_runs": 2
+   "dry_runs": 0
   },
   {
    "name": "Guardian Africa",
@@ -5082,7 +4905,7 @@
    "fetched": 0,
    "kept": 0,
    "error": null,
-   "dry_runs": 5
+   "dry_runs": 6
   }
  ]
 }

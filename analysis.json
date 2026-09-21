@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T22:14:37.115724+00:00",
+ "generated": "2026-09-21T01:58:42.439464+00:00",
  "cadence_hours": 24,
  "window_days": 21,
  "countries": [
@@ -61,7 +61,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 102,
+   "recent": 103,
    "baseline": 0.0
   },
   {
@@ -71,12 +71,12 @@
   },
   {
    "country": "Niger",
-   "recent": 117,
+   "recent": 118,
    "baseline": 0.0
   },
   {
    "country": "Nigeria",
-   "recent": 88,
+   "recent": 90,
    "baseline": 0.0
   },
   {
@@ -106,7 +106,7 @@
   },
   {
    "country": "Ghana",
-   "recent": 59,
+   "recent": 60,
    "baseline": 0.0
   },
   {
@@ -116,12 +116,12 @@
   },
   {
    "country": "Benin",
-   "recent": 29,
+   "recent": 31,
    "baseline": 0.0
   },
   {
    "country": "Regional",
-   "recent": 120,
+   "recent": 122,
    "baseline": 0.0
   }
  ],
@@ -478,6 +478,24 @@
    "corroboration": 1,
    "thread": "developing",
    "anomaly": false
+  },
+  {
+   "id": "2981644532c9d559",
+   "title": "West Africa Seasonal Monitor: Rainy season progresses with localized deficits across the Sahel, August 31, 2026",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMTFjMWYzWF9JejVzaUI5U1hWNEdJVDEyOVk0ZHlvNUFHek1sS216N0JRa0tVMTFmcDctRXZ4Tjd0WWJaeTlBQm4xTnB2RFhwMWlpRW9NWC1qNVo5eF9HdTNWT2s4REMxMXZnZ3o1TV94VXNVejN2X2NZSWo1N3J1SC14VFlTVjVtUnh3aGFfb0ZEUlFTclQ1WVk2dTNXcFRkLXR5eEpzcktDckZodmdaTmRkeC1zeFBWM0VsYUxRRzM5NXdNQXBYalJPMGNTQW8?oc=5",
+   "publisher": "ReliefWeb",
+   "feed": "Humanitarian reporting",
+   "lang": "en",
+   "date": "2026-08-31T07:00:00+00:00",
+   "summary": "West Africa Seasonal Monitor: Rainy season progresses with localized deficits across the Sahel, August 31, 2026 &nbsp;&nbsp; ReliefWeb",
+   "countries": [
+    "Regional"
+   ],
+   "themes": [],
+   "events": [],
+   "corroboration": 1,
+   "thread": "developing",
+   "anomaly": false
   }
  ],
  "health": [
@@ -487,7 +505,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 5
+   "dry_runs": 6
   },
   {
    "name": "Crisis Group",
@@ -511,13 +529,13 @@
    "fetched": 100,
    "kept": 0,
    "error": null,
-   "dry_runs": 4
+   "dry_runs": 5
   },
   {
    "name": "Humanitarian reporting",
    "ok": true,
    "fetched": 100,
-   "kept": 4,
+   "kept": 5,
    "error": null,
    "dry_runs": 0
   },

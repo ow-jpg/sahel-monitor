@@ -13,10 +13,10 @@
   "AES et CEDEAO": 0,
   "RFI Afrique": 0,
   "France 24 Afrique": 0,
-  "Al Jazeera": 2,
+  "Al Jazeera": 0,
   "Guardian Africa": 0,
-  "ReliefWeb": 5,
-  "Long War Journal": 5,
+  "ReliefWeb": 6,
+  "Long War Journal": 6,
   "Institute for Security Studies": 0,
   "Crisis Group": 0,
   "ACLED": 0,
@@ -34,7 +34,7 @@
   "OpenAlex: Tuareg Azawad": 0,
   "OpenAlex: Russian influence Africa": 0,
   "ISS Africa and ACLED": 0,
-  "Africa Center and US research": 4,
+  "Africa Center and US research": 5,
   "Humanitarian reporting": 0
  }
 }
