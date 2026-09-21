@@ -51,8 +51,12 @@ jobs:
         run: |
           git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
-          git add -A news.json analysis.json social.json research.json \
-                     sources.json brief.json state.json archive 2>/dev/null || true
+          # Stage everything. Listing files by name breaks badly: git add
+          # aborts on the first name that does not exist and stages nothing
+          # at all, so one missing file silently discards the whole run.
+          git add -A .
+          echo "Staged:"
+          git diff --staged --name-only | sed 's/^/  /'
           if git diff --staged --quiet; then
             echo "Nothing changed."
           else
