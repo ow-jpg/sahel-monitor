@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T04:13:15.889785+00:00",
+ "generated": "2026-09-21T04:28:58.355387+00:00",
  "manual": true,
  "cadence_hours": 168,
  "window_days": 21,
@@ -229,7 +229,9 @@
     }
    ],
    "thread": "developing",
-   "anomaly": false
+   "anomaly": false,
+   "ai_summary": "Crisis Group publishes a list of ten challenges for the UN in 2026-2027. The blurb indicates the list covers multiple regions and global issues.",
+   "ai_basis": "the headline and the feed blurb"
   },
   {
    "id": "f2abb36d2b9b8d2f",
@@ -262,13 +264,13 @@
   },
   {
    "id": "a315b2fb6e207388",
-   "title": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ?",
+   "title": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ? - timbuktu-institute.org",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWGtKSWQ1Y1BkclphREFzTi0tZ1F2bHhKcWJjMHAxVkRSbXpfbkM3MHNzNXAzMDdtY2xob1F0SkZhcVhkeU5jYmpkS0JqSXQ4UTh1a09EbW9kbk8wQUJ2QmFub3E0V1RuS1lKc2hCMVRfbFdiYnNMZG16RkFYQjJvYi16QVBJd01fQTR4SGo1RTUwRHJzWGhHNFJfQXVNV3YzNFRZMkdBenFZeEtldHpTZDlpcUxhM0xtYVp0ZUxzVDluM0UxZmFEZG5walA0TVdoSmg3VjI3RUxOMFE?oc=5",
-   "publisher": "Timbuktu Institute",
+   "publisher": "timbuktu-institute.org",
    "feed": "Analyse francophone",
    "lang": "fr",
    "date": "2026-09-11T07:00:00+00:00",
-   "summary": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ? &nbsp;&nbsp; Timbuktu Institute",
+   "summary": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ? &nbsp;&nbsp; timbuktu-institute.org",
    "countries": [
     "Mali"
    ],
@@ -277,21 +279,21 @@
    ],
    "topics": [],
    "events": [],
-   "corroboration": 1,
+   "corroboration": 2,
    "sources": [
     {
-     "publisher": "Timbuktu Institute",
+     "publisher": "timbuktu-institute.org",
      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWGtKSWQ1Y1BkclphREFzTi0tZ1F2bHhKcWJjMHAxVkRSbXpfbkM3MHNzNXAzMDdtY2xob1F0SkZhcVhkeU5jYmpkS0JqSXQ4UTh1a09EbW9kbk8wQUJ2QmFub3E0V1RuS1lKc2hCMVRfbFdiYnNMZG16RkFYQjJvYi16QVBJd01fQTR4SGo1RTUwRHJzWGhHNFJfQXVNV3YzNFRZMkdBenFZeEtldHpTZDlpcUxhM0xtYVp0ZUxzVDluM0UxZmFEZG5walA0TVdoSmg3VjI3RUxOMFE?oc=5",
      "date": "2026-09-11T07:00:00+00:00",
-     "title": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ?",
+     "title": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ? - timbuktu-institute.org",
      "lang": "fr",
      "kind": "outlet"
     }
    ],
    "thread": "developing",
    "anomaly": false,
-   "title_en": "Artificial intelligence, new propaganda lever of JNIM in Mali ?",
-   "summary_en": "Artificial intelligence, new propaganda lever of JNIM in Mali ? &nbsp;&nbsp; Timbuktu Institute",
+   "title_en": "Artificial intelligence, new lever of JNIM propaganda in Mali? - timbuktu-institute.org",
+   "summary_en": "Artificial intelligence, new lever of JNIM propaganda in Mali?    timbuktu-institute.org",
    "also": [
     {
      "publisher": "Timbuktu Institute",
@@ -304,7 +306,9 @@
      "aggregator": false,
      "cross_language": true
     }
-   ]
+   ],
+   "ai_summary": "Timbuktu Institute reports that artificial intelligence is being used as a new propaganda lever by JNIM in Mali. A second headline from the same institute frames the claim as a question.",
+   "ai_basis": "the headlines of 2 reports"
   },
   {
    "id": "cfadb9dc3ba96f9b",
@@ -429,7 +433,9 @@
     }
    ],
    "thread": "developing",
-   "anomaly": false
+   "anomaly": false,
+   "ai_summary": "Timbuktu Institute publishes an analysis of Burkina Faso covering industrial sovereignty, youth mobilisation and persistent insecurity. No other outlets are cited for this item.",
+   "ai_basis": "the headline and the feed blurb"
   },
   {
    "id": "fc26acb11fd09a5d",
@@ -710,7 +716,9 @@
     }
    ],
    "thread": "developing",
-   "anomaly": false
+   "anomaly": false,
+   "ai_summary": "ReliefWeb issues a seasonal monitor stating the rainy season is progressing with localised deficits across the Sahel as of 31 August 2026. No other outlets are cited for this item.",
+   "ai_basis": "the headline and the feed blurb"
   }
  ],
  "health": [
@@ -720,7 +728,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 8
+   "dry_runs": 9
   },
   {
    "name": "Crisis Group",
@@ -744,7 +752,7 @@
    "fetched": 100,
    "kept": 0,
    "error": null,
-   "dry_runs": 7
+   "dry_runs": 8
   },
   {
    "name": "Humanitarian reporting",

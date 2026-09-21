@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T04:13:15.889785+00:00",
+ "generated": "2026-09-21T04:28:58.355387+00:00",
  "settings": {
   "window_days": 21,
   "manual": true,
@@ -67,7 +67,7 @@
      "kind": "search",
      "ok": true,
      "fetched": 100,
-     "kept": 15,
+     "kept": 12,
      "dry_runs": 0,
      "error": null
     },
@@ -89,7 +89,7 @@
      "kind": "search",
      "ok": true,
      "fetched": 100,
-     "kept": 53,
+     "kept": 52,
      "dry_runs": 0,
      "error": null
     },
@@ -111,7 +111,7 @@
      "kind": "search",
      "ok": true,
      "fetched": 100,
-     "kept": 8,
+     "kept": 7,
      "dry_runs": 0,
      "error": null
     },
@@ -189,7 +189,7 @@
      "ok": true,
      "fetched": 0,
      "kept": 0,
-     "dry_runs": 8,
+     "dry_runs": 9,
      "error": null
     }
    ]
@@ -207,7 +207,7 @@
      "ok": true,
      "fetched": 30,
      "kept": 0,
-     "dry_runs": 8,
+     "dry_runs": 9,
      "error": null
     },
     {
@@ -240,7 +240,7 @@
      "ok": true,
      "fetched": 100,
      "kept": 0,
-     "dry_runs": 7,
+     "dry_runs": 8,
      "error": null
     },
     {
