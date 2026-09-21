@@ -1,10 +1,21 @@
 name: Update feed
 
 on:
-  # Times are UTC. 20:00 UTC is early morning in Canberra, so a fresh run is
-  # waiting when you start work.
+  # Cron is always UTC and GitHub does not follow daylight saving, so the
+  # Canberra time this lands at shifts by an hour across the year.
+  #
+  #   22:00 UTC  =  9am Canberra during daylight saving (AEDT, Oct to Apr)
+  #              =  8am Canberra the rest of the year   (AEST, Apr to Oct)
+  #
+  # Chosen so the fresh run is always waiting by 9am rather than arriving
+  # after it. Monday morning is covered by the daily run.
+  #
+  # Collection stays daily on purpose. Feeds only carry recent items, so a
+  # weekly poll would silently miss anything that scrolled off between runs,
+  # and the archive and the coverage baselines get thinner and less useful.
+  # Reading it weekly is the point; collecting weekly would cost you data.
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "0 22 * * *"
 
   # Lets you run it by hand from the Actions tab.
   workflow_dispatch:
