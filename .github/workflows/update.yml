@@ -1,31 +1,10 @@
 name: Update feed
 
+# Manual only. Nothing runs on a schedule, so the site changes when you
+# decide it should and not before. Start a run from the Actions tab:
+# click "Update feed" on the left, then "Run workflow" on the right.
 on:
-  # Cron is always UTC and GitHub does not follow daylight saving, so the
-  # Canberra time this lands at shifts by an hour across the year.
-  #
-  #   22:00 UTC  =  9am Canberra during daylight saving (AEDT, Oct to Apr)
-  #              =  8am Canberra the rest of the year   (AEST, Apr to Oct)
-  #
-  # Chosen so the fresh run is always waiting by 9am rather than arriving
-  # after it. Monday morning is covered by the daily run.
-  #
-  # Collection stays daily on purpose. Feeds only carry recent items, so a
-  # weekly poll would silently miss anything that scrolled off between runs,
-  # and the archive and the coverage baselines get thinner and less useful.
-  # Reading it weekly is the point; collecting weekly would cost you data.
-  schedule:
-    - cron: "0 22 * * *"
-
-  # Lets you run it by hand from the Actions tab.
   workflow_dispatch:
-
-  # Also runs when you change the source list, so edits take effect at once.
-  push:
-    paths:
-      - "sources.yml"
-      - "scripts/**"
-      - ".github/workflows/update.yml"
 
 permissions:
   contents: write
@@ -52,23 +31,32 @@ jobs:
 
       - name: Collect
         id: collect
-        # The collector exits non-zero on a suspiciously empty run. We want the
-        # results committed either way, so the site can show what happened, but
-        # we remember the outcome and fail the job at the end.
+        # Exits non-zero on a suspiciously empty run. We still want the
+        # results committed so the site can show what happened, so the
+        # failure is remembered and applied at the end instead.
         continue-on-error: true
         run: python scripts/collect.py
+
+      - name: Translate and summarise
+        # Needs OPENROUTER_API_KEY. Without it this step does nothing and
+        # passes, and the site works fine minus translations and the brief.
+        # Never fails the run: a model being unavailable is not a collection
+        # problem, and the previous brief stays in place.
+        continue-on-error: true
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python scripts/enrich.py
 
       - name: Save the results
         run: |
           git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
-          git add -A news.json analysis.json research.json state.json archive 2>/dev/null || true
+          git add -A news.json analysis.json social.json research.json \
+                     sources.json brief.json state.json archive 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Nothing changed."
           else
             git commit -m "Update feed: $(date -u '+%Y-%m-%d %H:%M UTC')"
-            # A scheduled run can collide with a commit you made in the browser.
-            # Rebase and retry rather than failing the whole run.
             for attempt in 1 2 3; do
               git pull --rebase --autostash origin main && git push && break
               echo "Push attempt $attempt failed, retrying."
@@ -77,11 +65,8 @@ jobs:
           fi
 
       - name: Report a bad run
-        # Turns a collapsed collection into a failed run, which GitHub emails
-        # you about. Check Settings, Notifications, Actions if you get nothing.
         if: steps.collect.outcome == 'failure'
         run: |
-          echo "::error::Collection came back far below normal volume. The site"
-          echo "::error::will show a warning. Open the Collect step above to see"
-          echo "::error::which feeds failed."
+          echo "::error::Collection came back far below normal volume."
+          echo "::error::Open the Collect step above to see which feeds failed."
           exit 1
