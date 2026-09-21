@@ -1,0 +1,1036 @@
+{
+ "generated": "2026-09-21T04:13:15.889785+00:00",
+ "settings": {
+  "window_days": 21,
+  "manual": true,
+  "cadence_hours": 168,
+  "max_news": 300,
+  "max_analysis": 120,
+  "max_research": 60,
+  "archive_days": 400,
+  "baseline_weeks": 8
+ },
+ "streams": [
+  {
+   "stream": "news",
+   "label": "News",
+   "note": "Wire services, regional outlets and local reporting.",
+   "sources": [
+    {
+     "name": "Sahel security",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(Sahel+OR+Mali+OR+%22Burkina+Faso%22+OR+Niger)+(attack+OR+militants+OR+army+OR+offensive)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 15,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "JNIM and Islamic State Sahel",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=JNIM+OR+%22Islamic+State+Sahel%22+OR+%22Islamic+State+West+Africa%22+OR+ISWAP&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 10,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Russia and Africa Corps",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(%22Africa+Corps%22+OR+Wagner+OR+Russian)+(Mali+OR+%22Burkina+Faso%22+OR+Niger+OR+Sahel)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 23,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "AES and ECOWAS",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=ECOWAS+OR+%22Alliance+of+Sahel+States%22&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 29,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Nigeria and Lake Chad",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(Nigeria+OR+%22Lake+Chad%22)+(%22Boko+Haram%22+OR+ISWAP+OR+banditry+OR+Borno)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 15,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Coastal spillover",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(Benin+OR+Togo+OR+%22Ivory+Coast%22+OR+Ghana+OR+Senegal)+(jihadist+OR+attack+OR+border+OR+security)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 49,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Sahel securite",
+     "lang": "fr",
+     "url": "https://news.google.com/rss/search?q=(Sahel+OR+Mali+OR+%22Burkina+Faso%22+OR+Niger)+(arm%C3%A9e+OR+attaque+OR+junte+OR+s%C3%A9curit%C3%A9)&hl=fr&gl=FR&ceid=FR:fr",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 53,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Jihadistes au Sahel",
+     "lang": "fr",
+     "url": "https://news.google.com/rss/search?q=JNIM+OR+%22Etat+islamique+au+Sahel%22+OR+jihadistes+Sahel&hl=fr&gl=FR&ceid=FR:fr",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 3,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Azawad et FLA",
+     "lang": "fr",
+     "url": "https://news.google.com/rss/search?q=%22Front+de+Lib%C3%A9ration+de+l%27Azawad%22+OR+Azawad+OR+Kidal&hl=fr&gl=FR&ceid=FR:fr",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 8,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Russie au Sahel",
+     "lang": "fr",
+     "url": "https://news.google.com/rss/search?q=(Russie+OR+Wagner+OR+%22Africa+Corps%22)+(Mali+OR+Burkina+OR+Niger+OR+Sahel)&hl=fr&gl=FR&ceid=FR:fr",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 18,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "AES et CEDEAO",
+     "lang": "fr",
+     "url": "https://news.google.com/rss/search?q=CEDEAO+OR+%22Alliance+des+Etats+du+Sahel%22&hl=fr&gl=FR&ceid=FR:fr",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 9,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "RFI Afrique",
+     "lang": "fr",
+     "url": "https://www.rfi.fr/fr/afrique/rss",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 25,
+     "kept": 8,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "France 24 Afrique",
+     "lang": "fr",
+     "url": "https://www.france24.com/fr/afrique/rss",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 30,
+     "kept": 10,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Al Jazeera",
+     "lang": "en",
+     "url": "https://www.aljazeera.com/xml/rss/all.xml",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 25,
+     "kept": 1,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Guardian Africa",
+     "lang": "en",
+     "url": "https://www.theguardian.com/world/africa/rss",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 20,
+     "kept": 4,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "ReliefWeb",
+     "lang": "en",
+     "url": "https://reliefweb.int/updates/rss.xml?view=headlines",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 0,
+     "kept": 0,
+     "dry_runs": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "stream": "analysis",
+   "label": "Analysis",
+   "note": "Research institutes and specialist trackers.",
+   "sources": [
+    {
+     "name": "Long War Journal",
+     "lang": "en",
+     "url": "https://www.longwarjournal.org/feed",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 30,
+     "kept": 0,
+     "dry_runs": 8,
+     "error": null
+    },
+    {
+     "name": "Crisis Group",
+     "lang": "en",
+     "url": "https://www.crisisgroup.org/rss.xml",
+     "kind": "direct",
+     "ok": true,
+     "fetched": 10,
+     "kept": 1,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "ISS Africa and ACLED",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(site%3Aissafrica.org+OR+site%3Aacleddata.com)+(Sahel+OR+Mali+OR+Niger+OR+Burkina+OR+Nigeria)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 5,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Africa Center and US research",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(site%3Aafricacenter.org+OR+site%3Acsis.org+OR+site%3Acfr.org)+(Sahel+OR+Mali+OR+Niger+OR+%22Burkina+Faso%22)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 0,
+     "dry_runs": 7,
+     "error": null
+    },
+    {
+     "name": "Humanitarian reporting",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(site%3Areliefweb.int+OR+site%3Athenewhumanitarian.org)+(Sahel+OR+Mali+OR+Niger+OR+%22Burkina+Faso%22)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 5,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Think tanks via search",
+     "lang": "en",
+     "url": "https://news.google.com/rss/search?q=(site%3Acrisisgroup.org+OR+site%3Atimbuktu-institute.org+OR+site%3Aecfr.eu+OR+site%3Achathamhouse.org)+(Sahel+OR+Mali+OR+Niger+OR+Burkina)&hl=en-US&gl=US&ceid=US:en",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 6,
+     "dry_runs": 0,
+     "error": null
+    },
+    {
+     "name": "Analyse francophone",
+     "lang": "fr",
+     "url": "https://news.google.com/rss/search?q=(site%3Airis-france.org+OR+site%3Atimbuktu-institute.org+OR+site%3Agrip.org+OR+site%3Afondation-res-publica.org)+(Sahel+OR+Mali+OR+Niger)&hl=fr&gl=FR&ceid=FR:fr",
+     "kind": "search",
+     "ok": true,
+     "fetched": 100,
+     "kept": 1,
+     "dry_runs": 0,
+     "error": null
+    }
+   ]
+  }
+ ],
+ "research_queries": [
+  {
+   "query": "Sahel insurgency",
+   "ok": true,
+   "kept": 9
+  },
+  {
+   "query": "jihadist violence West Africa",
+   "ok": true,
+   "kept": 8
+  },
+  {
+   "query": "Mali conflict",
+   "ok": true,
+   "kept": 10
+  },
+  {
+   "query": "Burkina Faso security",
+   "ok": true,
+   "kept": 9
+  },
+  {
+   "query": "Wagner Group Africa",
+   "ok": true,
+   "kept": 10
+  },
+  {
+   "query": "military coup West Africa",
+   "ok": true,
+   "kept": 8
+  },
+  {
+   "query": "Boko Haram",
+   "ok": true,
+   "kept": 10
+  },
+  {
+   "query": "ECOWAS regional security",
+   "ok": true,
+   "kept": 7
+  },
+  {
+   "query": "Tuareg Azawad",
+   "ok": true,
+   "kept": 9
+  },
+  {
+   "query": "Russian influence Africa",
+   "ok": true,
+   "kept": 10
+  }
+ ],
+ "countries": [
+  {
+   "name": "Mali",
+   "tier": 1,
+   "terms": [
+    "mali",
+    "malian",
+    "malien",
+    "malienne",
+    "bamako",
+    "gao",
+    "timbuktu",
+    "tombouctou",
+    "kidal",
+    "mopti",
+    "menaka",
+    "segou",
+    "sikasso",
+    "koulikoro",
+    "nampala",
+    "kayes"
+   ]
+  },
+  {
+   "name": "Burkina Faso",
+   "tier": 1,
+   "terms": [
+    "burkina",
+    "burkinabe",
+    "ouagadougou",
+    "ouaga",
+    "djibo",
+    "dori",
+    "kaya",
+    "nouna",
+    "bobo-dioulasso",
+    "solenzo",
+    "barsalogho",
+    "sahel region"
+   ]
+  },
+  {
+   "name": "Niger",
+   "tier": 1,
+   "terms": [
+    "niger",
+    "nigerien",
+    "niamey",
+    "tillaberi",
+    "diffa",
+    "agadez",
+    "tahoua",
+    "dosso",
+    "maradi",
+    "zinder",
+    "tera",
+    "banibangou"
+   ]
+  },
+  {
+   "name": "Nigeria",
+   "tier": 2,
+   "terms": [
+    "nigeria",
+    "nigerian",
+    "abuja",
+    "lagos",
+    "borno",
+    "maiduguri",
+    "zamfara",
+    "kaduna",
+    "sokoto",
+    "katsina",
+    "yobe",
+    "benue",
+    "niger delta",
+    "lakurawa"
+   ]
+  },
+  {
+   "name": "Chad",
+   "tier": 2,
+   "terms": [
+    "chad",
+    "chadian",
+    "tchad",
+    "ndjamena",
+    "n'djamena",
+    "lake chad",
+    "lac tchad"
+   ]
+  },
+  {
+   "name": "Mauritania",
+   "tier": 2,
+   "terms": [
+    "mauritania",
+    "mauritanian",
+    "mauritanie",
+    "nouakchott"
+   ]
+  },
+  {
+   "name": "Senegal",
+   "tier": 2,
+   "terms": [
+    "senegal",
+    "senegalese",
+    "dakar",
+    "casamance",
+    "ziguinchor"
+   ]
+  },
+  {
+   "name": "Guinea",
+   "tier": 2,
+   "terms": [
+    "guinea",
+    "guinean",
+    "guinee",
+    "conakry"
+   ]
+  },
+  {
+   "name": "Côte d'Ivoire",
+   "tier": 2,
+   "terms": [
+    "ivoire",
+    "ivorian",
+    "ivoirien",
+    "ivory coast",
+    "abidjan",
+    "korhogo",
+    "yamoussoukro"
+   ]
+  },
+  {
+   "name": "Ghana",
+   "tier": 2,
+   "terms": [
+    "ghana",
+    "ghanaian",
+    "accra",
+    "bawku"
+   ]
+  },
+  {
+   "name": "Togo",
+   "tier": 2,
+   "terms": [
+    "togo",
+    "togolese",
+    "togolais",
+    "lome",
+    "savanes",
+    "dapaong"
+   ]
+  },
+  {
+   "name": "Benin",
+   "tier": 2,
+   "terms": [
+    "benin",
+    "beninese",
+    "beninois",
+    "cotonou",
+    "porto-novo",
+    "alibori",
+    "atakora",
+    "kandi"
+   ]
+  },
+  {
+   "name": "Regional",
+   "tier": 2,
+   "terms": [
+    "sahel",
+    "sahelian",
+    "sahelien",
+    "ecowas",
+    "cedeao",
+    "west africa",
+    "afrique de l'ouest",
+    "sahel states",
+    "etats du sahel",
+    "liptako",
+    "gourma",
+    "gulf of guinea",
+    "tri-border",
+    "three borders"
+   ]
+  }
+ ],
+ "country_traps": {
+  "Guinea": [
+   "papua",
+   "equatorial guinea",
+   "guinee equatoriale",
+   "guinea pig"
+  ],
+  "Niger": [
+   "niger delta",
+   "river niger",
+   "niger state",
+   "niger bridge"
+  ],
+  "Benin": [
+   "benin city"
+  ],
+  "Chad": [
+   "chadwick"
+  ]
+ },
+ "actors": [
+  {
+   "name": "JNIM and al-Qaeda",
+   "terms": [
+    "jnim",
+    "nusrat al-islam",
+    "nusrat al islam",
+    "soutien a l'islam",
+    "group for support of islam",
+    "katiba",
+    "macina",
+    "katiba macina",
+    "ansarul",
+    "ansarul islam",
+    "al-qaeda",
+    "al qaida",
+    "aqim",
+    "aqmi",
+    "iyad ag ghaly",
+    "amadou koufa"
+   ],
+   "colour": "#c25b4a"
+  },
+  {
+   "name": "Islamic State",
+   "terms": [
+    "islamic state",
+    "etat islamique",
+    "iswap",
+    "issp",
+    "is-sahel",
+    "is sahel",
+    "islamic state sahel",
+    "islamic state west africa",
+    "daesh",
+    "amaq",
+    "boko haram",
+    "iswa",
+    "lakurawa",
+    "bakura"
+   ],
+   "colour": "#b5654f"
+  },
+  {
+   "name": "Azawad and FLA",
+   "terms": [
+    "azawad",
+    "fla",
+    "front de liberation",
+    "cma",
+    "tuareg",
+    "touareg",
+    "separatist",
+    "separatiste",
+    "independantiste",
+    "hcua",
+    "mnla",
+    "coordination des mouvements",
+    "gatia"
+   ],
+   "colour": "#d3a24b"
+  },
+  {
+   "name": "Russia and Africa Corps",
+   "terms": [
+    "russia",
+    "russian",
+    "russie",
+    "russe",
+    "wagner",
+    "africa corps",
+    "afrika korps",
+    "moscow",
+    "moscou",
+    "kremlin",
+    "prigozhin",
+    "lavrov",
+    "rosoboronexport",
+    "rosatom",
+    "military instructors",
+    "instructeurs russes"
+   ],
+   "colour": "#7e93a8"
+  },
+  {
+   "name": "National armies and juntas",
+   "terms": [
+    "fama",
+    "malian army",
+    "armee malienne",
+    "burkinabe army",
+    "armee burkinabe",
+    "nigerien army",
+    "armee nigerienne",
+    "junta",
+    "junte",
+    "defence ministry",
+    "ministere de la defense",
+    "gendarmerie",
+    "national guard",
+    "vdp",
+    "volunteers for the defence",
+    "goita",
+    "traore",
+    "tiani",
+    "armed forces"
+   ],
+   "colour": "#8fae93"
+  },
+  {
+   "name": "Other external forces",
+   "terms": [
+    "france",
+    "french",
+    "francais",
+    "barkhane",
+    "minusma",
+    "united states",
+    "africom",
+    "turkey",
+    "turkish",
+    "turquie",
+    "bayraktar",
+    "uae",
+    "emirates",
+    "emirats",
+    "china",
+    "chinese",
+    "chinois",
+    "european union",
+    "eucap",
+    "eutm",
+    "morocco",
+    "algeria",
+    "algerie",
+    "iran",
+    "north korea",
+    "ukraine"
+   ],
+   "colour": "#a08ac0"
+  }
+ ],
+ "topics": [
+  {
+   "name": "Armed violence",
+   "terms": [
+    "attack",
+    "attaque",
+    "ambush",
+    "embuscade",
+    "killed",
+    "tues",
+    "raid",
+    "clash",
+    "affrontement",
+    "offensive",
+    "strike",
+    "frappe",
+    "bombing",
+    "explosion",
+    "ied",
+    "casualties",
+    "wounded",
+    "blesses",
+    "siege",
+    "massacre",
+    "fighting",
+    "combats",
+    "insurgency",
+    "insurrection",
+    "drone"
+   ],
+   "colour": "#c25b4a"
+  },
+  {
+   "name": "Coups and transitions",
+   "terms": [
+    "coup",
+    "putsch",
+    "transition",
+    "transitional government",
+    "gouvernement de transition",
+    "election",
+    "referendum",
+    "constitution",
+    "state of emergency",
+    "etat d'urgence",
+    "dissolved",
+    "dissous",
+    "mutiny",
+    "mutinerie",
+    "seized power",
+    "sworn in",
+    "interim",
+    "ballot"
+   ],
+   "colour": "#84a58c"
+  },
+  {
+   "name": "AES and ECOWAS",
+   "terms": [
+    "ecowas",
+    "cedeao",
+    "alliance of sahel states",
+    "alliance des etats du sahel",
+    "aes",
+    "african union",
+    "union africaine",
+    "summit",
+    "sommet",
+    "withdrawal",
+    "retrait",
+    "confederation",
+    "single currency",
+    "cfa",
+    "free movement",
+    "bloc"
+   ],
+   "colour": "#c98f6a"
+  },
+  {
+   "name": "Diplomacy and agreements",
+   "terms": [
+    "talks",
+    "pourparlers",
+    "negotiation",
+    "negociation",
+    "agreement",
+    "accord",
+    "treaty",
+    "traite",
+    "memorandum",
+    "pact",
+    "pacte",
+    "ambassador",
+    "ambassadeur",
+    "envoy",
+    "delegation",
+    "visit",
+    "visite",
+    "sanctions",
+    "embargo",
+    "expelled",
+    "expulse",
+    "severed",
+    "diplomatic relations",
+    "mediation",
+    "cooperation"
+   ],
+   "colour": "#9b8ec4"
+  },
+  {
+   "name": "Humanitarian impact",
+   "terms": [
+    "displaced",
+    "displacement",
+    "deplaces",
+    "refugee",
+    "refugies",
+    "famine",
+    "hunger",
+    "faim",
+    "aid",
+    "humanitarian",
+    "humanitaire",
+    "malnutrition",
+    "cholera",
+    "blockade",
+    "blocus",
+    "civilians",
+    "civils",
+    "idp",
+    "ocha",
+    "unhcr",
+    "food insecurity",
+    "insecurite alimentaire",
+    "abducted",
+    "enleve"
+   ],
+   "colour": "#7fa3a8"
+  },
+  {
+   "name": "Resources and economy",
+   "terms": [
+    "gold",
+    "or",
+    "mining",
+    "mine",
+    "miniere",
+    "uranium",
+    "oil",
+    "petrole",
+    "lithium",
+    "orano",
+    "barrick",
+    "nationalisation",
+    "nationalised",
+    "contract",
+    "contrat",
+    "revenue",
+    "smuggling",
+    "contrebande",
+    "trafficking",
+    "trafic",
+    "economy",
+    "economie",
+    "budget",
+    "investment",
+    "pipeline"
+   ],
+   "colour": "#b0985e"
+  }
+ ],
+ "events": [
+  {
+   "name": "Conflict event",
+   "terms": [
+    "attack",
+    "attaque",
+    "ambush",
+    "embuscade",
+    "killed",
+    "tues",
+    "raid",
+    "clash",
+    "affrontement",
+    "offensive",
+    "strike",
+    "frappe",
+    "bombing",
+    "explosion",
+    "ied",
+    "casualties",
+    "wounded",
+    "blesses",
+    "siege",
+    "massacre",
+    "abducted",
+    "enleve",
+    "fighting",
+    "combats",
+    "drone strike"
+   ]
+  },
+  {
+   "name": "Leadership change",
+   "terms": [
+    "appointed",
+    "appoints",
+    "names new",
+    "nomme",
+    "nomination",
+    "replaced",
+    "remplace",
+    "resigned",
+    "demissionne",
+    "sacked",
+    "limoge",
+    "dismissed",
+    "ousted",
+    "new leader",
+    "nouveau chef",
+    "new defence minister",
+    "new head",
+    "promoted",
+    "succeeded",
+    "takes over",
+    "took command",
+    "steps down",
+    "hands over",
+    "installed",
+    "emir",
+    "commander",
+    "chief of staff",
+    "reshuffle",
+    "remaniement",
+    "successor"
+   ]
+  },
+  {
+   "name": "Alliance shift",
+   "terms": [
+    "alliance",
+    "pact",
+    "pacte",
+    "agreement",
+    "accord",
+    "deal",
+    "merger",
+    "split",
+    "scission",
+    "defected",
+    "rallied",
+    "joined forces",
+    "partnership",
+    "partenariat",
+    "memorandum",
+    "treaty",
+    "traite",
+    "cooperation",
+    "rupture",
+    "expelled",
+    "expulse"
+   ]
+  },
+  {
+   "name": "Political development",
+   "terms": [
+    "election",
+    "referendum",
+    "constitution",
+    "parliament",
+    "parlement",
+    "decree",
+    "decret",
+    "law",
+    "loi",
+    "protest",
+    "manifestation",
+    "negotiation",
+    "negociation",
+    "talks",
+    "pourparlers",
+    "sanctions",
+    "summit",
+    "sommet",
+    "cabinet",
+    "government",
+    "gouvernement",
+    "arrested",
+    "arrete",
+    "trial",
+    "proces"
+   ]
+  }
+ ],
+ "exclude": [
+  "football",
+  "afcon",
+  "africa cup",
+  "cup of nations",
+  "premier league",
+  "transfer window",
+  "striker",
+  "midfielder",
+  "world cup qualif",
+  "horoscope",
+  "lottery",
+  "best hotels",
+  "travel guide",
+  "recipe",
+  "box office",
+  "nollywood",
+  "afrobeats",
+  "music video",
+  "net worth",
+  "how to watch",
+  "betting",
+  "casino"
+ ],
+ "agencies": [
+  "reuters",
+  "associated press",
+  " ap ",
+  "agence france-presse",
+  "afp",
+  "anadolu",
+  "xinhua",
+  "deutsche presse",
+  "dpa",
+  "efe",
+  "apa news"
+ ],
+ "aggregators": [
+  "yahoo",
+  "msn",
+  "google news",
+  "flipboard",
+  "newsbreak",
+  "news break",
+  "smartnews",
+  "the news international",
+  "zerohedge",
+  "one news page",
+  "headtopics",
+  "star tribune wire",
+  "bignewsnetwork",
+  "big news network"
+ ]
+}

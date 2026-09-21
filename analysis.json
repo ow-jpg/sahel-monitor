@@ -1,6 +1,7 @@
 {
- "generated": "2026-09-21T02:11:02.173623+00:00",
- "cadence_hours": 24,
+ "generated": "2026-09-21T04:13:15.889785+00:00",
+ "manual": true,
+ "cadence_hours": 168,
  "window_days": 21,
  "countries": [
   "Mali",
@@ -32,24 +33,44 @@
   "Benin": 2,
   "Regional": 2
  },
- "themes": {
-  "Jihadist groups": {
+ "actors": {
+  "JNIM and al-Qaeda": {
    "colour": "#c25b4a"
   },
-  "Russia and Africa Corps": {
-   "colour": "#7e93a8"
+  "Islamic State": {
+   "colour": "#b5654f"
   },
   "Azawad and FLA": {
    "colour": "#d3a24b"
   },
+  "Russia and Africa Corps": {
+   "colour": "#7e93a8"
+  },
+  "National armies and juntas": {
+   "colour": "#8fae93"
+  },
+  "Other external forces": {
+   "colour": "#a08ac0"
+  }
+ },
+ "topics": {
+  "Armed violence": {
+   "colour": "#c25b4a"
+  },
   "Coups and transitions": {
    "colour": "#84a58c"
   },
-  "External actors": {
-   "colour": "#a08ac0"
-  },
-  "Regional bloc politics": {
+  "AES and ECOWAS": {
    "colour": "#c98f6a"
+  },
+  "Diplomacy and agreements": {
+   "colour": "#9b8ec4"
+  },
+  "Humanitarian impact": {
+   "colour": "#7fa3a8"
+  },
+  "Resources and economy": {
+   "colour": "#b0985e"
   }
  },
  "events": [
@@ -61,7 +82,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 104,
+   "recent": 110,
    "baseline": 0.0
   },
   {
@@ -116,12 +137,12 @@
   },
   {
    "country": "Benin",
-   "recent": 31,
+   "recent": 32,
    "baseline": 0.0
   },
   {
    "country": "Regional",
-   "recent": 122,
+   "recent": 124,
    "baseline": 0.0
   }
  ],
@@ -138,13 +159,24 @@
    "countries": [
     "Nigeria"
    ],
-   "themes": [
-    "Jihadist groups"
+   "actors": [
+    "Islamic State"
    ],
+   "topics": [],
    "events": [
     "Alliance shift"
    ],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ACLED",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWUN2NmtpemlxMmdCeVAyVHdDQjlJVTdQMTZuTFBDVzVzY19uVEJNZmtFV3RzdHI1VkJkY3pRMl80dUwydHZkN2RvU180MkFkRHFxa245d3ZuUGxZQmFfVkRiUi0wVXl3S2Zqdl9ITWdlWHNoN2xUMmQ1cHBaSGZGSmQ4amFfRDc4dW5YUUVCV0Q0XzBfcnMwaHlURTh6aUVZQkVDcDBFY2ZCSzNrYTROR3JiRXg?oc=5",
+     "date": "2026-09-16T09:09:24+00:00",
+     "title": "Is violence actually decreasing after Boko Haram’s alleged ceasefire deal in Nigeria?",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -165,12 +197,19 @@
     "Senegal",
     "Regional"
    ],
-   "themes": [
-    "Jihadist groups",
+   "actors": [
+    "JNIM and al-Qaeda",
     "Russia and Africa Corps",
+    "National armies and juntas",
+    "Other external forces"
+   ],
+   "topics": [
+    "Armed violence",
     "Coups and transitions",
-    "External actors",
-    "Regional bloc politics"
+    "AES and ECOWAS",
+    "Diplomacy and agreements",
+    "Humanitarian impact",
+    "Resources and economy"
    ],
    "events": [
     "Conflict event",
@@ -179,6 +218,16 @@
     "Political development"
    ],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Crisis Group",
+     "link": "https://www.crisisgroup.org/sbr/global/sb15-ten-challenges-un-2026-2027",
+     "date": "2026-09-14T08:00:00+00:00",
+     "title": "Ten Challenges for the UN in 2026-2027",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -194,29 +243,20 @@
    "countries": [
     "Burkina Faso"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
-   "thread": "developing",
-   "anomaly": false
-  },
-  {
-   "id": "c477ffd21b25c9d2",
-   "title": "Artificial intelligence, a new propaganda lever for JNIM in Mali?",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZWhYcG9pQWhGZ3pJQjVleXZnRmRGMlc5VVdYdUJaMGtraVUzTG92RHVyT1c1VHdHcW5fODEtelc4NWFEVUJDZlAxclBNSDJtMHNWb2JnazNvYVNSME14Y1IyS241RzVfVDQ0eC1DdHlOSmdKQ3RiYkVXYlVxb0dfMkZKSFZTb0pjZEZJaDBQamNxU1c0NFgzcm1uRmdIanlUNUtKbmFLandQVXl1LVpzWS1CbFlLbXN6eFA4M1NKWHN3a1B4QmtCbmZjNXhEWlE?oc=5",
-   "publisher": "Timbuktu Institute",
-   "feed": "Think tanks via search",
-   "lang": "en",
-   "date": "2026-09-11T17:30:39+00:00",
-   "summary": "Artificial intelligence, a new propaganda lever for JNIM in Mali? &nbsp;&nbsp; Timbuktu Institute",
-   "countries": [
-    "Mali"
+   "sources": [
+    {
+     "publisher": "ReliefWeb Response",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QRTdIcTNONTVTaEhGVXB1dXhfTEVlUVFQZnpRMkJGSDN0T1NqR1FuNXpOS2FtVGxZajdoRnBNSm1wd3VJc1hqOGtUZ3BnblB0LVZ5T1FxWGhaVGdna1RaOUg1czN0RWRRM21PUy1Vb0RLZFRy?oc=5",
+     "date": "2026-09-13T22:37:24+00:00",
+     "title": "Burkina Faso: Education - Maps / Infographics",
+     "lang": "en",
+     "kind": "outlet"
+    }
    ],
-   "themes": [
-    "Jihadist groups"
-   ],
-   "events": [],
-   "corroboration": 1,
    "thread": "developing",
    "anomaly": false
   },
@@ -232,13 +272,39 @@
    "countries": [
     "Mali"
    ],
-   "themes": [
-    "Jihadist groups"
+   "actors": [
+    "JNIM and al-Qaeda"
    ],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Timbuktu Institute",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWGtKSWQ1Y1BkclphREFzTi0tZ1F2bHhKcWJjMHAxVkRSbXpfbkM3MHNzNXAzMDdtY2xob1F0SkZhcVhkeU5jYmpkS0JqSXQ4UTh1a09EbW9kbk8wQUJ2QmFub3E0V1RuS1lKc2hCMVRfbFdiYnNMZG16RkFYQjJvYi16QVBJd01fQTR4SGo1RTUwRHJzWGhHNFJfQXVNV3YzNFRZMkdBenFZeEtldHpTZDlpcUxhM0xtYVp0ZUxzVDluM0UxZmFEZG5walA0TVdoSmg3VjI3RUxOMFE?oc=5",
+     "date": "2026-09-11T07:00:00+00:00",
+     "title": "L’intelligence artificielle, nouveau levier de propagande du JNIM au Mali ?",
+     "lang": "fr",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
-   "anomaly": false
+   "anomaly": false,
+   "title_en": "Artificial intelligence, new propaganda lever of JNIM in Mali ?",
+   "summary_en": "Artificial intelligence, new propaganda lever of JNIM in Mali ? &nbsp;&nbsp; Timbuktu Institute",
+   "also": [
+    {
+     "publisher": "Timbuktu Institute",
+     "title": "Artificial intelligence, a new propaganda lever for JNIM in Mali?",
+     "title_en": null,
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZWhYcG9pQWhGZ3pJQjVleXZnRmRGMlc5VVdYdUJaMGtraVUzTG92RHVyT1c1VHdHcW5fODEtelc4NWFEVUJDZlAxclBNSDJtMHNWb2JnazNvYVNSME14Y1IyS241RzVfVDQ0eC1DdHlOSmdKQ3RiYkVXYlVxb0dfMkZKSFZTb0pjZEZJaDBQamNxU1c0NFgzcm1uRmdIanlUNUtKbmFLandQVXl1LVpzWS1CbFlLbXN6eFA4M1NKWHN3a1B4QmtCbmZjNXhEWlE?oc=5",
+     "date": "2026-09-11T17:30:39+00:00",
+     "lang": "en",
+     "agency": false,
+     "aggregator": false,
+     "cross_language": true
+    }
+   ]
   },
   {
    "id": "cfadb9dc3ba96f9b",
@@ -254,9 +320,22 @@
     "Burkina Faso",
     "Niger"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [
+    "Humanitarian impact"
+   ],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ReliefWeb",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLUNPejJXVDhJaUFMOXF3V3ZicTR6bjYySWRRRFBFT2pjcmFYRGFDc0FKc3RMX0g5RVJiQXk1YnBsNmEtS0UzV00yelVBZlBiUmQyMVVfcFJhY3ZDdWFDeXBsdHlYbXk3dFhNNUJCRkNaTmo1NEptQlRiRU8zVGFXaEdFTzZZS0NQakJpa0M0RzE3WVNyLXNmM3pENXZkd05xVmpEeEU2SjhsN3RLVTVmVnR6bENSaTRnUVlPUGNB?oc=5",
+     "date": "2026-09-10T12:43:04+00:00",
+     "title": "Burkina Faso, Mali and Western Niger - Humanitarian Overview – 2026 (as of 9 September 2026)",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -272,13 +351,24 @@
    "countries": [
     "Nigeria"
    ],
-   "themes": [
-    "Jihadist groups"
+   "actors": [
+    "Islamic State"
    ],
+   "topics": [],
    "events": [
     "Leadership change"
    ],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ACLED",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ05PZGNDT002T1BYSmh1Mmw4RHZBSzBtcTZJYjdkMV9OMXRrN0dnSU03Si1CdjZ3MTBsbk5HRHhkZUJFbWhnMFJ2bW82Q0dQZjZZRGxLZXJQRE1oRmd1V0RTdE9mdGN3UkV6R3lpT2tXcXNwX0Q4QTZQZWNXSjlXRlpUVWQ2VjZsV0tuZDlveDRrdGduUHdzanFwekRMVEtCZGxkczdlRXZWUTYyZVc4cVBZQ1A4ZGc?oc=5",
+     "date": "2026-09-09T07:00:00+00:00",
+     "title": "Nigeria names new commander to lead military operations against Boko Haram | Reuters",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -294,9 +384,20 @@
    "countries": [
     "Mali"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Timbuktu Institute",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV1ZtcFlzV2FUUXJDOUpiaUZpU1hjWkJtMDFLWWNTRHVQU3lIV3AyY040VVJUTkJFT2RrTXNYN3RuOXBWRkhaQjQ4ZUp1WDJ6UXN1WUl0MWJ0NnRCZDdRcWREaVlUdkE1ZzZjc2l4ajlRWVZDUU45THhZcU9pYUhTYkVuNWRfaWFRZUl3VG9mVWdWTl9GaldHa1RhajZQS2NjRy1DM3NlaE9uVjRTc2dyc0c1U3JSSVpuZFE?oc=5",
+     "date": "2026-09-09T07:00:00+00:00",
+     "title": "In Mali, generative AI joins the information war",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -313,9 +414,20 @@
     "Mali",
     "Burkina Faso"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Timbuktu Institute",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVDVlSWJlZFRpUWVSVzY0UWhXUWxQdlBCaThNV1dxdUJiMWJRSHJOX3Z6TTM2LTJSOUlMeFdjdUstOW1EWDdiQ3VvZFBFZ0N6cTZYWG5fQ1lYTkZ6dWp2bVB1b0hRbGtiVkU2Mm9tODItUm1BdFdnei1RZXFWNTQwaE1MMTN0MDczcW9aT1BXQjVBQnBpUEtsRDZjbEZHanRQSUJrcnJhZ2VodG5XUEZ5Ti1sYkpCZUtEeFdWeUtZY2ZjVE1IZ2ZOT2trX0x5WUFrMDA3cXk3U3Y1bzgtRGxkRzl5UXlrM2pBTUtOb2Joajc?oc=5",
+     "date": "2026-09-09T07:00:00+00:00",
+     "title": "Burkina Faso : Between Industrial Sovereignty, Youth Mobilization and Persistent Insecurity",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -331,9 +443,20 @@
    "countries": [
     "Burkina Faso"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ReliefWeb",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcmhPQ3JOX3kxM29FUVNKcTNORkY1eVM3S1RhVnZDOU5pcmQ0TERvYS1BWEFodWNJOXM0WHZ1eElHLUEyenQyVjF2THlWX2M2SFlEN1hBMFVnRjEzTVlyRTJYRGk4MUxEQ2VVWEMtclpZdC1UOFA5Qi1Gc1dFVGlLdDA2N0JqYmczeGJ0LQ?oc=5",
+     "date": "2026-09-08T22:21:40+00:00",
+     "title": "WFP Burkina Faso Country Brief, August 2026",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -350,11 +473,23 @@
     "Mali",
     "Burkina Faso"
    ],
-   "themes": [
-    "Coups and transitions"
+   "actors": [],
+   "topics": [
+    "Coups and transitions",
+    "Resources and economy"
    ],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Timbuktu Institute",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxORDNXYjVSZ0lYNWFmS3U4VEQ0b2thMUVLRlZHR2hmS2N3WU9oZ3BFMjNObmlFMjgteExYVW1EUlZRSWVBRFcxRUZ3azBOd3N6NVdfZ2tyVWxkNTMwVzhPa2FEMmZwU1lqN3pOQmJDZ2w3d2tlVmZWeGZITmJic2lUNHpENG9UTWZmRXg4VUM1NG1SWXJLYmNzV0EzS0NsajVtTHhwZE5XeDJkTUJydzdaTW56Q0luaFZiQ2prdTNiNUdPVTdxT2I2dFNDbzVxVzdTOW5vT3dKbmtJLWN1S1hxTzBmT3NmN2dz?oc=5",
+     "date": "2026-09-08T11:45:05+00:00",
+     "title": "Burkina Faso: when gold attracts armed groups and the transition settles its scores",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -370,9 +505,20 @@
    "countries": [
     "Burkina Faso"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ReliefWeb",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdTdyMVNNY0MtWmRQRW1ZdFRLdjJLay12OEwtTDExOGhsOVNYUEZZZm1CQ0N6OVREM0lPVDhWM0I5WG12VGQyYUVfTmI2TEZQWTJTWWtEU00yODlCVU5EQ1FHSmx0dl9DXzJTMzFJck4wRURGSms1UVNOQXF3ZlF3NzBaeE9QMmxLNFQzMjhsbDcyN3BxSjFsZEdB?oc=5",
+     "date": "2026-09-08T07:00:00+00:00",
+     "title": "Burkina Faso : Bilan regional Bankui, Janvier-Juin 2026",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -389,9 +535,22 @@
     "Mali",
     "Niger"
    ],
-   "themes": [],
+   "actors": [
+    "National armies and juntas"
+   ],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Timbuktu Institute",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTUtKUnB1Q1VSRHhhNGxUTGxkUXczR1pCU3dFMlRVZmRvZEEtRnNhd0gwMFo1RDh6U0tKUUhTS3l1QUh1UjVCazVTMUhTQVpFdERWOURCV3RjS1VzT092c3hKMW9Ra1ZSODdLQWNqRkVmYjh4OGNaeVlZdWVHZ182X2VHdlh3QjQwTHltbU5wdlRPZ0lDWnN5aUZUTzRuWnBPWjhRdXNDRXI2ZmFKbHdyd3htdzlIcnFzYmd2bWpEaVNlVkdGa1JPLWRYUGt6X3BUTWRiZ0piemo?oc=5",
+     "date": "2026-09-07T21:04:52+00:00",
+     "title": "Niger : Tiani between military fragility and the fight against terrorism",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -407,14 +566,25 @@
    "countries": [
     "Mali"
    ],
-   "themes": [
-    "Jihadist groups",
+   "actors": [
+    "JNIM and al-Qaeda",
     "Azawad and FLA"
    ],
+   "topics": [],
    "events": [
     "Alliance shift"
    ],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ISS Africa",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRFpNY1ZHTjlxSjJFWU51WEIzbnMySzQ4UHVVNE5WbFpJSnc3eUNuT2NxcHpGTS1PVjhsTTV1M3YtVGpMemh3R2pJbllwRFN6UjMzQ0lSZ1FCYkJ0U0FsYzE3ZURWOUw0cXVaVDdsT1Z1V3pfWDJJaEFZR0JINmZ5bkU1Z1Q1d2ZTN2Vrd2t5c2ZENHNVRHVvQnhURXVSNzgwdGdz?oc=5",
+     "date": "2026-09-02T07:00:00+00:00",
+     "title": "Can Mali’s FLA-JNIM insurgent alliance survive its internal divisions?",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -431,11 +601,24 @@
     "Mali",
     "Senegal"
    ],
-   "themes": [
-    "Jihadist groups"
+   "actors": [
+    "JNIM and al-Qaeda"
+   ],
+   "topics": [
+    "Resources and economy"
    ],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ACLED",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTGctTUh0SVBsZDd3RzFXRzdnRGRtVUFqV05mRUJ3REV2bjVVM0hFVEVLU0NIS3hsMVp1NkJaQ3g3M2VFSUxSRVJnWmFEMkkzcGRiZWpvdktBaHJPLVFHOWhBUjl4LU5zTTZ4UDJwUVRhNEkxdmZwa0oxNXYxUjR6blozWGkyNUxlTlF2TFlDdm1lbGw2Q05TdFMydUNTMWh5U1g0?oc=5",
+     "date": "2026-09-01T21:30:00+00:00",
+     "title": "Protected: JNIM’s expansion in western Mali puts Senegal’s trade and mining sectors at risk",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -451,12 +634,22 @@
    "countries": [
     "Niger"
    ],
-   "themes": [
-    "Jihadist groups",
+   "actors": [],
+   "topics": [
     "Coups and transitions"
    ],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ACLED",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQODdCbm5kV2RUc0V3V2dDdEYtUjhQbmlZbHdOeElpV00zeF9jRDVJNDEtRkNTMUtKS1FOT3RsMzV6djBPSm9yakVpTDkzcVdkWWM1V1VHb3NRM3l3OG5QN0pSODZ0SWVLc1lBLWtfNFM5S1NGRFNSNy1HdURwRlNmRTU5bkR3ekNNdXZ5U0FqWURjR0FudDgyZlRHU2xBYUlZRFZaR1pHS2U0M2VucU1B?oc=5",
+     "date": "2026-09-01T16:35:38+00:00",
+     "title": "Niger’s capital rocked by failed mutiny attempt: Could jihadist groups benefit?",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -473,9 +666,20 @@
     "Mali",
     "Regional"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "Timbuktu Institute",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVlVTVmpuZHgwN2x6RnVKaW5SNzh5YUduR3Z2NjVQTm1PY0pOaFpmMXRId3hzQTNidGFiRHB3dmtUWmUxNmpYQTBtLXZKWU1aal9RaUx1TXFCM1FYQklkNXNvZlRodnpDaVlPa1M3UzYtZTFhSE94RFphV3RTUWdVZ2pkdzluNUJxdkd3Z3pRM2pMcl9UbUhyT1ZlSERVUEsycGwxeUNTOUEyLTI1dTBPQ200OXJMZGx0eFJOTi01Y3lTajh1YWdiemNoUEU0amhaTFJtZ2RPTQ?oc=5",
+     "date": "2026-09-01T07:00:00+00:00",
+     "title": "Mali : between a lull in léré and the assertion of sahelian sovereignty",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   },
@@ -491,9 +695,20 @@
    "countries": [
     "Regional"
    ],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
+   "sources": [
+    {
+     "publisher": "ReliefWeb",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMTFjMWYzWF9JejVzaUI5U1hWNEdJVDEyOVk0ZHlvNUFHek1sS216N0JRa0tVMTFmcDctRXZ4Tjd0WWJaeTlBQm4xTnB2RFhwMWlpRW9NWC1qNVo5eF9HdTNWT2s4REMxMXZnZ3o1TV94VXNVejN2X2NZSWo1N3J1SC14VFlTVjVtUnh3aGFfb0ZEUlFTclQ1WVk2dTNXcFRkLXR5eEpzcktDckZodmdaTmRkeC1zeFBWM0VsYUxRRzM5NXdNQXBYalJPMGNTQW8?oc=5",
+     "date": "2026-08-31T07:00:00+00:00",
+     "title": "West Africa Seasonal Monitor: Rainy season progresses with localized deficits across the Sahel, August 31, 2026",
+     "lang": "en",
+     "kind": "outlet"
+    }
+   ],
    "thread": "developing",
    "anomaly": false
   }
@@ -505,7 +720,7 @@
    "fetched": 30,
    "kept": 0,
    "error": null,
-   "dry_runs": 7
+   "dry_runs": 8
   },
   {
    "name": "Crisis Group",
@@ -529,7 +744,7 @@
    "fetched": 100,
    "kept": 0,
    "error": null,
-   "dry_runs": 6
+   "dry_runs": 7
   },
   {
    "name": "Humanitarian reporting",

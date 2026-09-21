@@ -1,6 +1,7 @@
 {
- "generated": "2026-09-21T02:11:02.173623+00:00",
- "cadence_hours": 24,
+ "generated": "2026-09-21T04:13:15.889785+00:00",
+ "manual": true,
+ "cadence_hours": 168,
  "window_days": 21,
  "countries": [
   "Mali",
@@ -32,24 +33,44 @@
   "Benin": 2,
   "Regional": 2
  },
- "themes": {
-  "Jihadist groups": {
+ "actors": {
+  "JNIM and al-Qaeda": {
    "colour": "#c25b4a"
   },
-  "Russia and Africa Corps": {
-   "colour": "#7e93a8"
+  "Islamic State": {
+   "colour": "#b5654f"
   },
   "Azawad and FLA": {
    "colour": "#d3a24b"
   },
+  "Russia and Africa Corps": {
+   "colour": "#7e93a8"
+  },
+  "National armies and juntas": {
+   "colour": "#8fae93"
+  },
+  "Other external forces": {
+   "colour": "#a08ac0"
+  }
+ },
+ "topics": {
+  "Armed violence": {
+   "colour": "#c25b4a"
+  },
   "Coups and transitions": {
    "colour": "#84a58c"
   },
-  "External actors": {
-   "colour": "#a08ac0"
-  },
-  "Regional bloc politics": {
+  "AES and ECOWAS": {
    "colour": "#c98f6a"
+  },
+  "Diplomacy and agreements": {
+   "colour": "#9b8ec4"
+  },
+  "Humanitarian impact": {
+   "colour": "#7fa3a8"
+  },
+  "Resources and economy": {
+   "colour": "#b0985e"
   }
  },
  "events": [
@@ -61,7 +82,7 @@
  "coverage": [
   {
    "country": "Mali",
-   "recent": 104,
+   "recent": 110,
    "baseline": 0.0
   },
   {
@@ -116,12 +137,12 @@
   },
   {
    "country": "Benin",
-   "recent": 31,
+   "recent": 32,
    "baseline": 0.0
   },
   {
    "country": "Regional",
-   "recent": 122,
+   "recent": 124,
    "baseline": 0.0
   }
  ],
@@ -136,7 +157,8 @@
    "date": "2029-05-06",
    "summary": "JANGIS",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -151,7 +173,8 @@
    "date": "2026-12-31",
    "summary": "Ngenwie Emilia Tanyie, Therese Mungah Shalo Tchombe",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -166,7 +189,8 @@
    "date": "2026-11-12",
    "summary": "Amadou Coulibaly",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -181,7 +205,8 @@
    "date": "2026-11-12",
    "summary": "Amadou Coulibaly",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -196,7 +221,8 @@
    "date": "2026-10-06",
    "summary": "Gunel Madadli",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -211,7 +237,8 @@
    "date": "2026-10-01",
    "summary": "Saul Estrin, Lilac Nachum, Yuan Hu",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -226,7 +253,8 @@
    "date": "2026-10-01",
    "summary": "Salamat Hussain, Zhengmeng CHAI, Zaheer Abbas",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -241,7 +269,8 @@
    "date": "2026-10-01",
    "summary": "Lu Zhang, Zaheer Abbas, Chuen Wah Seow",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -256,7 +285,8 @@
    "date": "2026-10-01",
    "summary": "Mohammad Hosny Awad, Rania Eladl, Asmahan Tagelsir Abdalla",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -271,7 +301,8 @@
    "date": "2026-09-30",
    "summary": "Chukwumerije Okereke, Chukwuemeka Emenekwe, Uchenna Nnamani",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -286,7 +317,8 @@
    "date": "2026-09-19",
    "summary": "Samuel Onyekachi CHIDI",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -301,7 +333,8 @@
    "date": "2026-09-19",
    "summary": "Tareq Hamadneh, Mohammed Ali, Omar Almomani",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -316,7 +349,8 @@
    "date": "2026-09-19",
    "summary": "Zeinab Montazeri, Mohammad Dehghani, Abdulrahman Alenezi",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -331,7 +365,8 @@
    "date": "2026-09-19",
    "summary": "S. Senthil Murugan, Balamurugan M",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -346,7 +381,8 @@
    "date": "2026-09-19",
    "summary": "Tareq Hamadneh, Mohammed Ali, Omar Almomani",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -361,7 +397,8 @@
    "date": "2026-09-19",
    "summary": "Gulnara Bektemyssova, Abdulrahman Alenezi, Zeinab Montazeri",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -376,7 +413,8 @@
    "date": "2026-09-19",
    "summary": "Muhammad Ahmad Bello",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -391,7 +429,8 @@
    "date": "2026-09-19",
    "summary": "Muhammad Ahmad Bello",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -406,7 +445,8 @@
    "date": "2026-09-18",
    "summary": "Olena Komleva",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -421,7 +461,8 @@
    "date": "2026-09-18",
    "summary": "Maroti Parmeshwar Sonarkhan, Prashant J. Wagh, Mrunal C. Kale",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -436,7 +477,8 @@
    "date": "2026-09-18",
    "summary": "Joseph Yaméogo, Songanaba Rouamba, S. Koala",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -451,7 +493,8 @@
    "date": "2026-09-18",
    "summary": "Muhammed Musa, Osman Antwi‐Boateng",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -466,7 +509,8 @@
    "date": "2026-09-18",
    "summary": "",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -481,7 +525,8 @@
    "date": "2026-09-18",
    "summary": "Minjie Chen, Yutong Ran, C. Y. Liu",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -496,7 +541,8 @@
    "date": "2026-09-18",
    "summary": "Giorgi Tedoradze, Arsena Bakhia, Tamar Jugeli",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -511,7 +557,8 @@
    "date": "2026-09-17",
    "summary": "Mendemwelabou Timothée Pakouyowou",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -526,7 +573,8 @@
    "date": "2026-09-17",
    "summary": "James Onyango Elijah, Maurice Udoto, Joel Ng'eno",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -541,7 +589,8 @@
    "date": "2026-09-17",
    "summary": "Lucie Le Goff, Norka Fuentes, Marco Soto-Alvarez",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -556,7 +605,8 @@
    "date": "2026-09-17",
    "summary": "Karina Mroß",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -571,7 +621,8 @@
    "date": "2026-09-17",
    "summary": "Daniel Masumbuko Nhunda, Mohanadoss Ponraj, Charles Bwalya Chisanga",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -586,7 +637,8 @@
    "date": "2026-09-17",
    "summary": "Domenico Bovienzo, Jeremy Stephan Pal, Jaroslav Myšiak",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -601,7 +653,8 @@
    "date": "2026-09-17",
    "summary": "Korotimi Ouédraogo, Kangbéni Dimobe, Adjima Thiombiano",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -616,7 +669,8 @@
    "date": "2026-09-17",
    "summary": "Md Shahinur Rahman, Muhammad Mainuddin Patwary, Shahreen Hasan",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -631,7 +685,8 @@
    "date": "2026-09-17",
    "summary": "Miguel Ángel Latorre Guillem, Olivia Artés Seguí",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -646,7 +701,8 @@
    "date": "2026-09-17",
    "summary": "Luis A. Ladino, Karin Ardon‐Dryer, Diana L. Pereira",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -661,7 +717,8 @@
    "date": "2026-09-17",
    "summary": "Aina-Obe Shamsuddin Bolatito, Nabukeera Madinah",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -676,7 +733,8 @@
    "date": "2026-09-17",
    "summary": "Niresh Shrestha, Atiq Zaman, Dora Marinova",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -691,7 +749,8 @@
    "date": "2026-09-17",
    "summary": "Capucine Marie Sophie Lechartre, Victor Boussange, Dirk Nikolaus Karger",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -706,7 +765,8 @@
    "date": "2026-09-17",
    "summary": "Saud A. Alsulaiman, Ezaddeen S. Almutairi",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -721,7 +781,8 @@
    "date": "2026-09-17",
    "summary": "Ashleigh N.S. Herrera, Siddhi S. Ganesh, Bradley T. Conner",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -736,7 +797,8 @@
    "date": "2026-09-17",
    "summary": "Elizabeth C Sibert, Matt Friedman, Morgan Gall",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -751,7 +813,8 @@
    "date": "2026-09-17",
    "summary": "Assem Dandashly, Christos Kourtelis",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -766,7 +829,8 @@
    "date": "2026-09-17",
    "summary": "Samson Uchenna Eze",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -781,7 +845,8 @@
    "date": "2026-09-17",
    "summary": "Rex Oforitse Aruofor",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -796,7 +861,8 @@
    "date": "2026-09-17",
    "summary": "Edward Obukokwo NNANNA",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -811,7 +877,8 @@
    "date": "2026-09-17",
    "summary": "Edward Obukokwo NNANNA",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -826,7 +893,8 @@
    "date": "2026-09-17",
    "summary": "Ashore-Onisemo Funmilayo",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -841,7 +909,8 @@
    "date": "2026-09-17",
    "summary": "M. A. Ibrahim",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -856,7 +925,8 @@
    "date": "2026-09-17",
    "summary": "Jovana Bogojević",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -871,7 +941,8 @@
    "date": "2026-09-17",
    "summary": "Remy Jonkam Oben, Shikha Daga, Mehdi Seraj",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -886,7 +957,8 @@
    "date": "2026-09-16",
    "summary": "Gbenga Adesina, Case Watkins",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -901,7 +973,8 @@
    "date": "2026-09-16",
    "summary": "Nathan Humphrey",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -916,7 +989,8 @@
    "date": "2026-09-16",
    "summary": "Nathan Humphrey",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -931,7 +1005,8 @@
    "date": "2026-09-16",
    "summary": "Yahor Azarkevich",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -946,7 +1021,8 @@
    "date": "2026-09-16",
    "summary": "Edouard Fouqueray, Luisa Enria, Umberto Pellecchia",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -961,7 +1037,8 @@
    "date": "2026-09-16",
    "summary": "Iyanda Kamoru Ahmed",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -976,7 +1053,8 @@
    "date": "2026-09-16",
    "summary": "Khalid Almezaini",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -991,7 +1069,8 @@
    "date": "2026-09-16",
    "summary": "Rhoda D. Diyoshak, Joyce Bukirwa, David Luyombya",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -1006,7 +1085,8 @@
    "date": "2026-09-16",
    "summary": "Akanksha Awal",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"
@@ -1021,7 +1101,8 @@
    "date": "2026-09-16",
    "summary": "Richard Arhinful, Leviticus Mensah, Hayford Asare Obeng",
    "countries": [],
-   "themes": [],
+   "actors": [],
+   "topics": [],
    "events": [],
    "corroboration": 1,
    "thread": "new"

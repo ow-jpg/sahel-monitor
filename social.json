@@ -1,0 +1,151 @@
+{
+ "generated": "2026-09-21T04:13:15.889785+00:00",
+ "manual": true,
+ "cadence_hours": 168,
+ "window_days": 21,
+ "countries": [
+  "Mali",
+  "Burkina Faso",
+  "Niger",
+  "Nigeria",
+  "Chad",
+  "Mauritania",
+  "Senegal",
+  "Guinea",
+  "Côte d'Ivoire",
+  "Ghana",
+  "Togo",
+  "Benin",
+  "Regional"
+ ],
+ "tiers": {
+  "Mali": 1,
+  "Burkina Faso": 1,
+  "Niger": 1,
+  "Nigeria": 2,
+  "Chad": 2,
+  "Mauritania": 2,
+  "Senegal": 2,
+  "Guinea": 2,
+  "Côte d'Ivoire": 2,
+  "Ghana": 2,
+  "Togo": 2,
+  "Benin": 2,
+  "Regional": 2
+ },
+ "actors": {
+  "JNIM and al-Qaeda": {
+   "colour": "#c25b4a"
+  },
+  "Islamic State": {
+   "colour": "#b5654f"
+  },
+  "Azawad and FLA": {
+   "colour": "#d3a24b"
+  },
+  "Russia and Africa Corps": {
+   "colour": "#7e93a8"
+  },
+  "National armies and juntas": {
+   "colour": "#8fae93"
+  },
+  "Other external forces": {
+   "colour": "#a08ac0"
+  }
+ },
+ "topics": {
+  "Armed violence": {
+   "colour": "#c25b4a"
+  },
+  "Coups and transitions": {
+   "colour": "#84a58c"
+  },
+  "AES and ECOWAS": {
+   "colour": "#c98f6a"
+  },
+  "Diplomacy and agreements": {
+   "colour": "#9b8ec4"
+  },
+  "Humanitarian impact": {
+   "colour": "#7fa3a8"
+  },
+  "Resources and economy": {
+   "colour": "#b0985e"
+  }
+ },
+ "events": [
+  "Conflict event",
+  "Leadership change",
+  "Alliance shift",
+  "Political development"
+ ],
+ "coverage": [
+  {
+   "country": "Mali",
+   "recent": 110,
+   "baseline": 0.0
+  },
+  {
+   "country": "Burkina Faso",
+   "recent": 20,
+   "baseline": 0.0
+  },
+  {
+   "country": "Niger",
+   "recent": 118,
+   "baseline": 0.0
+  },
+  {
+   "country": "Nigeria",
+   "recent": 90,
+   "baseline": 0.0
+  },
+  {
+   "country": "Chad",
+   "recent": 5,
+   "baseline": 0.0
+  },
+  {
+   "country": "Mauritania",
+   "recent": 3,
+   "baseline": 0.0
+  },
+  {
+   "country": "Senegal",
+   "recent": 24,
+   "baseline": 0.0
+  },
+  {
+   "country": "Guinea",
+   "recent": 5,
+   "baseline": 0.0
+  },
+  {
+   "country": "Côte d'Ivoire",
+   "recent": 12,
+   "baseline": 0.0
+  },
+  {
+   "country": "Ghana",
+   "recent": 60,
+   "baseline": 0.0
+  },
+  {
+   "country": "Togo",
+   "recent": 3,
+   "baseline": 0.0
+  },
+  {
+   "country": "Benin",
+   "recent": 32,
+   "baseline": 0.0
+  },
+  {
+   "country": "Regional",
+   "recent": 124,
+   "baseline": 0.0
+  }
+ ],
+ "items": [],
+ "health": []
+}
