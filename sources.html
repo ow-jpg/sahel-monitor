@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources · Sahel Monitor</title>
+<meta name="description" content="What this monitor collects from, and how it filters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Sources and filters
+    <span>Everything the collector looks at, and every rule it applies.</span>
+  </h1>
+  <div class="status-block">
+    <span class="pill" id="status-pill"><span class="lamp"></span><span id="status-text">Checking</span></span>
+  </div>
+</header>
+
+<nav class="tabs"></nav>
+
+<div class="alert" id="alert" role="status">
+  <h2 id="alert-title"></h2>
+  <p id="alert-body"></p>
+</div>
+
+<div class="sources-intro">
+  <p>This page is written by the collector on every run, so it is always what
+  the system is actually doing rather than what it was once set up to do. All
+  of it comes from one file, <code>sources.yml</code>, in the repository.</p>
+  <p>An item has to mention a listed place to appear anywhere on the site. It
+  then picks up themes and event types on top of that. If something you expect
+  to see is missing, the cause is usually a place name or a term that is not in
+  these lists, rather than a missing feed.</p>
+</div>
+
+<div class="empty" id="no-data" style="margin-top:2rem; display:none;">
+  Waiting on <code>sources.json</code>. It appears after the next collection run.
+</div>
+
+<main id="content" style="display:none;">
+
+  <section class="block" id="block-feeds">
+    <h2>Feeds</h2>
+    <p class="block-note">Marked <span style="color:var(--green)">direct</span>
+      where the outlet publishes its own feed, and <span style="color:var(--brass)">search</span>
+      where it is reached through a Google News query instead, which is how
+      publications without a usable feed of their own get covered. Counts are
+      from the most recent run.</p>
+    <div id="feeds"></div>
+  </section>
+
+  <section class="block">
+    <h2>Academic searches</h2>
+    <p class="block-note">Run against OpenAlex, which indexes journals and
+      working papers. Free and needs no account.</p>
+    <div id="research"></div>
+  </section>
+
+  <section class="block">
+    <h2>Places</h2>
+    <p class="block-note">An item must match at least one of these to be kept
+      at all. Matching ignores accents and only fires on whole words, so Mali
+      is not matched inside Somalia. Tier 1 is the focus, tier 2 is tracked.</p>
+    <div class="two-up" id="countries"></div>
+  </section>
+
+  <section class="block">
+    <h2>Themes</h2>
+    <p class="block-note">Colour coded across the site and used as the filter
+      buttons. An item can carry several, or none.</p>
+    <div id="themes"></div>
+  </section>
+
+  <section class="block">
+    <h2>Event types</h2>
+    <p class="block-note">Applied on top of themes, and shown as a badge on
+      each item.</p>
+    <div id="events"></div>
+  </section>
+
+  <section class="block">
+    <h2>Discounted and excluded</h2>
+    <p class="block-note">Corroboration counts are meant to show how many
+      independent newsrooms carried a story. Wire copy is counted once no
+      matter how many outlets run it, and republishing platforms are ignored
+      entirely, otherwise one agency report would look like six confirmations.</p>
+    <div id="discounts"></div>
+  </section>
+
+  <section class="block">
+    <h2>Adding or removing a source</h2>
+    <p class="block-note">Edit <code>sources.yml</code> in the repository and
+      commit. That triggers a fresh run on its own. To add a publication with
+      no feed of its own, copy an existing search entry and change the site in
+      the query.</p>
+    <div class="notepad">
+      <h3>Scratchpad</h3>
+      <p class="block-note" style="margin-top:0;">Somewhere to note sources to
+        add as you think of them. Saved in this browser only, so it will not
+        survive clearing your browsing data and will not appear on another
+        machine. Copy it out once you have a list worth keeping.</p>
+      <textarea id="notes" placeholder="Sources to add, gaps noticed, terms that are missing..."
+                aria-label="Notes on sources to add"></textarea>
+      <div class="row">
+        <button class="btn quiet" id="copy-notes">Copy to clipboard</button>
+        <button class="btn quiet" id="clear-notes">Clear</button>
+        <span class="saved" id="saved-note"></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Every feed listed here is polled on the same schedule. A source appearing
+  in this list is not a judgement about its reliability, and several of them
+  are state owned or carry declared positions. The site does not label them as
+  such, so that assessment is yours.</p>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+(function () {
+  "use strict";
+  var S = window.SM;
+
+  function termList(terms, limit) {
+    var wrap = S.el("div", "tagline");
+    (terms || []).slice(0, limit || 999).forEach(function (t) {
+      wrap.appendChild(S.el("span", "term", t));
+    });
+    if (terms && limit && terms.length > limit) {
+      wrap.appendChild(S.el("span", "term", "+" + (terms.length - limit) + " more"));
+    }
+    return wrap;
+  }
+
+  function feedRow(feed) {
+    var status = feed.ok === false ? "fail" : (feed.kept ? "ok" : "dry");
+    var row = S.el("div", "feed-row is-" + status);
+
+    var name = S.el("div", "feed-name", feed.name);
+    row.appendChild(name);
+
+    var stat = S.el("div", "feed-stat");
+    stat.appendChild(S.el("span", status, status));
+    var detail = feed.ok === false
+      ? "  " + (feed.error || "no response")
+      : "  " + feed.kept + " kept of " + feed.fetched +
+        (feed.dry_runs > 1 ? ",  " + feed.dry_runs + " empty runs" : "");
+    stat.appendChild(document.createTextNode(detail));
+    row.appendChild(stat);
+
+    var urlLine = S.el("div", "feed-url");
+    urlLine.appendChild(document.createTextNode(
+      feed.kind + "  ·  " + String(feed.lang).toUpperCase() + "  ·  "));
+    var href = S.safeUrl(feed.url);
+    if (href) {
+      var a = S.el("a", null, feed.url);
+      a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer";
+      urlLine.appendChild(a);
+    } else {
+      urlLine.appendChild(document.createTextNode(feed.url));
+    }
+    row.appendChild(urlLine);
+    return row;
+  }
+
+  function renderFeeds(data) {
+    var host = document.getElementById("feeds");
+    data.streams.forEach(function (stream) {
+      host.appendChild(S.el("h3", null,
+        stream.label + "  (" + stream.sources.length + ")"));
+      var note = S.el("p", "block-note", stream.note);
+      note.style.margin = "0 0 0.6rem";
+      host.appendChild(note);
+      stream.sources.forEach(function (f) { host.appendChild(feedRow(f)); });
+    });
+  }
+
+  function renderResearch(data) {
+    var host = document.getElementById("research");
+    (data.research_queries || []).forEach(function (q) {
+      var row = S.el("div", "feed-row is-" + (q.ok === false ? "fail" : q.kept ? "ok" : "dry"));
+      row.appendChild(S.el("div", "feed-name", q.query));
+      var stat = S.el("div", "feed-stat");
+      stat.appendChild(document.createTextNode(
+        q.ok === false ? "no response" : q.kept + " kept"));
+      row.appendChild(stat);
+      host.appendChild(row);
+    });
+  }
+
+  function renderCountries(data) {
+    var host = document.getElementById("countries");
+    [1, 2].forEach(function (tier) {
+      var group = data.countries.filter(function (c) { return c.tier === tier; });
+      if (!group.length) return;
+      var col = S.el("div");
+      col.appendChild(S.el("h3", null,
+        tier === 1 ? "Tier 1, in focus" : "Tier 2, tracked"));
+      group.forEach(function (c) {
+        var row = S.el("div", "def-row");
+        var head = S.el("div", "def-head");
+        head.appendChild(S.el("span", null, c.name));
+        head.appendChild(S.el("span", "tier", "T" + c.tier));
+        var traps = (data.country_traps || {})[c.name];
+        if (traps && traps.length) {
+          var t = S.el("span", "tier", "cancelled by: " + traps.join(", "));
+          t.style.color = "var(--red)";
+          head.appendChild(t);
+        }
+        row.appendChild(head);
+        row.appendChild(termList(c.terms));
+        col.appendChild(row);
+      });
+      host.appendChild(col);
+    });
+  }
+
+  function renderThemes(data) {
+    var host = document.getElementById("themes");
+    (data.themes || []).forEach(function (t) {
+      var row = S.el("div", "def-row");
+      var head = S.el("div", "def-head");
+      var dot = S.el("span", "swatch");
+      dot.style.background = t.colour || "#777";
+      head.appendChild(dot);
+      head.appendChild(S.el("span", null, t.name));
+      head.appendChild(S.el("span", "tier", (t.terms || []).length + " terms"));
+      row.appendChild(head);
+      row.appendChild(termList(t.terms));
+      host.appendChild(row);
+    });
+  }
+
+  function renderEvents(data) {
+    var host = document.getElementById("events");
+    (data.events || []).forEach(function (e) {
+      var row = S.el("div", "def-row");
+      var head = S.el("div", "def-head");
+      head.appendChild(S.el("span", null, e.name));
+      head.appendChild(S.el("span", "tier", (e.terms || []).length + " terms"));
+      row.appendChild(head);
+      row.appendChild(termList(e.terms));
+      host.appendChild(row);
+    });
+  }
+
+  function renderDiscounts(data) {
+    var host = document.getElementById("discounts");
+    [["Wire agencies, counted once between them", data.agencies],
+     ["Republishing platforms, not counted at all", data.aggregators],
+     ["Headlines dropped outright", data.exclude]].forEach(function (pair) {
+      var row = S.el("div", "def-row");
+      var head = S.el("div", "def-head");
+      head.appendChild(S.el("span", null, pair[0]));
+      head.appendChild(S.el("span", "tier", (pair[1] || []).length));
+      row.appendChild(head);
+      row.appendChild(termList(pair[1]));
+      host.appendChild(row);
+    });
+  }
+
+  // ---------- scratchpad ----------
+
+  var NOTE_KEY = "sahel_monitor_source_notes";
+
+  function wireNotes() {
+    var box = document.getElementById("notes");
+    var saved = document.getElementById("saved-note");
+    try { box.value = localStorage.getItem(NOTE_KEY) || ""; } catch (e) {}
+
+    var timer;
+    box.addEventListener("input", function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        try {
+          localStorage.setItem(NOTE_KEY, box.value);
+          saved.textContent = "saved " + new Date().toLocaleTimeString("en-AU",
+            { hour: "2-digit", minute: "2-digit" });
+        } catch (e) {
+          saved.textContent = "this browser would not save the note";
+        }
+      }, 400);
+    });
+
+    document.getElementById("copy-notes").addEventListener("click", function () {
+      var done = function () { saved.textContent = "copied"; };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(box.value).then(done, function () {
+          box.select(); saved.textContent = "select and copy manually";
+        });
+      } else {
+        box.select(); saved.textContent = "select and copy manually";
+      }
+    });
+
+    document.getElementById("clear-notes").addEventListener("click", function () {
+      if (!box.value || window.confirm("Clear the scratchpad?")) {
+        box.value = "";
+        try { localStorage.removeItem(NOTE_KEY); } catch (e) {}
+        saved.textContent = "cleared";
+      }
+    });
+  }
+
+  // ---------- go ----------
+
+  S.buildNav("sources.html");
+  wireNotes();
+
+  // Freshness comes from the stream files, same as everywhere else.
+  S.loadAll().then(function (data) {
+    S.assessFreshness(data.meta, {
+      severeMessage:
+        "Collection has stopped, so the counts against each feed below are from " +
+        "the last run that worked and not from today."
+    });
+  });
+
+  fetch("sources.json?t=" + Date.now())
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .catch(function () { return null; })
+    .then(function (data) {
+      if (!data) {
+        document.getElementById("no-data").style.display = "block";
+        return;
+      }
+      document.getElementById("content").style.display = "block";
+      renderFeeds(data);
+      renderResearch(data);
+      renderCountries(data);
+      renderThemes(data);
+      renderEvents(data);
+      renderDiscounts(data);
+    });
+})();
+</script>
+</body>
+</html>

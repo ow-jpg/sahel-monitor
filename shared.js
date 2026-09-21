@@ -94,9 +94,11 @@
   // =======================================================================
 
   var PAGES = [
-    { href: "index.html", label: "Monitor" },
-    { href: "brief.html", label: "Brief" },
-    { href: "ask.html",   label: "Ask" }
+    { href: "index.html",   label: "Monitor" },
+    { href: "brief.html",   label: "Brief" },
+    { href: "ask.html",     label: "Ask" },
+    // Reference rather than daily reading, so it sits apart on the right.
+    { href: "sources.html", label: "Sources", secondary: true }
   ];
 
   function buildNav(current) {
@@ -104,7 +106,7 @@
     if (!nav) return;
     nav.textContent = "";
     PAGES.forEach(function (p) {
-      var a = el("a", null, p.label);
+      var a = el("a", p.secondary ? "secondary" : null, p.label);
       a.href = p.href;
       if (p.href === current) a.setAttribute("aria-current", "page");
       nav.appendChild(a);
