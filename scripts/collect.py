@@ -318,9 +318,27 @@ def score_clusters(items: list[dict], classifier: Classifier) -> list[dict]:
         best = dict(members[0])
         best["corroboration"] = max(1, count)
         best["fingerprint"] = sorted(fingerprint(best["title"]))
-        if len(members) > 1:
-            others = [m["publisher"] for m in members[1:6]]
-            best["also"] = others
+
+        # Every retelling, so the card can show who else carried it and link
+        # straight through to each one.
+        seen_links, roster = set(), []
+        for m in members:
+            key = m["link"].split("?")[0]
+            if key in seen_links:
+                continue
+            seen_links.add(key)
+            roster.append({
+                "publisher": m["publisher"],
+                "link": m["link"],
+                "date": m["date"],
+                "title": m["title"],
+                "lang": m["lang"],
+                "kind": ("aggregator" if classifier.is_aggregator(m["publisher"])
+                         else "agency" if classifier.is_agency(m["publisher"])
+                         else "outlet"),
+            })
+        roster.sort(key=lambda r: (r["kind"] != "outlet", r["publisher"]))
+        best["sources"] = roster[:12]
         output.append(best)
     return output
 
@@ -673,6 +691,7 @@ def main() -> int:
 
     meta = {
         "generated": now.isoformat(),
+        "manual": bool(settings.get("manual", False)),
         "cadence_hours": int(settings.get("cadence_hours", 24)),
         "window_days": window,
         "countries": list(countries_cfg.keys()),
@@ -687,6 +706,10 @@ def main() -> int:
     write_stream("news", news, news_health, meta)
     write_stream("analysis", analysis, analysis_health, meta)
     write_stream("research", research, research_health, meta)
+    # Bluesky is not collected yet. Writing the file anyway keeps the column
+    # honest: it shows "nothing collected" rather than "file missing".
+    if not (ROOT / "social.json").exists():
+        write_stream("social", [], [], meta)
     write_sources(config, all_health, now)
 
     save_archive(archive)
